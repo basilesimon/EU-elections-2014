@@ -402,7 +402,8 @@
         "name": "Anna Lo",
         "party": "Alliance Party of Northern Ireland",
         "region": "northern-ireland",
-        "twitter": "Anna4Europe"
+        "twitter": "Anna4Europe",
+        "uri": "",
     },
     {
         "name": "Anne Elstone",
@@ -625,7 +626,8 @@
         "name": "Ben Houchen",
         "party": "Conservative Party",
         "region": "north-east",
-        "twitter": "BenHouchen"
+        "twitter": "BenHouchen",
+        "uri": ""
     },
     {
         "name": "Bernard Dube",
@@ -1044,7 +1046,8 @@
         "name": "Cliff Le May",
         "party": "British National Party",
         "region": "london",
-        "twitter": ""
+        "twitter": "",
+        "uri": ""
     },
     {
         "name": "Clive Jefferson",
@@ -1463,19 +1466,22 @@
         "name": "Dr Chidi Ejimofo",
         "party": "National Health Action Party",
         "region": "london",
-        "twitter": "Nytspider"
+        "twitter": "Nytspider",
+        "uri": ""
     },
     {
         "name": "Dr Louise Irvine",
         "party": "National Health Action Party",
         "region": "london",
-        "twitter": "drmarielouise"
+        "twitter": "drmarielouise",
+        "uri": ""
     },
     {
         "name": "Dr Vicky Dunn",
         "party": "Green Party",
         "region": "yorkshire-and-the-humber",
-        "twitter": "HumberGreen"
+        "twitter": "HumberGreen",
+        "uri": ""
     },
     {
         "name": "Duncan Kerr",
@@ -1831,7 +1837,8 @@
         "name": "Giuseppe De Santis",
         "party": "British National Party",
         "region": "south-west",
-        "twitter": ""
+        "twitter": "",
+        "uri": ""
     },
     {
         "name": "Glenis Willmott",
@@ -2404,7 +2411,8 @@
         "name": "Jo Crotty",
         "party": "Liberal Democrats",
         "region": "north-west",
-        "twitter": "ProfJoCrotty"
+        "twitter": "ProfJoCrotty",
+        "uri": ""
     },
     {
         "name": "Joanne Brown",
@@ -3747,7 +3755,8 @@
         "name": "Nnenna St Luce",
         "party": "Christian Peoples Alliance",
         "region": "south-east",
-        "twitter": ""
+        "twitter": "",
+        "uri": ""
     },
     {
         "name": "NoelleAnne O\u2019Sullivan",
@@ -5034,7 +5043,8 @@
         "name": "Val Pain",
         "party": "An Independence From Europe",
         "region": "east-midlands",
-        "twitter": ""
+        "twitter": "",
+        "uri": ""
     },
     {
         "name": "Valerie Morris",
