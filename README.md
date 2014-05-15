@@ -3,9 +3,9 @@
 Unnecessary exploration of the 2014 European election in the UK.
 
 ####To-do
-[] Model dashboard
-[x] Test new shapefile (cf /newshape folder)
-    [x] Have a proper map of UK's regions for EU election
+- [ ] Model dashboard
+- [x] Test new shapefile (cf /newshape folder)
+   -  [x] Have a proper map of UK's regions for EU election
 
 ####Ideas
 - Dashboard to follow the elections
