@@ -1,7 +1,7 @@
 {
     "type": "Topology",
     "objects": {
-        "collection": {
+        "subunits": {
             "bbox": [
                 62435.5,
                 11560.5,
