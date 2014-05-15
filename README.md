@@ -3,6 +3,15 @@
 Unnecessary exploration of the 2014 European election in the UK.
 
 ####To-do
+- [ ] Have a nice map... that actually gives results
+    - [x] Use unique IDs for European constituencies
+    - [ ] With ```query.html``` as model, attach click events to SVG elements
+    - [ ] Clicks must display a list of the candidates
+        - Some are clickable and style differently
+    - [ ] Clicking on a candidate must display infos about him
+        - [ ] Which infos do we want to use? See DBPedia for structure
+- [ ] Formulate queries for media coverage (number of occurrences from April 1st) - @iaincollins
+- [ ] Second pie chart for media coverage
 - [ ] Model dashboard
 - [x] Test new shapefile (cf /newshape folder)
    -  [x] Have a proper map of UK's regions for EU election
