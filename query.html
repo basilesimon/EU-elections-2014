@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>query</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <button name="london" id="london" onclick="setChoice()">london</button>
+  <button name="wales" id="wales" onclick="setChoice()">wales</button>
+  <button name="west-midlands" id="west-midlands" onclick="setChoice()">west-midlands</button>
+
+  <ul id="list"></ul>
+</div>
+<script>
+  function setChoice() {
+
+    var buttons = document.querySelectorAll('button');
+    for (var i=0; i<buttons.length; ++i) {
+      buttons[i].addEventListener('click', clickFunc); //attach click event
+    }
+
+    function clickFunc() {
+
+      var search = this.id;   //button id must be one of the JSON's region key
+
+      $.getJSON("src/candidates.json", findStuff);
+      function findStuff(data) {
+        $("#list").empty();   //empties the list
+
+        for (var i = 0; i < data.length; i++) {
+          if (data[i].region === search) {
+            var newLi = document.createElement("li");
+
+            if (data[i].uri.length > 2) {     //gets the one we can click on
+              newLi.style.fontWeight = "bold"; //so we can see them!
+              newLi.addEventListener("click", gimmeMore); //attach click event
+              function gimmeMore() {
+                //do stuff === the real job
+              }
+            }
+            var fill = document.createTextNode(data[i].name);
+            newLi.appendChild(fill);
+            document.getElementById("list").appendChild(newLi);
+          }
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
