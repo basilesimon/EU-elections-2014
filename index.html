@@ -3,16 +3,20 @@
 <head>
   <title>Elections</title>
   <meta charset="utf-8"></meta>
-  <script type="text/javascript" src="d3.js"></script>
   <style>
     body {
       background-color: #F3F3F3;
       margin: 0;
       padding: 0;
     }
-    h1{
+    h1, h2{
       font-family: sans-serif;
       text-align: center;
+      color: #353434;
+    }
+    h1 {
+      font-size: 40px;
+      margin-top: 10%;
     }
     h4 {
       font-family: sans-serif;
@@ -31,16 +35,32 @@
     header img {
       padding: 5px;
     }
+    #top {
+      text-align: center;
+      color: #353434;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #minilabs {
+      right: 0;
+      bottom: 0;
+      position: fixed;
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="src/bbc_blocks.png" width="84" height="24">
   </header>
-  <h1>Experimental dashboard around UK European Elections - May 2014</h1>
-  <div id="parties">
-    <h4>Number of candidates running for the election, by party</h4>
-    <iframe height=371 width=600 src="//docs.google.com/a/basilesimon.fr/spreadsheets/d/1875deO7un6yF0k9hTGdhevJqW8tg6rPkj3R8gaWxspE/gviz/chartiframe?oid=1982886000" seamless frameborder=0 scrolling=no></iframe>
+  <h1>Fun with elections</h1>
+  <h2>An experimental dashboard around UK European Elections <br> May 2014</h2>
+  <p id="top">By <a href="http://twitter.com/iaincollins"><em>@IainCollins</em></a> and <a href="http://twitter.com/basilesimon"><em>@BasileSimon</em></a> - BBC News Labs</p>
+  <img src="src/minilabs.jpeg" id="minilabs" height="200px" />
   </div>
 </body>
 </html>
