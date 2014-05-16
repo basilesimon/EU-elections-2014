@@ -2,6 +2,19 @@
 <html>
   <head>
     <title></title>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/juicer-api.js"></script>
+      <script>
+        $(document).on("click touch", "svg path", function(e) {
+          var region = $(this).attr('id').replace('-', ' ');
+          var response = juicerApi.getArticles(region, null, null, null, null, "2014-04-01", null);
+          response.articles.forEach(function(article) {
+                console.log(article.title+','+article.url);
+          });
+          // console.log(region);
+          //  console.log(articles);
+        });
+      </script>
     <style>
     body {
         background: #ccc;
