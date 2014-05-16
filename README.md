@@ -11,8 +11,11 @@ Unnecessary exploration of the 2014 European election in the UK.
         - Some are clickable and style differently
     - [ ] Clicking on a candidate must display infos about him
         - [ ] Which infos do we want to use? See DBPedia for structure
-- [ ] Formulate queries for media coverage (number of occurrences from April 1st) - @iaincollins
+    - [x] Grey the Ireland part which is not in the UK
 - [ ] Second pie chart for media coverage
+    - [ ] Formulate queries for number of occurrences (since 2 weeks since campaign start)
+- [ ] Fix colour-coding of pie-charts
+- [ ] Graph of candidates' number of occurrences over time
 - [ ] Model dashboard
 - [x] Test new shapefile (cf /newshape folder)
    -  [x] Have a proper map of UK's regions for EU election
