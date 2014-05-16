@@ -6,7 +6,7 @@ Unnecessary exploration of the 2014 European election in the UK.
 - [ ] Have a nice map... that actually gives results
     - [x] Use unique IDs for European constituencies
     - [ ] Separate SVG data in another doc to make ```map.html``` easier to work on?
-    - [ ] With ```query.html``` as model, attach click events to SVG elements
+    - [x] With ```query.html``` as model, attach click events to SVG elements
     - [ ] Clicks must display a list of the candidates
         - Some are clickable and style differently
     - [ ] Clicking on a candidate must display infos about him
