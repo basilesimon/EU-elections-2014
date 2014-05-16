@@ -7,9 +7,10 @@
       <script>
         $(document).on("click touch", "svg path", function(e) {
           var region = $(this).attr('id').replace('-', ' ');
-          var response = juicerApi.getArticles(region, null, null, null, null, "2014-04-01", null);
+          var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")'+region, null, null, null, null, "2014-04-01", null);
+          $('#articles').html('');
           response.articles.forEach(function(article) {
-                console.log(article.title+','+article.url);
+              $('#articles').append('<li><a href="'+article.url+'">'+article.title+'</a></li>');
           });
           // console.log(region);
           //  console.log(articles);
@@ -51,6 +52,10 @@
     </style>
   </head>
   <body>
+    <div>
+        <h3>Articles</h3>
+        <ul id="articles"></ul>
+    </div>
     <div class="map-wrapper">
         <svg class="map" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="510" height="650" id="svg2945" inkscape:version="0.48.0 r9654" sodipodi:docname="EP-constituencies.svg" inkscape:export-filename="C:\Users\Dell\Desktop\Norway\Maps\EU Electoral\EP-constituencies.png" inkscape:export-xdpi="131.83594" inkscape:export-ydpi="131.83594">
           <metadata id="metadata16">
