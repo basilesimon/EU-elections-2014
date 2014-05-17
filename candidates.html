@@ -7,8 +7,8 @@
         <link href="css/main.css" rel="stylesheet" />
         <script src="js/lib/jquery-1.10.2.min.js"></script>
         <script src="js/lib/bootstrap.min.js"></script>
-        <script src="js/lib/juicer-apis.min.js"></script>
-        <script src="js/lib/newslabs-apis.min.js"></script>
+        <script src="js/lib/juicer-api.js"></script>
+        <script src="js/lib/newslabs-api.js"></script>
         <script src="js/lib/chart.js"></script>
         <script src="js/lib/d3.js"></script>
         <script src="js/main.js"></script>
@@ -18,23 +18,19 @@
 
 
         <script>
-$(function() {
           //Defining query parameters
-          var name = "David Cameron";
           var uri = "http://dbpedia.org/resource/Nigel_Farage";
-          var host = "http://triplestore.bbcnewslabs.co.uk/api";
-          var apiKey = "";
           var after = "2014-05-12"; //having a proper date, possible?
           var before = "2014-05-13";
 
           //Will store the info the graph
           var results = [];
 
-          $.getJSON(host + '/concepts/co-occurrences?uri=' + uri + '&type=http://dbpedia.org/ontology/Person&limit=1&after=' + after + '&apikey=' + apiKey + '&before=' + before, stuff);
+          var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, after);
+          console.log(response);
 
-          function stuff(data) {
-            console.log(data["co-occurrences"][0].occurrence);  //to store somewhere
-            //results.push(data["co-occurrences"][0].occurrence);  //creating the array
+            var results = [];
+            results.push(response["co-occurrences"][0].occurrence);
 
             //chart.js definition
             var ctx = document.getElementById("myChart").getContext("2d");
@@ -51,10 +47,6 @@ $(function() {
               ]
             }
             var myNewChart = new Chart(ctx).Line(boudin);
-          }
-
-
-});
         </script>
     </body>
 </html>
