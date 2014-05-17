@@ -17,38 +17,31 @@
     <body>
         <canvas id="myChart" width="400" height="400"></canvas>
         <script>
-          //Defining query parameters
-          var uri = "http://dbpedia.org/resource/Nigel_Farage";
-          
-          var 
-          
-          while (true) {
-              var startDate = moment().subtract('days', 10).format('YYYY-MM-DD');
-              //Will store the info the graph
-              var results = [];
+            //Defining query parameters
+            var uri = "http://dbpedia.org/resource/Nigel_Farage";
 
-              var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, startDate);
-
-              console.log(date);
-              console.log(response);
-
-                var results = [];
-                
-            results.push(response["co-occurrences"][0].occurrence);
-
+            var articles = [];
+            var labels = [];
+            for (var i = 0; i <= 30; i++) {
+                var startDate = moment().subtract('days', i).format('YYYY-MM-DD');
+                var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, startDate);
+                articles.push( parseInt( response["co-occurrences"][0].occurrence ) );
+                labels.push(startDate);
+            }
+            console.log(articles);
             //chart.js definition
             var ctx = document.getElementById("myChart").getContext("2d");
             var boudin = {
-            labels : ["January","February","March","April","May","June","July"],
-            datasets : [
-                {
-                fillColor : "rgba(220,220,220,0.5)",
-                strokeColor : "rgba(220,220,220,1)",
-                pointColor : "rgba(220,220,220,1)",
-                pointStrokeColor : "#fff",
-                data : results  //yeah!
-                }
-              ]
+                labels : labels,
+                    datasets : [
+                    {
+                        fillColor : "rgba(220,220,220,0.5)",
+                        strokeColor : "rgba(220,220,220,1)",
+                        pointColor : "rgba(220,220,220,1)",
+                        pointStrokeColor : "#fff",
+                        data : articles  //yeah!
+                    }
+                ]
             }
             var myNewChart = new Chart(ctx).Line(boudin);
         </script>
