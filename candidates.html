@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidates map</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="src/chart.js"></script>
+
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+
+
+<script>
+  //Defining query parameters
+  var name = "David Cameron";
+  var uri = "http://dbpedia.org/resource/Nigel_Farage";
+  var host = "http://triplestore.bbcnewslabs.co.uk/api";
+  var apiKey = "njht536adt9bdsj65wtkdx8w";
+  var after = "2014-05-12"; //having a proper date, possible?
+  var before = "2014-05-13";
+
+  //Will store the info the graph
+  var results = [];
+
+  $.getJSON(host + '/concepts/co-occurrences?uri=' + uri + '&type=http://dbpedia.org/ontology/Person&limit=1&after=' + after + '&apikey=' + apiKey + '&before=' + before, stuff);
+
+  function stuff(data) {
+    console.log(data["co-occurrences"][0].occurrence);  //to store somewhere
+    //results.push(data["co-occurrences"][0].occurrence);  //creating the array
+
+    //chart.js definition
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var boudin = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+        {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : results  //yeah!
+        }
+      ]
+    }
+    var myNewChart = new Chart(ctx).Line(boudin);
+  }
+
+
+
+</script>
+</body>
+</html>
