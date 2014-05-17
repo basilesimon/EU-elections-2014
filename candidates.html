@@ -23,13 +23,11 @@
           var 
           
           while (true) {
-              var date = moment().subtract('days', 10).format('YYYY-MM-DD');
-//              var before = "2014-05-13";
-
+              var startDate = moment().subtract('days', 10).format('YYYY-MM-DD');
               //Will store the info the graph
               var results = [];
 
-              var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, after);
+              var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, startDate);
 
               console.log(date);
               console.log(response);

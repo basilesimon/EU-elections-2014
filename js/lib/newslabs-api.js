@@ -808,7 +808,7 @@ var newslabsApi = new function() {
    * @param	{string}	q	
    * @param	{string}	highlightclass	
    */
-  this.fullTextSearchCreativeWorks = function(q, highlightclass) {
+  this.fullTextSearchCreativeWorks = function(q, highlightclass, limit) {
     var result;
     $.ajax({
       async:	false,
@@ -817,6 +817,7 @@ var newslabsApi = new function() {
       data:	{
         "q": q,
         "highlightClass": highlightclass,
+        "limit": limit,
         "apikey": this.options["apikey"]
       },
       success:	function(response) {
