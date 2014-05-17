@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" /> 
-        <title>European Elections 2014</title>
+        <title>European Elections 2014 - Candidates in the news</title>
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
         <script src="js/lib/jquery-1.10.2.min.js"></script>
@@ -11,25 +11,31 @@
         <script src="js/lib/newslabs-api.js"></script>
         <script src="js/lib/chart.js"></script>
         <script src="js/lib/d3.js"></script>
+        <script src="js/lib/moment.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
         <canvas id="myChart" width="400" height="400"></canvas>
-
-
         <script>
           //Defining query parameters
           var uri = "http://dbpedia.org/resource/Nigel_Farage";
-          var after = "2014-05-12"; //having a proper date, possible?
-          var before = "2014-05-13";
+          
+          var 
+          
+          while (true) {
+              var date = moment().subtract('days', 10).format('YYYY-MM-DD');
+//              var before = "2014-05-13";
 
-          //Will store the info the graph
-          var results = [];
+              //Will store the info the graph
+              var results = [];
 
-          var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, after);
-          console.log(response);
+              var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, after);
 
-            var results = [];
+              console.log(date);
+              console.log(response);
+
+                var results = [];
+                
             results.push(response["co-occurrences"][0].occurrence);
 
             //chart.js definition
