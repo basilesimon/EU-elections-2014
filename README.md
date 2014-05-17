@@ -11,7 +11,7 @@ This content is not published by BBC News and must not be considered as BBC word
 - [ ] Graph of candidates' number of occurrences over time
     - [x] Build the query with News Labs API
     - [ ] Store the results to be used with Chart.js
-- [ ] Model dashboard
+- [x] Model dashboard
 - [ ] Infos we want to return for candidates from DBPedia
 
 ######Iain Herr Collins
@@ -21,9 +21,14 @@ This content is not published by BBC News and must not be considered as BBC word
     - [ ] Separate SVG data in another doc to make ```map.html``` easier to work on?
 - Candidates map:
     - [x] Clicks must display a list of the candidates
+    - [ ] Only display candidates we have infos on
     - [ ] Clicking on a candidate must display infos about him
         - [ ] Which infos do we want to use? See Basile
-
+- News map: 
+    - [ ] Clicking on an article displays greyed box with article description
+- Nav: 
+    - [ ] Flattened list on landing screen with section titles
+    - [ ] Nav sticks to top (under BBC masthead) when scrolling
 ####Ideas
 - Dashboard to follow the elections
 - Highlight the different media coverages the parties and candidates receive
