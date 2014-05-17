@@ -5,15 +5,15 @@ Unnecessary exploration of the 2014 European election in the UK.
 
 ####To-do
 ######Basile le Simon
-- [ ] Second pie chart for media coverage
-    - [ ] Formulate queries for number of occurrences (since 2 weeks since campaign start)
-- [ ] Fix colour-coding of pie-charts
+- [x] Second pie chart for media coverage
+    - [x] Formulate queries for number of occurrences (since 2 weeks since campaign start)
+- [x] Fix colour-coding of pie-charts
 - [ ] Graph of candidates' number of occurrences over time
 - [ ] Model dashboard
 - [ ] Infos we want to return for candidates from DBPedia
 
 ######Iain Herr Collins
-- [ ] Tell le Basile how to get the number of occurrences for a concept
+- [x] Tell le Basile how to get the number of occurrences for a concept
 - [ ] Have a nice map... that actually gives results
     - [x] Use unique IDs for European constituencies
     - [ ] Separate SVG data in another doc to make ```map.html``` easier to work on?
