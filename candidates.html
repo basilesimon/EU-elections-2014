@@ -18,32 +18,12 @@
         <canvas id="myChart" width="400" height="400"></canvas>
         <script>
             //Defining query parameters
-            var uri = "http://dbpedia.org/resource/Nigel_Farage";
-
-            var articles = [];
-            var labels = [];
-            for (var i = 0; i <= 30; i++) {
-                var startDate = moment().subtract('days', i).format('YYYY-MM-DD');
-                var response = newslabsApi.findConceptCoOccurrences(uri, 'http://dbpedia.org/ontology/Person', 1, startDate);
-                articles.push( parseInt( response["co-occurrences"][0].occurrence ) );
-                labels.push(startDate);
-            }
-            console.log(articles);
-            //chart.js definition
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var boudin = {
-                labels : labels,
-                    datasets : [
-                    {
-                        fillColor : "rgba(220,220,220,0.5)",
-                        strokeColor : "rgba(220,220,220,1)",
-                        pointColor : "rgba(220,220,220,1)",
-                        pointStrokeColor : "#fff",
-                        data : articles  //yeah!
-                    }
-                ]
-            }
-            var myNewChart = new Chart(ctx).Line(boudin);
+            $(function() {
+                var uri = 'http://dbpedia.org/resource/Nigel_Farage';
+                var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
+                var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, 30);
+                bbcNewsLabs.plotGraphByDate(document.getElementById('myChart'), mentionsByDay, true);
+            });
         </script>
     </body>
 </html>
