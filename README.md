@@ -3,12 +3,14 @@
 
 Unnecessary exploration of the 2014 European election in the UK.
 
+######Disclaimer
+This content is not published by BBC News and must not be considered as BBC words.
+
 ####To-do
 ######Basile le Simon
-- [x] Second pie chart for media coverage
-    - [x] Formulate queries for number of occurrences (since 2 weeks since campaign start)
-- [x] Fix colour-coding of pie-charts
 - [ ] Graph of candidates' number of occurrences over time
+    - [x] Build the query with News Labs API
+    - [ ] Store the results to be used with Chart.js
 - [ ] Model dashboard
 - [ ] Infos we want to return for candidates from DBPedia
 
@@ -17,13 +19,10 @@ Unnecessary exploration of the 2014 European election in the UK.
 - [ ] Have a nice map... that actually gives results
     - [x] Use unique IDs for European constituencies
     - [ ] Separate SVG data in another doc to make ```map.html``` easier to work on?
-- Articles map:
-    - [x] Clicks display articles
 - Candidates map:
     - [ ] Clicks must display a list of the candidates
     - [ ] Clicking on a candidate must display infos about him
         - [ ] Which infos do we want to use? See Basile
-
 
 ####Ideas
 - Dashboard to follow the elections
