@@ -757,6 +757,7 @@ var newslabsApi = new function() {
       },
       'error':	function(jqXHR, textStatus, errorThrown) {
           /* @todo add error handling here */
+          return null;
       }
     });
     return result;

@@ -22,7 +22,7 @@
                 var uri = 'http://dbpedia.org/resource/Nigel_Farage';
                 var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
                 var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, 30);
-                bbcNewsLabs.plotGraphByDate(document.getElementById('myChart'), mentionsByDay, true);
+                bbcNewsLabs.plotGraphByDate('myChart', mentionsByDay, true);
             });
         </script>
     </body>
