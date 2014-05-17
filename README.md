@@ -20,7 +20,7 @@ This content is not published by BBC News and must not be considered as BBC word
     - [x] Use unique IDs for European constituencies
     - [ ] Separate SVG data in another doc to make ```map.html``` easier to work on?
 - Candidates map:
-    - [ ] Clicks must display a list of the candidates
+    - [x] Clicks must display a list of the candidates
     - [ ] Clicking on a candidate must display infos about him
         - [ ] Which infos do we want to use? See Basile
 

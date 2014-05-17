@@ -7,16 +7,30 @@
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <script src="js/lib/jquery-1.10.2.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/lib/juicer-api.js"></script>
       <script>
         $(document).on("click touch", "svg path", function(e) {
-          var region = $(this).attr('id').replace(/\-/g,' ');
-          var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")'+region, null, null, null, null, "2014-04-01", null);
-          $('.articles ul').html('');
-          $('.articles h3').html('Articles for '+region);
-          response.articles.forEach(function(article) {
-              $('.articles ul').append('<li><a href="'+article.url+'">'+article.title+'</a></li>');
-          });
+          var region = $(this).attr('id');
+          $.getJSON("src/candidates.json", findStuff);
+          function findStuff(data) {
+            $("#articles").empty();   //empties the list
+
+            for (var i = 0; i < data.length; i++) {
+              if (data[i].region === region) {
+                var newLi = document.createElement("li");
+
+                if (data[i].uri.length > 2) {     //gets the one we can click on
+                  newLi.style.fontWeight = "bold"; //so we can see them!
+                  /*newLi.addEventListener("click", gimmeMore); //attach click event
+                  function gimmeMore() {
+                    //do stuff === the real job
+                  }*/
+                }
+                var fill = document.createTextNode(data[i].name);
+                newLi.appendChild(fill);
+                document.getElementById('articles').appendChild(newLi);
+              }
+            }
+          }
         });
       </script>
     <style>
@@ -71,9 +85,8 @@
     </style>
   </head>
   <body>
-    <div class="articles">
-        <h3></h3>
-        <ul></ul>
+    <div id="articles">
+
     </div>
     <div class="map-wrapper">
         <svg class="map" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="510" height="650" id="svg2945" inkscape:version="0.48.0 r9654" sodipodi:docname="EP-constituencies.svg" inkscape:export-filename="C:\Users\Dell\Desktop\Norway\Maps\EU Electoral\EP-constituencies.png" inkscape:export-xdpi="131.83594" inkscape:export-ydpi="131.83594">
