@@ -139,18 +139,24 @@ $(document).on("click touch", "svg path", function(e) {
 
     var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")' + region, null, null, null, null, "2014-04-01", null);
     $('#region-articles ul').html('');
-    $('#region-articles h2').html('Articles about ' + region);
+    $('#region-articles h2').html('Articles about ' + region.capitalize());
     var articlesDisplayed = 0;
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
             if (articlesDisplayed > 10)
                 return;
-            $('#region-articles ul').append('<li><i class="fa fa-li fa-file-text-o fa-lg"></i><a href="' + article.url + '">' + article.title + '</a></li>');
+
+            var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+            var hostname = matches && matches[1];
+            hostname = hostname.replace(/^www\./, '');
+            hostname = hostname.replace(/^feeds\./, '');
+            
+            $('#region-articles ul').append('<li><i class="fa fa-li fa-file-text-o fa-lg"></i><a href="' + article.url + '">' + article.title + '</a><br/><span class="text-muted">'+hostname+'</span></li>');
             articlesDisplayed++;
         });
     }
 
-    $('#candidiates-for').html('Candidates for ' + region);
+    $('#candidiates-for').html('Candidates for ' + region.capitalize());
 
     $('#candidate-info').hide();
     var region = $(this).attr('id');
@@ -205,3 +211,7 @@ $(document).on("click touch", "#candidates li a", function(e) {
         $('#candidate-info').removeClass('hidden').show();
     });
 });
+
+String.prototype.capitalize = function() {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
