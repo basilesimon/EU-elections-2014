@@ -9,7 +9,8 @@ a.navbar-brand {
 
 .container-map {
     position: relative;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     width: 500px;
     height: 500px;
     display: inline-block;
@@ -67,8 +68,10 @@ a.navbar-brand {
 
 .ul-wrapper {
     margin-top: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     padding-bottom: 1px;
     background: #ffffff;
+    box-shadow: 0 2px 0 #dddddd;
 }
 

@@ -131,11 +131,14 @@ $(document).on("click touch", "svg path", function(e) {
     $('.map .active').attr('class', '');
     $(element).attr('class', cssClass + ' active');
 
+    $('#region-name').html(region.capitalize());
+    
     var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")' + region, null, null, null, null, "2014-04-01", null);
     $('#region-articles ul').html('');
     var articlesDisplayed = 0;
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
+            
             if (articlesDisplayed > 5)
                 return;
 
@@ -143,7 +146,11 @@ $(document).on("click touch", "svg path", function(e) {
             var hostname = matches && matches[1];
             hostname = hostname.replace(/^www\./, '');
             hostname = hostname.replace(/^feeds\./, '');
+            hostname = hostname.replace(/^rss\./, '');
             
+            if (hostname == "twitter.com")
+                return;
+
             $('#region-articles ul').append('<li><i class="fa fa-li fa-file-text-o fa-lg"></i><a href="' + article.url + '">' + article.title + '</a> <span class="text-muted">'+hostname+'</span></li>');
             articlesDisplayed++;
         });
@@ -169,6 +176,8 @@ $(document).on("click touch", "svg path", function(e) {
             */
         }
     });
+    
+    $('#region-info').removeClass('hidden');
 });
 
 // @todo Refactor!

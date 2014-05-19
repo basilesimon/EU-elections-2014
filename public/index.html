@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="img/news-labs.jpg" class="pull-left" height="120" style="margin-top: 20px; margin-right: 10px; margin-bottom: 20px;" alt="BBC News Labs" />
+                    <img src="img/news-labs.jpg" class="pull-right" height="120" style="margin-top: 20px; margin-right: 10px; margin-bottom: 20px;" alt="BBC News Labs" />
                     <h1>European Elections 2014</h1>
                     <h2>An experimental dashboard around European Election data in the UK</h2>
                     <p id="top">
@@ -75,23 +75,26 @@
             <div class="container">
                  <div class="row">
                     <div class="col-sm-6" style="z-index: 10;">
-                        <div id="region-articles">
-                            <h3>News articles</h3>
-                            <div class="ul-wrapper">
-                                <ul class="fa-ul"></ul>
+                        <div id="region-info" class="hidden">
+                            <h2 id="region-name"></h2>
+                            <div id="region-articles">
+                                <h3>News articles</h3>
+                                <div class="ul-wrapper">
+                                    <ul class="fa-ul"></ul>
+                                </div>
                             </div>
-                        </div>
-                        <div id="candidates">
-                            <h3>Candidates</h3>
-                            <div class="ul-wrapper">
-                                <ul class="fa-ul"></ul>
+                            <div id="candidates">
+                                <h3>Candidates</h3>
+                                <div class="ul-wrapper">
+                                    <ul class="fa-ul"></ul>
+                                </div>
                             </div>
-                        </div>
-                        <div id="candidate-info" class="hidden">
-                            <h3 id="candidate-name"></h3>
-                            <canvas id="candidate-mentions" width="400" height="400"></canvas>
-                            <h3>Mentioned in relation to</h3>
-                            <div id="related-concepts"></div>
+                            <div id="candidate-info" class="hidden">
+                                <h3 id="candidate-name"></h3>
+                                <canvas id="candidate-mentions" width="400" height="400"></canvas>
+                                <h3>Mentioned in relation to</h3>
+                                <div id="related-concepts"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6" style="z-index: 5;">
@@ -142,9 +145,10 @@
         <div class"container">
             <div id="footer">
               <div class="container">
-                <p class="text-muted">
-                  <strong>Disclaimer:</strong> This content is not published by BBC News and must not be considered as BBC words.
+                <p class="text-center text-muted">
+                  <strong>Disclaimer</strong> This is an experiment from BBC News Labs, it is not published by BBC News and should not be considered official BBC content.
                 </p>
+                <br/>
               </div>
             </div>
         </div>
