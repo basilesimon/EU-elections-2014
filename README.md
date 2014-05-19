@@ -17,6 +17,7 @@ This content is not published by BBC News and must not be considered as BBC word
 - Nav: 
     - [ ] Flattened list on landing screen with section titles
     - [ ] Nav sticks to top (under BBC masthead) when scrolling
+
 ####Ideas
 - Dashboard to follow the elections
 - Highlight the different media coverages the parties and candidates receive
