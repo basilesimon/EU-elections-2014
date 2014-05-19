@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/basilesimon/EU-elections-2014/master/src/sreenshot-readme.png)
+![alt tag](https://raw.githubusercontent.com/basilesimon/EU-elections-2014/master/public/img/sreenshot-readme.png)
 #EU-elections-2014
 
 Unnecessary exploration of the 2014 European election in the UK.
