@@ -6,3 +6,59 @@
 a.navbar-brand {
     color: #fff !important;
 }
+
+.container-map {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 700px;
+    display: inline-block;
+    background: #fff;
+    overflow: hidden;
+}
+
+.map.map-uk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 400px;
+    left: 520px;
+    -webkit-transform: scale(4);
+    -moz-transform: scale(4);
+    transform: scale(4);
+}
+
+.map.map-europe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.map path {
+    fill: rgb(190,0,7) !important;
+}
+
+.map path:hover {
+    cursor: pointer;
+    fill: #e50119 !important;
+}
+
+.map path.active {
+    fill: rgb(254,182,69) !important;
+}
+
+.map path.disabled,
+.map path.disabled:hover {
+    fill: #eeeeee !important;
+}
+
+.label.label-info {
+    font-size: 15px;
+    line-height: 19px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.fa-ul li {
+    margin-bottom: 5px;
+}
