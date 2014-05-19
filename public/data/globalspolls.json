@@ -1,0 +1,35 @@
+[
+    {
+      "value": 17,
+      "color":"#0099c6"
+    },
+    {
+      "value" : 18.5,
+      "color" : "#cc0000"
+    },
+    {
+      "value" : 4.5,
+      "color" : "#ff9900"
+    },
+    {
+      "value" : 6.5,
+      "color" : "#741b47"
+    },
+    {
+      "value" : 2,
+      "color" : "#38761d"
+    },
+    {
+      "value" : 1.5,
+      "color" : "#766AFF"
+    },
+    {
+      "value" : 0.5,
+      "color" : "#073763"
+    },
+    {
+      "value" : 50,
+      "color" : "white"
+    }
+
+]

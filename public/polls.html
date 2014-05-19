@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>polls</title>
+  <script src="js/lib/chart.js"></script>
+  <script src="js/lib/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<h1>Projected votes - YouGov 18.05.2014</h1>
+<canvas id="nationalpoll" width="400" height="400"></canvas>
+
+<h1>London</h1>
+<canvas id="londonpoll" width="400" height="400"></canvas>
+
+<h1>Rest of South</h1>
+<canvas id="southpoll" width="400" height="400"></canvas>
+
+<h1>Midlands and Wales</h1>
+<canvas id="midlandspoll" width="400" height="400"></canvas>
+
+<h1>North</h1>
+<canvas id="northpoll" width="400" height="400"></canvas>
+
+<h1>Scotland</h1>
+<canvas id="scotpoll" width="400" height="400"></canvas>
+
+<script>
+  var nationalPoll = $.getJSON("data/globalspolls.json", chartDraw);
+  function chartDraw(nationalPoll) {
+    var ctx = document.getElementById("nationalpoll").getContext("2d");
+    var pollsChart = new Chart(ctx).Doughnut(nationalPoll);
+  }
+
+  var londonPoll = $.getJSON("data/londonpolls.json", londonDraw);
+  function londonDraw(londonPoll) {
+    var ctxLondon = document.getElementById("londonpoll").getContext("2d");
+    var londonChart = new Chart(ctxLondon).Doughnut(londonPoll);
+  }
+
+  var southPoll = $.getJSON("data/southpolls.json", southDraw);
+  function southDraw(southPoll) {
+    var ctxSouth = document.getElementById("southpoll").getContext("2d");
+    var southChart = new Chart(ctxSouth).Doughnut(southPoll);
+  }
+
+  var midlandsPoll = $.getJSON("data/midlandspolls.json", midlandsDraw);
+  function midlandsDraw(midlandsPoll) {
+    var ctxMidlands = document.getElementById("midlandspoll").getContext("2d");
+    var midlandsChart = new Chart(ctxMidlands).Doughnut(midlandsPoll);
+  }
+
+  var northPoll = $.getJSON("data/northpolls.json", northDraw);
+  function northDraw(northPoll) {
+    var ctxNorth = document.getElementById("northpoll").getContext("2d");
+    var northChart = new Chart(ctxNorth).Doughnut(northPoll);
+  }
+
+  var scotlandPoll = $.getJSON("data/scotlandpolls.json", scotlandDraw);
+  function scotlandDraw(scotlandPoll) {
+    var ctxScotland = document.getElementById("scotpoll").getContext("2d");
+    var scotChart = new Chart(ctxScotland).Doughnut(scotlandPoll);
+  }
+</script>
+</body>
+</html>
