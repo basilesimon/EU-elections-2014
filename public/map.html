@@ -10,8 +10,10 @@
     <script src="js/lib/moment.min.js"></script>
     <script src="js/lib/chart.js"></script>
     <script src="js/lib/newslabs-api.js"></script>
+    <script src="js/lib/juicer-api.js"></script>
     <script src="js/main.js"></script>
       <script>
+      // @todo refactor all of this!
         $(document).on("click touch", "svg path", function(e) {
             // NB: Can't use addClass() and removeClass as they don't work    
             // cross browser with SVG elements.
@@ -27,13 +29,25 @@
             // If not selected, display it
             $(element).attr('class', cssClass+' active');
 
+
+            var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")'+region, null, null, null, null, "2014-04-01", null);
+            $('#region-articles ul').html('');
+            $('#region-articles h3').html('Articles for '+region);
+            var articlesDisplayed = 0;
+            response.articles.forEach(function(article) {
+                if (articlesDisplayed > 5)
+                    return;
+                $('#region-articles ul').append('<li><a href="'+article.url+'">'+article.title+'</a></li>');
+                articlesDisplayed++;
+            });
+
             $('#candidiates-for').html('Candidiates for '+region);
 
             $('#candidate-info').hide();
               var region = $(this).attr('id');
-              $.getJSON("src/candidates.json", findStuff);
+              $.getJSON("data/candidates.json", findStuff);
               function findStuff(data) {
-                $("#articles").empty();   //empties the list
+                $("#candidate-articles").empty();   //empties the list
 
                 for (var i = 0; i < data.length; i++) {
                   if (data[i].region === region) {
@@ -47,7 +61,7 @@
                       // For now only showing canidates we have URI's for
                       var fill = document.createTextNode(data[i].name);
                       newLi.appendChild(fill);
-                      document.getElementById('articles').appendChild(newLi);
+                      document.getElementById('candidate-articles').appendChild(newLi);
                     }
 
                   }
@@ -140,10 +154,14 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="">
         <div class="col-sm-6" style="z-index: 10;">
+            <div id="region-articles">
+                <h3></h3>
+                <ul></ul>
+            </div>
             <h3 id="candidiates-for"></h3>
-            <div id="articles"></div>
+            <div id="candidate-articles"></div>
             <div id="candidate-info" class="hidden">
                 <h3 id="candidate-name"></h3>
                 <canvas id="candidate-mentions" width="400" height="400"></canvas>
