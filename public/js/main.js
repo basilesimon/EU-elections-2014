@@ -123,27 +123,20 @@ var bbcNewsLabs = new function() {
 
 // @todo refactor all of this!
 $(document).on("click touch", "svg path", function(e) {
-    // NB: Can't use addClass() and removeClass as they don't work    
-    // cross browser with SVG elements.
     var element = this;
     var region = $(element).attr('id').replace(/\-/g, ' ');
     var cssClass = $(element).attr('class');
 
-    // Remove 'active' class from each active map element
-    $('.map .active').each(function(index, el) {
-        $(el).attr('class', $(el).attr('class').replace(' active', ''));
-    });
-
-    // If not selected, display it
+    // NB: Can't use addClass() and removeClass as they don't work with SVGs!
+    $('.map .active').attr('class', '');
     $(element).attr('class', cssClass + ' active');
 
     var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")' + region, null, null, null, null, "2014-04-01", null);
     $('#region-articles ul').html('');
-    $('#region-articles h2').html('Articles about ' + region.capitalize());
     var articlesDisplayed = 0;
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
-            if (articlesDisplayed > 10)
+            if (articlesDisplayed > 5)
                 return;
 
             var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -151,12 +144,10 @@ $(document).on("click touch", "svg path", function(e) {
             hostname = hostname.replace(/^www\./, '');
             hostname = hostname.replace(/^feeds\./, '');
             
-            $('#region-articles ul').append('<li><i class="fa fa-li fa-file-text-o fa-lg"></i><a href="' + article.url + '">' + article.title + '</a><br/><span class="text-muted">'+hostname+'</span></li>');
+            $('#region-articles ul').append('<li><i class="fa fa-li fa-file-text-o fa-lg"></i><a href="' + article.url + '">' + article.title + '</a> <span class="text-muted">'+hostname+'</span></li>');
             articlesDisplayed++;
         });
     }
-
-    $('#candidiates-for').html('Candidates for ' + region.capitalize());
 
     $('#candidate-info').hide();
     var region = $(this).attr('id');
