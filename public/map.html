@@ -34,12 +34,14 @@
             $('#region-articles ul').html('');
             $('#region-articles h3').html('Articles for '+region);
             var articlesDisplayed = 0;
-            response.articles.forEach(function(article) {
-                if (articlesDisplayed > 5)
-                    return;
-                $('#region-articles ul').append('<li><a href="'+article.url+'">'+article.title+'</a></li>');
-                articlesDisplayed++;
-            });
+            if (response && response.length > 0) {
+                response.articles.forEach(function(article) {
+                    if (articlesDisplayed > 5)
+                        return;
+                    $('#region-articles ul').append('<li><a href="'+article.url+'">'+article.title+'</a></li>');
+                    articlesDisplayed++;
+                });
+            }
 
             $('#candidiates-for').html('Candidiates for '+region);
 

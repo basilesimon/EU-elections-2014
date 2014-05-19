@@ -97,16 +97,16 @@ var bbcNewsLabs = new function(){
         // Note if there are a large number of things I let it do it's own thing
         // otherwise the graph looks bunched up. Can fix this better later.
         // Chart.js doesn't have a 'use integer values only' option :(
-        var chartOptions = {};
-        if (maxValue < 20) {
-            var steps = maxValue;
-            var max = maxValue;
+        // var chartOptions = {};
+        // if (maxValue < 20) {
+            var steps = 40;
+            var max = 40;
             chartOptions = {    scaleOverride: true,
                                 scaleSteps: steps,
                                 scaleStepWidth: Math.ceil(max / steps),
                                 scaleStartValue: 0
                             };
-        }
+        // }
         
         ctx.canvas.height = $('#'+canvasId).attr('origionalHeight');
         ctx.canvas.width = $('#'+canvasId).attr('origionalWidth');

@@ -1,4 +1,8 @@
 .navbar {
-    background-color: #cd0102;
+    background-color: #a4000e;
     padding-bottom: 5px;
+}
+
+a.navbar-brand {
+    color: #fff !important;
 }
