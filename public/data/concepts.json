@@ -1,0 +1,1916 @@
+[
+    {
+        "_id": "http://dbpedia.org/resource/Aberdeen_F.C.",
+        "description": "Aberdeen Football Club (also known as The Dons, The Dandies or The Reds) are a Scottish professional football club based in Aberdeen. They compete in the Scottish Premier League and are one of the most successful teams in their country, having won four league titles and seven Scottish Cups, including a record three in a row during the 1980s, the only time a team other than Rangers has done this since 1882.",
+        "typeUri": "http://dbpedia.org/ontology/SoccerClub",
+        "uri": "http://dbpedia.org/resource/Aberdeen_F.C."
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Afghanistan",
+        "description": "Afghanistan Listen/\u00e6f\u02c8\u0261\u00e6n\u0268st\u00e6n/, officially the Islamic Republic of Afghanistan, is a landlocked country located in the centre of Asia, forming part of South Asia, Central Asia, and Greater Middle East, it is also considered to be part of a broader West Asia. With a population of about 29 million, it has an area of 647,500 km (250,001 sq\u00a0mi), making it the 42nd most populous and 41st largest nation in the world.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Afghanistan"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ahmet_Davuto%C4%9Flu",
+        "description": "Professor Ahmet Davuto\u011flu is the Foreign Minister of Turkey. He is also a political scientist, an academic and an ambassador at large and was formerly chief advisor to the Prime Minister.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Ahmet_Davuto%C4%9Flu"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Airbus",
+        "description": "Airbus is an aircraft manufacturing subsidiary of EADS, a European aerospace company. Based in Blagnac, France, a suburb of Toulouse, and with significant activity across Europe, the company produces more than half of the world's jet airliners. Airbus began as a consortium of aerospace manufacturers, Airbus Industrie.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Airbus"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alasdair_McDonnell",
+        "description": "Alasdair McDonnell (born 1 September 1949) is an Irish politician, Leader of the Social Democratic and Labour Party and both a Member of the Parliament of the United Kingdom and a Member of the Legislative Assembly for South Belfast. On 5 November 2011, he was elected as the new leader of the SDLP.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Alasdair_McDonnell"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alex_Attwood",
+        "description": "Alex Attwood, MLA (Born 26 April 1959) is an Irish politician, currently serving in the Northern Ireland Executive, and is the Social Democratic and Labour Party MLA for Belfast West. Attwood was born in Belfast. Educated at Queen's University, Belfast and a former practising solicitor, Attwood has been a member of Belfast City Council for the Upper Falls, West Belfast since 1985. He was a former Leader of the SDLP Belfast City Council Group.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Alex_Attwood"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alex_Salmond",
+        "description": "Alexander Elliot Anderson Salmond is a Scottish politician and current First Minister of Scotland. He became Scotland's fourth First Minister in May 2007. He is the Leader of the Scottish National Party (SNP), having served as Member of the Scottish Parliament (MSP) for Gordon. From 1987 to 2010 he served as Member of Parliament for Banff and Buchan in the UK House of Commons. Salmond previously held the position of leader of the SNP from September 1990 until he stepped down in September 2000.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Alex_Salmond"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alliance_'90/The_Greens",
+        "description": "Alliance '90/The Greens (German: B\u00fcndnis 90/Die Gr\u00fcnen) is a green political party in Germany, formed from the merger of the German Green Party (founded in West Germany in 1980) and Alliance 90 in 1993. Its leaders are Claudia Roth and Cem \u00d6zdemir. In the 2009 federal elections, the party won 10.7% of the votes and 68 out of 622 seats in the Bundestag.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Alliance_'90/The_Greens"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alliance_Party_of_Northern_Ireland",
+        "description": "The Alliance Party of Northern Ireland is a liberal and nonsectarian political party in Northern Ireland. It is Northern Ireland's fifth-largest party overall, with eight seats in the Northern Ireland Assembly and one in the House of Commons. Founded in 1970 from the New Ulster Movement, the Alliance Party originally represented moderate and non-sectarian Unionism.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Alliance_Party_of_Northern_Ireland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alliance_of_Liberals_and_Democrats_for_Europe",
+        "description": "The Alliance of Liberals and Democrats for Europe (ALDE; French: Alliance des D\u00e9mocrates et des Lib\u00e9raux pour l'Europe, ADLE) is a transnational alliance between two European political parties, the European Liberal Democrat and Reform Party and the European Democratic Party. It has political groups in the European Parliament, the EU Committee of the Regions, the Parliamentary Assembly of the Council of Europe and the NATO Parliamentary Assembly.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Alliance_of_Liberals_and_Democrats_for_Europe"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Alyn_Smith",
+        "description": "Alyn Smith (born 15 September 1973) is a Scottish politician, and Scottish National Party Member of the European Parliament for Scotland. He is also the SNP's agricultural spokesman.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Alyn_Smith"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Andrew_Duff",
+        "description": "Andrew Duff OBE is a Liberal Democrat politician, president of the Union of European Federalists, and a Member of the European Parliament for the East of England region of the UK. He initially stood in the 1984 European Parliament election, finishing third with 22.5% of the vote. In the 1989 election he polled 8% of the vote, coming fourth, then in the 1994 election he came third with 20%. The constituencies were largely representing Cambridgeshire and at times parts of Bedfordshire.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Andrew_Duff"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Andrew_Neil",
+        "description": "Andrew Ferguson Neil (born 21 May 1949) is a Scottish journalist and broadcaster. He currently works for the BBC, presenting the live political programmes The Daily Politics on BBC Two, The Sunday Politics on BBC One and This Week on BBC One. For the BBC he also anchors Straight Talk with Andrew Neil and makes documentaries. He is also Chairman of Spectator Magazines; Chairman of ITP Magazines (Dubai); and Chairman of World Media Rights (London).",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Andrew_Neil"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Andy_Dixon",
+        "description": "Andy Dixon (born 1979) is a Canadian musician and graphic designer, who gained notoriety as a member of the North Vancouver punk rock band d.b.s. He founded the record label Ache Records, and later played in The Red Light Sting. Beginning in 2003, during the final months of The Red Light Sting, he began to cut up audio recordings he made himself and compose glitch/IDM music under the alias Secret Mommy, though he used The Epidemic for his first solo release.",
+        "typeUri": "http://dbpedia.org/ontology/MusicalArtist",
+        "uri": "http://dbpedia.org/resource/Andy_Dixon"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Angela_Merkel",
+        "description": "Angela Dorothea Merkel,; n\u00e9e Kasner (born 17 July 1954) is the Chancellor of Germany and Chairwoman of the Christian Democratic Union (CDU). Merkel is the first female Chancellor of Germany. A physical chemist by professional background, Merkel entered politics in the wake of the Revolutions of 1989 and briefly served as the deputy spokesperson for Lothar de Maizi\u00e8re's democratically elected East German government prior to the German reunification.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Angela_Merkel"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Angus_Robertson",
+        "description": "Angus Struan Carolus Robertson is the Scottish National Party (SNP) Member of Parliament (MP) for Moray and is the SNP's Parliamentary Group Leader and spokesperson for foreign affairs and defence. Robertson was the Election Co-ordinator for the Scottish National party's successful 2007 and 2011 Scottish Parliament election campaigns. On 3 June 2011, he was appointed the SNP's Campaign Director for the Scottish Independence referendum campaign.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Angus_Robertson"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ankara",
+        "description": "Ankara is the capital of Turkey and the country's second largest city after Istanbul. The city has a mean elevation of 938 metres (3,077\u00a0ft), and as of 2010 the metropolitan area in the entire Ankara Province had a population of 4.4 million. Centrally located in Anatolia, Ankara is an important commercial and industrial city. It is the center of the Turkish Government, and houses all foreign embassies.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Ankara"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Anna_Lo",
+        "description": "Anna Manwah Lo MBE (Chinese: \u76e7\u66fc\u83ef is an Alliance Party politician in Northern Ireland. Born in Hong Kong, of Chinese ethnicity, Lo was elected to the Northern Ireland Assembly for South Belfast in the 2007 assembly election. She was the first ethnic minority politician elected at a national level in Northern Ireland, and the first politician born in East Asia elected to any legislative body in the United Kingdom.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Anna_Lo"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Argentina",
+        "description": "For alternative meanings, see Argentina (disambiguation) and Argentine (disambiguation).",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Argentina"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Arlene_Foster",
+        "description": "Arlene Isabel Foster (n\u00e9e Kelly) (b. 3 July 1970) is a politician in Northern Ireland. She is one of two Democratic Unionist Party MLAs representing the Fermanagh and South Tyrone constituency in the Northern Ireland Assembly. She became Minister of the Environment on 8 May 2007 and was subsequently reshuffled into the Department of Enterprise, Trade and Investment on 9 June 2008. Foster became the acting First Minister of Northern Ireland from 11 January 2010 until 3 February 2010.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Arlene_Foster"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Austria",
+        "description": "Austria, officially the Republic of Austria, is a landlocked country of roughly 8.47\u00a0million people in Central Europe. It is bordered by the Czech Republic and Germany to the north, Hungary and Slovakia to the east, Slovenia and Italy to the south, and Switzerland and Liechtenstein to the west. The territory of Austria covers 83,855 square kilometres (32,377 sq\u00a0mi) and has a temperate and alpine climate.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Austria"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Aylesbury",
+        "description": "Aylesbury is the county town of Buckinghamshire in South East England. However the town also falls into a notional geographical region known as the South Midlands an area that ecompasses the north of the South East, and the southern extremities of the East Midlands, and the western portion of the East of England.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Aylesbury"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/B%C3%BClent_Ar%C4%B1n%C3%A7",
+        "description": "B\u00fclent Ar\u0131n\u00e7, (b. 25 May 1948, Bursa, Turkey) is a Turkish politician. He served as the 22nd house speaker of the Parliament of Turkey from 2002 to 2007. He is one of the State Ministers of Turkey and Vice-Prime Minister today.",
+        "typeUri": "http://dbpedia.org/ontology/President",
+        "uri": "http://dbpedia.org/resource/B%C3%BClent_Ar%C4%B1n%C3%A7"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BBC",
+        "description": "The British Broadcasting Corporation (BBC) is a British public service broadcaster headquartered at Broadcasting House in the City of Westminster, London. It is the largest broadcaster in the world, with about 23,000 staff. Its main responsibility is to provide impartial public service broadcasting in the United Kingdom, Channel Islands and Isle of Man.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/BBC"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BBC_News",
+        "description": "BBC News is the department of the British Broadcasting Corporation responsible for the gathering and broadcasting of news and current affairs. The department is the world's largest broadcast news organisation and generates about 120 hours of radio and television output each day, as well as online news coverage. The service maintains 44 foreign news bureaux and has correspondents in almost all of the world's 240 countries. Since 2004, the Director of BBC News has been Helen Boaden.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/BBC_News"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BBC_One",
+        "description": "BBC One is the flagship television channel of the British Broadcasting Corporation in the United Kingdom. It was launched on 2 November 1936 as the BBC Television Service, and was the world's first regular television service with a high level of image resolution. It was later renamed BBC TV until the launch of sister channel BBC2 in 1964, whereupon it was known as BBC1, with the current spelling adopted in 1997. The channel's annual budget for 2011/12 is \u00a31,166.6 million.",
+        "typeUri": "http://dbpedia.org/ontology/TelevisionStation",
+        "uri": "http://dbpedia.org/resource/BBC_One"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BBC_Radio_4",
+        "description": "BBC Radio 4 is a British domestic radio station, operated and owned by the British Broadcasting Corporation (BBC), that broadcasts a wide variety of spoken-word programmes, including news, drama, comedy, science and history. It replaced the BBC Home Service in 1967. The station controller is Gwyneth Williams, and the station is part of BBC Radio and the BBC Audio & Music department. The station is broadcast from the BBC's headquarters at Broadcasting House, London.",
+        "typeUri": "http://dbpedia.org/ontology/BroadcastNetwork",
+        "uri": "http://dbpedia.org/resource/BBC_Radio_4"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BBC_Radio_Wales",
+        "description": "BBC Radio Wales is the BBC's national radio station broadcasting to Wales in the English language. Operated by BBC Wales, it began broadcasting on 12 November 1978 following the demise of the old \"Radio 4 Wales\" (previously the Welsh Home Service) when BBC Radio 4 became a national network and moved from medium wave to long wave. The current editor for the station is Steve Austins.",
+        "typeUri": "http://dbpedia.org/ontology/RadioStation",
+        "uri": "http://dbpedia.org/resource/BBC_Radio_Wales"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BMW",
+        "description": "Bayerische Motoren Werke AG \u00a0pronunciation (BMW; English: Bavarian Motor Works) is a German automobile, motorcycle and engine manufacturing company founded in 1917. BMW is headquartered in Munich, Bavaria, Germany. It also owns and produces the Mini marque, and is the parent company of Rolls-Royce Motor Cars. BMW produces motorcycles under BMW Motorrad and Husqvarna brands. In 2010, the BMW group produced 1,481,253 automobiles and 112,271 motorcycles across all its brands.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/BMW"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/BNP_Paribas",
+        "description": "BNP Paribas S.A. is a global banking group, headquartered in Paris, with its second global headquarters in London. In October 2010, BNP Paribas was ranked by Bloomberg and Forbes as the largest bank and largest company in the world by assets with over US$3.1\u00a0trillion. It was formed through the merger of Banque Nationale de Paris (BNP) and Paribas in 2000.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/BNP_Paribas"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Barack_Obama",
+        "description": "Barack Hussein Obama II is the 44th and current President of the United States. He is the first African American to hold the office. In January 2005, Obama was sworn in as a U.S. Senator in the state of Illinois. He would hold this office until November 2008, when he resigned following his victory in the 2008 presidential election. Born in Honolulu, Hawaii, Obama is a graduate of Columbia University and Harvard Law School, where he was the president of the Harvard Law Review.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Barack_Obama"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bashar_al-Assad",
+        "description": "Bashar Hafez al-Assad \u200e; born 11 September 1965) is the current President of Syria and Regional Secretary of the Syrian-led branch of the Arab Socialist Ba'ath Party. His father Hafez al-Assad ruled Syria for 29 years until his death in 2000. Al-Assad graduated from the medical school of the University of Damascus in 1988, and started to work as a doctor in the army. Four years later, he attended postgraduate studies at the Western Eye Hospital, in London, specializing in ophthalmology.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Bashar_al-Assad"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Beijing",
+        "description": "Beijing, formerly romanized as Peking, is the capital of the People's Republic of China and one of the most populous cities in the world, with a population of 19,612,368 as of 2010. The metropolis, located in northern China, is governed as a direct-controlled municipality under the national government, with 14 urban and suburban districts and two rural counties. Beijing Municipality is surrounded by Hebei Province with the exception of neighboring Tianjin Municipality to the southeast.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Beijing"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Belfast",
+        "description": "Belfast is the capital of and largest city in Northern Ireland. By population, it is the fourteenth largest city in the United Kingdom and second largest on the island of Ireland. It is the seat of the devolved government and legislative Northern Ireland Assembly. The city of Belfast has a population of 267,500 and lies at the heart of the Belfast urban area, which has a population of 579,276. The Larger Urban Zone, as defined by the European Union, has a total population 641,638.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Belfast"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Belgium",
+        "description": "Belgium, officially the Kingdom of Belgium, is a federal state in Western Europe. It is a founding member of the European Union and hosts the EU's headquarters, and those of several other major international organisations such as NATO. Belgium covers an area of 30,528 square kilometres (11,787\u00a0sq\u00a0mi), and it has a population of about 11\u00a0million people.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Belgium"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ben_Fogle",
+        "description": "Ben Fogle (born 3 November 1973) is an English television presenter, adventurer and writer.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Ben_Fogle"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Benny_Hill",
+        "description": "Benny Hill (21 January 1924 \u2013 20 April 1992) was an English comedian and actor, notable for his long-running television programme The Benny Hill Show.",
+        "typeUri": "http://dbpedia.org/ontology/Comedian",
+        "uri": "http://dbpedia.org/resource/Benny_Hill"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Berlin",
+        "description": "Berlin is the capital city of Germany and one of the 16 states of Germany. With a population of 3.5\u00a0million people, Berlin is Germany's largest city and is the second most populous city proper and the eighth most populous urban area in the European Union. Located in northeastern Germany, it is the center of the Berlin-Brandenburg Metropolitan Region, which has 5.9\u00a0million residents from over 190 nations. Located in the European Plains, Berlin is influenced by a temperate seasonal climate.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Berlin"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bicester",
+        "description": "Bicester is a town and civil parish in the Cherwell district of northeastern Oxfordshire in England. This historic market centre is one of the fastest growing towns in Oxfordshire Development has been favoured by its proximity to junction 9 of the M40 motorway linking it to London, Birmingham and Banbury. It has good road links to Oxford, Kidlington, Brackley, Buckingham, Aylesbury and Witney, as well as rail service.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Bicester"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bill_Newton_Dunn",
+        "description": "William \"Bill\" Newton Dunn is a British politician. He is a Member of the European Parliament for the East Midlands for the Liberal Democrats.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Bill_Newton_Dunn"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bill_Shankly",
+        "description": "William \"Bill\" Shankly, OBE (2 September 1913 \u2013 29 September 1981) was a Scottish football player and manager. As a player, Shankly was a ball-winning right half who represented Scotland twelve times, including seven wartime internationals. He made 312 appearances in The Football League for Carlisle United and Preston North End between 1932 and 1949, losing the peak years of his career to the Second World War when competitive football was suspended.",
+        "typeUri": "http://dbpedia.org/ontology/SoccerManager",
+        "uri": "http://dbpedia.org/resource/Bill_Shankly"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Birmingham",
+        "description": "Birmingham is a city and metropolitan borough in the West Midlands of England. It is the most populous British city outside the capital London, with a population of 1,036,900 (2010 estimate), and lies at the heart of the West Midlands conurbation, the second most populous urban area in the United Kingdom with a population of 2,284,093 (2001 census). Birmingham's metropolitan area is also the United Kingdom's second most populous with a population of 3,683,000.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Birmingham"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Blair",
+        "description": null,
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Blair"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bob_Ainsworth",
+        "description": "Robert William Ainsworth (born 19 June 1952) is a British Labour Party politician who has been the Member of Parliament (MP) for Coventry North East since 1992, and was the Secretary of State for Defence from 2009 to 2010. Following the general election in 2010 he was the Shadow Defence Secretary, but was replaced by Jim Murphy following the election of new Labour leader Ed Miliband.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Bob_Ainsworth"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Boston",
+        "description": "Boston is the capital of and largest city in Massachusetts, and is one of the oldest cities in the United States. The largest city in New England, Boston is regarded as the unofficial \"Capital of New England\" for its economic and cultural impact on the entire New England region. The city proper, covering only 48.43 square miles, had a population of 617,594 according to the 2010 U.S. Census.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Boston"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Brecon",
+        "description": "Brecon is a long-established market town and community in southern Powys, Mid Wales, with a population of 7,901. It was the county town of the historic county of Brecknockshire; although its role as such was eclipsed with the formation of Powys, it remains an important local centre. Brecon is the third largest town in Powys.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Brecon"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bristol",
+        "description": "Bristol Listen/\u02c8br\u026ast\u0259l/ is a city, unitary authority area and ceremonial county in South West England, with an estimated population of 433,100 for the unitary authority in 2009, and a surrounding Larger Urban Zone (LUZ) with an estimated 1,070,000 residents in 2007. It is England's sixth and the United Kingdom's eighth most populous city, one of the group of English Core Cities and the most populous city in South West England.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Bristol"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bristol_Airport",
+        "description": "Bristol Airport, located at Lulsgate Bottom in North Somerset, is the commercial airport serving the city of Bristol, England, and the surrounding area. Originally named Bristol (Lulsgate) Airport in 1955, from March 1997 to March 2010 it became known as Bristol International Airport. In 2003, the airport drew 45% of its passengers from the former county of Avon area, 13% from Devon, 10% from Somerset.",
+        "typeUri": "http://dbpedia.org/ontology/Airport",
+        "uri": "http://dbpedia.org/resource/Bristol_Airport"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Broadmoor_Hospital",
+        "description": "Broadmoor Hospital is a high-security psychiatric hospital at Crowthorne in the Borough of Bracknell Forest in Berkshire, England. It is the best known of the three high-security psychiatric hospitals in England, the other two being Ashworth and Rampton. Scotland has a similar institution at Carstairs, officially known as The State Hospital but often called Carstairs Hospital, which serves Scotland and Northern Ireland.",
+        "typeUri": "http://dbpedia.org/ontology/Hospital",
+        "uri": "http://dbpedia.org/resource/Broadmoor_Hospital"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Bruno_Gollnisch",
+        "description": "Bruno Gollnisch (born 28 January 1950 in Neuilly-sur-Seine) is a French academic and politician, a member of the National Front (FN) far-right party, and a member of the European Parliament. He was chairman of the European Parliamentary group 'Identity, Tradition, Sovereignty' in 2007, which was dissolved in November 2007 following the defection of the Greater Romania Party. He is therefore a Non-Inscrit. Gollnisch has also been the executive vice-president of the FN since 2007.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Bruno_Gollnisch"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Brussels",
+        "description": "Brussels, officially the Brussels Region or Brussels-Capital Region, is the capital of Belgium and the de facto capital of the European Union (EU). It is also the largest urban area in Belgium, comprising 19 municipalities, including the municipality of the City of Brussels, which is the de jure capital of Belgium, in addition to the seat of the French Community of Belgium and of the Flemish Community.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Brussels"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Buckingham",
+        "description": "Buckingham is a town in north Buckinghamshire, England, close to the borders of Northamptonshire and Oxfordshire. The town has a population of 11,572, (2007 est. 13,200). Buckingham is also a civil parish designated as a town council. Buckingham was declared the county town of Buckinghamshire in the 10th century when it was made the capital of the newly formed shire of Buckingham until Aylesbury took over this role early in the 18th century.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Buckingham"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Cardiff_Airport",
+        "description": "Cardiff Airport (Welsh: Maes Awyr Caerdydd) is an international airport serving Cardiff, and the rest of South, Mid and West Wales. Around 1.2 million passengers passed through the airport in 2011, a 13% annual reduction. It is located in the village of Rhoose, Vale of Glamorgan, 12\u00a0mi (19\u00a0km) west of the city centre of Cardiff, the country's largest city and capital. Cardiff Airport is owned by TBI plc.",
+        "typeUri": "http://dbpedia.org/ontology/Airport",
+        "uri": "http://dbpedia.org/resource/Cardiff_Airport"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Carwyn_Jones",
+        "description": "Carwyn Howell Jones (born 21 March 1967) is a Welsh politician and the First Minister of Wales. The third official to lead the Welsh Government, Jones has been Assembly Member for Bridgend since 1999. In the coalition government of Welsh Labour and Plaid Cymru, he was appointed Counsel General for Wales and Leader of the House on 19 July 2007. Along with a number of other Assembly Members, he is a fluent Welsh speaker, and is also a member of Amnesty International and the Fabian Society.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Carwyn_Jones"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Catherine_Ashton",
+        "description": "Catherine Ashton, Baroness Ashton of Upholland, PC (born 20 March 1956) is a British Labour politician who in 2009 became the European Union's High Representative of the Union for Foreign Affairs and Security Policy. Under the Treaty of Lisbon this post is combined with the post of Vice-President of the European Commission.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Catherine_Ashton"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Catherine_Stihler",
+        "description": "Catherine Stihler (born 30 July 1973) is a British Labour Party politician. She has been a Member of the European Parliament for Scotland since 1999, being re-elected in 2004 and 2009. She is currently the only female MEP representing Scotland.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Catherine_Stihler"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Cayman_Islands",
+        "description": "The Cayman Islands is a British Overseas Territory located in the western Caribbean Sea. The territory comprises the three islands of Grand Cayman, Cayman Brac, and Little Cayman, located south of Cuba and northwest of Jamaica. The Cayman Islands are considered to be part of the geographic Western Caribbean Zone as well as the Greater Antilles. The territory is a major world offshore financial centre.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Cayman_Islands"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Cheryl_Gillan",
+        "description": "Rt Hon Cheryl Elise Kendall Gillan MP is a British Conservative Party politician. She is currently the Secretary of State for Wales, and the Member of Parliament (MP) for the constituency of Chesham and Amersham in Buckinghamshire. Prior to her parliamentary career, Gillan worked as a marketing executive for several companies. She was first elected to the House of Commons in 1992 and was a junior minister for education and employment from 1995-97.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Cheryl_Gillan"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Chevron_Corporation",
+        "description": "Chevron Corporation is an American multinational energy corporation headquartered in San Ramon, California, United States and active in more than 180 countries. It is engaged in every aspect of the oil, gas, and geothermal energy industries, including exploration and production; refining, marketing and transport; chemicals manufacturing and sales; and power generation. Chevron is one of the world's six \"supermajor\" oil companies.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Chevron_Corporation"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/China",
+        "description": "China, officially the People's Republic of China (PRC), is the world's most-populous country, with a population of over 1.3\u00a0billion. Covering approximately 9.6\u00a0million square kilometres, the East Asian state is the world's second-largest country by land area, and the third- or fourth-largest in total area, depending on the definition of total area. The People's Republic of China is a single-party state governed by the Communist Party of China.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/China"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Chris",
+        "description": "Chris is a short form of various names including Christopher, Christian, Christina, Christine, Crissie and others. Unlike these names, however, it does not indicate the person's gender although it is much more common for males to have this name than it is for females. It is the preferred form of the full name of such notable individuals as Chris Tucker and Chris Penn. To find an article about one of these people, see .",
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Chris"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Chris_Packham",
+        "description": "Christopher Gary \"Chris\" Packham (born 4 May 1961) is an English naturalist, nature photographer, television presenter and author. He is the brother of fashion designer, Jenny Packham. He lives in the New Forest with his zookeeper girlfriend Charlotte and 16-year-old stepdaughter Megan.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Chris_Packham"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Chuka_Umunna",
+        "description": "Chuka Harrison Umunna (born 17 October 1978) is a British Labour Party politician and employment lawyer who has been the Member of Parliament (MP) for Streatham since 2010. After less than 18 months in Parliament, he was promoted to the Shadow Cabinet as Shadow Business Secretary by Labour Leader Ed Miliband on 7 October 2011. Umunna has described himself as being \"One Nation Labour\" and has written articles promoting the Blue Labour trend.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Chuka_Umunna"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/City_College_of_New_York",
+        "description": "The City College of the City University of New York (known more commonly as the City College of New York or simply City College, CCNY, or colloquially as City) is a senior college of the City University of New York (CUNY), in New York City. It is also the oldest of the City University's twenty-three institutions of higher learning.",
+        "typeUri": "http://dbpedia.org/ontology/University",
+        "uri": "http://dbpedia.org/resource/City_College_of_New_York"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Conall_McDevitt",
+        "description": "Conall McDevitt, M.L.A. (born 1 June 1972), became National Secretary of Labour Youth in 1993 and Vice President of ECOSY (European Community Organisation of Socialist Youth) in 1994. The son of an Official IRA internee and a great-grandson of a Belfast republican socialist, Danny McDevitt, he became the Social Democratic and Labour Party's (SDLP) Director of Communications in November 1996 until December 1999. He was involved in the negotiations that led to the Good Friday Agreement.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Conall_McDevitt"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Conservative_Party_(UK)",
+        "description": "The Conservative Party, formally the Conservative and Unionist Party, is a centre-right political party in the United Kingdom that adheres to the philosophies of conservatism and British unionism. It is the largest single party in the House of Commons with 306 MPs, the largest party in local government with 9,391 councillors, and the largest British party in the European Parliament with 25 MEPs.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Conservative_Party_(UK)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Council_of_the_European_Union",
+        "description": "The Council of the European Union (sometimes just called the Council and sometimes still referred to as the Council of Ministers) is the institution in the essentially bicameral legislature of the European Union (EU) representing the executives of member states, the other legislative body being the European Parliament. The Council is composed of several configurations of twenty-seven national ministers.",
+        "typeUri": "http://dbpedia.org/ontology/Legislature",
+        "uri": "http://dbpedia.org/resource/Council_of_the_European_Union"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Coventry",
+        "description": "Coventry is a city and metropolitan borough in the county of West Midlands in England. Coventry is the 9th largest city in England and the 11th largest in the United Kingdom. It is also the second largest city in the English Midlands, after Birmingham, with a population of 300,848, although Stoke-on-Trent, Leicester and Nottingham have larger urban areas. The population of Coventry had risen to 315,800 as of 2010, according to the Office of National Statistics.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Coventry"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Coventry_City_F.C.",
+        "description": "Coventry City Football Club is an English football club based in Coventry. Nicknamed the Sky Blues owing to the colour of their strip, Coventry City were formed in 1883 as Singers F.C. , and they joined the Football League in 1919. From August 2012, they will compete in Football League One, the third-highest tier of the English football league system.",
+        "typeUri": "http://dbpedia.org/ontology/SoccerClub",
+        "uri": "http://dbpedia.org/resource/Coventry_City_F.C."
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Daily_Mail_and_General_Trust",
+        "description": "\"DMgt\" redirects here, but may also refer to Doctor of Management. Daily Mail and General Trust plc 200pxType Public limited companyTraded as LSE:\u00a0DMGTIndustry Newspapers Radio Websites InsuranceFounded 1922Headquarters London, United KingdomKey people The Viscount Rothermere Martin MorganRevenue \u00a31,989.8 million (2011)Operating income \u00a3164.3 million (2011)Net income \u00a3127.5 million (2011)Employees 14,000 (2012)Website [http://www. dmgt. co. uk http://www. dmgt. co.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Daily_Mail_and_General_Trust"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Danny_Kennedy",
+        "description": "Danny Kennedy MLA (born 6 July 1959) is a unionist politician in Northern Ireland a former deputy leader of the Ulster Unionist Party (UUP) Assembly Group and current Minister for Regional Development.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Danny_Kennedy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Dara",
+        "description": "Dara is a name with more than one origin. It is found in the Bible's Old Testament Books of Chronicles. Dara was a biblical descendant of Judah known for his wisdom. In Cambodian Khmer, Dara is a name for a boy or a girl meaning \"star\". In Turkish and in Punjabi, Dara means \"leader\". In Persian Dara means \"wealthy\" and is a boy's name. In the Swahili version Dara means \"the beautiful one\". In Irish Dara means \"oak\". But in Indonesian, Dara means \"girl\", \"young woman\", or \"virgin\".",
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Dara"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Dave_Nellist",
+        "description": "David John Nellist (born 16 July 1952) is a British Trotskyist activist and former Labour Member of Parliament (MP) for the now abolished constituency of Coventry South East. He is a member of the Socialist Party of England and Wales and a former councillor in Coventry.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Dave_Nellist"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David",
+        "description": "David was, according to the Hebrew Bible, the second king of the United Kingdom of Israel and, according to the Gospel of Matthew and the Gospel of Luke, an ancestor of Jesus. David is seen as a major Prophet in Islamic traditions. His life is conventionally dated to c. 1040\u2013970 BC, his reign over Judah c. 1010\u20131003 BC, and his reign over the United Kingdom of Israel c. 1003\u2013970 BC.",
+        "typeUri": "http://dbpedia.org/ontology/Monarch",
+        "uri": "http://dbpedia.org/resource/David"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Cameron",
+        "description": "David William Donald Cameron is the Prime Minister of the United Kingdom, First Lord of the Treasury, Minister for the Civil Service and Leader of the Conservative Party. He represents Witney as its Member of Parliament (MP). Cameron studied Philosophy, Politics and Economics (PPE) at Oxford, gaining a first class honours degree. He then joined the Conservative Research Department and became Special Adviser to Norman Lamont, and then to Michael Howard.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/David_Cameron"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Coburn",
+        "description": "David Coburn is an American actor, voice actor and singer. He is best known as the voice of Captain Planet in the TV series, Captain Planet and the Planeteers.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/David_Coburn"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Ford",
+        "description": "David Ford (born 24 February 1951) is a politician who is a member of the Northern Ireland Assembly. Ford has been leader of the Alliance Party of Northern Ireland since 2001 and has been Northern Ireland Minister of Justice since April 2010.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/David_Ford"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Lidington",
+        "description": "David Roy Lidington PC (born 30 June 1956) is a British Conservative Party politician, who has been Member of Parliament for Aylesbury since 1992. He is currently a Minister of State at the Foreign Office, serving as Minister for Europe.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/David_Lidington"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Martin_(Scottish_politician)",
+        "description": "David Martin (born August 26, 1954 in Edinburgh) is a British Labour Party politician, and member of the European Parliament for Scotland. He was educated outside of Edinburgh at Liberton High School. He was first elected as a councillor in 1982, and won the Lothians seat in the 1984 European Parliament elections. He retained his seat, and following a reform of the electoral system, was in 1999 elected to represent the whole of Scotland along with other members.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/David_Martin_(Scottish_politician)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/David_Miliband",
+        "description": "David Wright Miliband (born 15 July 1965) is a British Labour Party politician who has been the Member of Parliament (MP) for South Shields since 2001, and was the Secretary of State for Foreign and Commonwealth Affairs from 2007 to 2010. He is the elder son of the late Marxist theorist Ralph Miliband. He and his brother, current Labour Leader Ed Miliband, were the first siblings to sit in the Cabinet simultaneously since Edward, Lord Stanley, and Oliver Stanley in 1938.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/David_Miliband"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Democratic_Republic_of_the_Congo",
+        "description": "The Democratic Republic of the Congo (French: R\u00e9publique d\u00e9mocratique du Congo), commonly referred to as DR Congo, Congo-Kinshasa or the DRC, is a country located in Central Africa. It is the second largest country in Africa by area since the accession of South Sudan as an independent country and the eleventh largest in the world.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Democratic_Republic_of_the_Congo"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Dermot_Murnaghan",
+        "description": "Dermot Murnaghan (born 26 December 1957) is a British journalist and television presenter. He is well known for his work as a presenter of ITV and BBC News as well as the shows Eggheads (2003\u2013present) and Treasure Hunt (2002\u20132003). He co-presented BBC Breakfast from Monday to Thursday as well as regularly fronting national BBC news bulletins until December 2007. He now presents for Sky News.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Dermot_Murnaghan"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Derry",
+        "description": "Derry or Londonderry is the second-biggest city in Northern Ireland and the fourth-biggest city on the island of Ireland. The name Derry is an anglicisation of the Irish name Doire or Doire Cholmcille, (Old Irish \"Dhoire\") meaning \"oak-wood of Colmcille\". In 1613, the city was granted a Royal Charter by King James I and the \"London\" prefix was added, changing the name of the city to Londonderry. While the city is more usually known as Derry, Londonderry is also used and remains the legal name.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Derry"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Diane_Dodds",
+        "description": "Diane Dodds (born 16 August 1958) is a Democratic Unionist Party politician from Northern Ireland, and a Member of the European Parliament (MEP) for the Northern Ireland constituency.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Diane_Dodds"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Doncaster",
+        "description": "Doncaster is a town in South Yorkshire, England, and the principal settlement of the Metropolitan Borough of Doncaster. The town is about 20 miles (32\u00a0km) from Sheffield and is popularly referred to as \"Donny\". Doncaster has an international airport, and in recent years its centre has undergone regeneration including the development of an Education City campus, currently the largest education investment of its kind in the UK.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Doncaster"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Douglas_Alexander",
+        "description": "Douglas Garven Alexander (born 26 October 1967) is a British Labour Party politician, who is currently the Shadow Secretary of State for Foreign and Commonwealth Affairs in the shadow cabinet of Ed Miliband. He has held cabinet posts under Tony Blair and Gordon Brown, including Secretary of State for Scotland (2006\u201307) and Secretary of State for International Development (2007\u201310).",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Douglas_Alexander"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Douglas_Carswell",
+        "description": "John Douglas Wilson Carswell (born 3 May 1971) is a British Conservative Party politician. He is the Member of Parliament (MP) for Clacton, having been first elected as MP for Harwich in 2005. He found prominence by calling for reform of parliamentary expenses before the 2009 expenses scandal, and leading the campaign to eject Michael Martin as Speaker of the House of Commons.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Douglas_Carswell"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/DuPont",
+        "description": "E. I. du Pont de Nemours and Company, commonly referred to as DuPont, is an American chemical company that was founded in July 1802 as a gunpowder mill by Eleuth\u00e8re Ir\u00e9n\u00e9e du Pont. DuPont was the world's third largest chemical company based on market capitalization and ninth based on revenue in 2009. Its stock price is a component of the Dow Jones Industrial Average.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/DuPont"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Dublin",
+        "description": "Dublin is the capital and most populous city of Ireland. The English name for the city is derived from the Irish name Dubhlinn, meaning \"black pool\". Dublin is situated near the midpoint of Ireland's east coast, at the mouth of the River Liffey and the centre of the Dublin Region. Originally founded as a Viking settlement, it evolved into the Kingdom of Dublin and became the island's principal city following the Norman invasion.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Dublin"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Dunblane",
+        "description": "Dunblane is a small cathedral city and former burgh north of Stirling in the Stirling council area of Scotland. The town is situated off the A9 road, on the way north to Perth. Its main landmark is Dunblane Cathedral and the Allan Water runs through the town centre, with the Cathedral and the High Street on the east side. Dunblane had a population of 7,911 at the 2001 census, although this was estimated to have grown to 8,840 by 2006.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Dunblane"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/ESPN",
+        "description": "Entertainment and Sports Programming Network, commonly known as ESPN, is an American global cable television network focusing on sports-related programming including live and pre-taped event telecasts, sports talk shows, and other original programming.",
+        "typeUri": "http://dbpedia.org/ontology/TelevisionStation",
+        "uri": "http://dbpedia.org/resource/ESPN"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ed_Balls",
+        "description": "Edward Michael Balls, (born 25 February 1967) is a British Labour politician, who has been the Member of Parliament (MP) for Morley and Outwood since 2010, and is the current Shadow Chancellor of the Exchequer. From 2005 to 2010, he was the MP for Normanton and he served in the Cabinet from 2007 to 2010. Balls is married to current Shadow Home Secretary and fellow Labour MP Yvette Cooper. In 2008 they were the first married couple to serve together in a British Cabinet.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Ed_Balls"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ed_Miliband",
+        "description": "Edward Samuel Miliband (born 24 December 1969) is a British Labour Party politician, currently the Leader of the Labour Party and Leader of the Opposition. He has been the Member of Parliament (MP) for the South Yorkshire constituency of Doncaster North since 2005 and served in the Cabinet from 2007 to 2010 under Prime Minister Gordon Brown. He and his brother, David Miliband, were the first siblings to sit in the Cabinet simultaneously since Edward, Lord Stanley, and Oliver Stanley in 1938.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Ed_Miliband"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Edinburgh",
+        "description": "Edinburgh is the capital city of Scotland and the seat of the Scottish Parliament. It is the second largest city in Scotland and the seventh most populous in the United Kingdom. The City of Edinburgh Council governs one of Scotland's 32 local government council areas. The council area includes urban Edinburgh and a 30 square miles (78\u00a0km) rural area. Located in the south-east of Scotland, Edinburgh lies on the east coast of the Central Belt, along the Firth of Forth, near the North Sea.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Edinburgh"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Edwin_Poots",
+        "description": "Alderman Edwin Poots MLA (b. 1965) is a Northern Irish politician and a Democratic Unionist Party (DUP) Member of the Legislative Assembly (MLA) for Lagan Valley. He is one of three DUP MLAs for Lagan Valley.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Edwin_Poots"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Electoral_Commission_of_Ghana",
+        "description": "The Electoral Commission of Ghana is the official body in Ghana responsible for all public elections. Made up of seven members, its independence is guaranteed by the 1992 Ghana constitution. The current commission was established by the Electoral Commission Act (Act 451) of 1993.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/Electoral_Commission_of_Ghana"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Emma_Bonino",
+        "description": "Emma Bonino (born 9 March 1948 in Bra) is an Italian politician, former Member of the European Parliament and current Member of the Italian Senate. She is a leading member of the Italian Radicals, a political party that supports economic and social libertarianism, and human rights. She graduated in modern languages and literature from Bocconi University in Milan in 1972.",
+        "typeUri": "http://dbpedia.org/ontology/PrimeMinister",
+        "uri": "http://dbpedia.org/resource/Emma_Bonino"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Emma_McClarkin",
+        "description": "Emma McClarkin is a British politician, and Member of the European Parliament for the East Midlands region for the Conservative Party.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Emma_McClarkin"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/England",
+        "description": "England Listen/\u02c8\u026a\u014b\u0261l\u0259nd/ is a country that is part of the United Kingdom. It shares land borders with Scotland to the north and Wales to the west; the Irish Sea is to the north west, the Celtic Sea to the south west, while the North Sea to the east and the English Channel to the south separate it from continental Europe. Most of England comprises the central and southern part of the island of Great Britain in the North Atlantic.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/England"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/English_language",
+        "description": "English is a West Germanic language spoken originally in England, and is now the most widely used language in the world. It is spoken as a first language by a majority of the inhabitants of several nations, including the United Kingdom, the United States, Canada, Australia, Ireland and New Zealand.",
+        "typeUri": "http://dbpedia.org/ontology/Language",
+        "uri": "http://dbpedia.org/resource/English_language"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Estonia",
+        "description": "Estonia Listen/\u0268s\u02c8to\u028ani\u0259/, officially the Republic of Estonia, is a state in the Baltic region of Northern Europe. It is bordered to the north by the Gulf of Finland, to the west by the Baltic Sea, to the south by Latvia (343\u00a0km), and to the east by Lake Peipus and the Russian Federation (338.6\u00a0km). Across the Baltic Sea lies Sweden in the west and Finland in the north. The territory of Estonia covers 45,227\u00a0km (17,462\u00a0sq\u00a0mi), and is influenced by a temperate seasonal climate.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Estonia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Euro",
+        "description": "The euro is the official currency of the eurozone, which consists of 17 of the 27 member states of the European Union. It is also the currency used by the Institutions of the European Union. The eurozone consists of Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia, and Spain. The currency is also used in a further five European countries and consequently used daily by some 332\u00a0million Europeans.",
+        "typeUri": "http://dbpedia.org/ontology/Currency",
+        "uri": "http://dbpedia.org/resource/Euro"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Europe",
+        "description": "Europe is, by convention, one of the world's seven continents. Comprising the westernmost peninsula of Eurasia, Europe is generally 'divided' from Asia to its east by the watershed divides of the Ural and Caucasus Mountains, the Ural River, the Caspian and Black Seas, and the waterways connecting the Black and Aegean Seas.",
+        "typeUri": "http://dbpedia.org/ontology/Continent",
+        "uri": "http://dbpedia.org/resource/Europe"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/European_External_Action_Service",
+        "description": "The European External Action Service (EEAS or EAS) is a European Union (EU) department that was established following the entry into force of the Treaty of Lisbon on 1 December 2009. It was formally launched on 1 December 2010 and serves as a foreign ministry and diplomatic corps for the EU, implementing the EU's Common Foreign and Security Policy and other areas of the EU's external representation.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/European_External_Action_Service"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/European_Parliament",
+        "description": "The European Parliament (abbreviated as Europarl or the EP) is the directly elected parliamentary institution of the European Union (EU). Together with the Council of the European Union (the Council) and the European Commission, it exercises the legislative function of the EU and it has been described as one of the most powerful legislatures in the world.",
+        "typeUri": "http://dbpedia.org/ontology/Legislature",
+        "uri": "http://dbpedia.org/resource/European_Parliament"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/European_Parliament_election,_1999",
+        "description": "The European Parliament Election, 1999 was a European election for all 626 members of the European Parliament held across the 15 European Union member states on 10, 11 and 13 June 1999. The voter turn-out was generally low, except in Belgium and Luxembourg, where voting is compulsory and where national elections were held that same day. This was the first such election where Austria, Finland and Sweden voted alongside other the other members, having joined in 1995 and voted separately.",
+        "typeUri": "http://dbpedia.org/ontology/Election",
+        "uri": "http://dbpedia.org/resource/European_Parliament_election,_1999"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/European_Parliament_election,_2009",
+        "description": "Elections to the European Parliament were held in the 27 member states of the European Union (EU) between 4 and 7 June 2009. A total of 736 Members of the European Parliament (MEPs) were elected to represent some 500 million Europeans, making these the biggest trans-national elections in history. An additional 18 observers (\"virtual MEPs\") were (supposed to be) pre-elected.",
+        "typeUri": "http://dbpedia.org/ontology/Election",
+        "uri": "http://dbpedia.org/resource/European_Parliament_election,_2009"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/European_Union",
+        "description": "The European Union (EU) Listen/\u02ccj\u028ar\u0259\u02c8pi\u02d0\u0259n\u02c8ju\u02d0nj\u0259n/ is an economic and political union or confederation of 27 member states which are located primarily in Europe. The EU traces its origins from the European Coal and Steel Community (ECSC) and the European Economic Community (EEC), formed by six countries in 1958. In the intervening years the EU has grown in size by the accession of new member states and in power by the addition of policy areas to its remit.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/European_Union"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/FIFA",
+        "description": "The F\u00e9d\u00e9ration Internationale de Football Association, commonly known by the acronym FIFA, is the international governing body of association football, futsal and beach soccer. Its membership comprises 209 national associations (the United Nations has 193 member states). Its headquarters are in Zurich, Switzerland, and its president is Sepp Blatter. FIFA is responsible for the organisation of football's major international tournaments, notably the World Cup.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/FIFA"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Falkland_Islands",
+        "description": "The Falkland Islands are an archipelago in the South Atlantic Ocean, located more than 250 nautical miles east of the coast of mainland South America. The archipelago comprises East Falkland, West Falkland, and 776 lesser islands. Stanley, the capital and only city, is on East Falkland. The islands are a self-governing British Overseas Territory, with the United Kingdom responsible for their defence and foreign affairs.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Falkland_Islands"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Fethullah_G%C3%BClen",
+        "description": "Fethullah G\u00fclen (born 27 April 1941) is a Turkish author, educator, and Muslim scholar. G\u00fclen has been described in the English-language media as \"one of the world's most important Muslim figures. \" He is the founder of the G\u00fclen movement. He currently lives in self-imposed exile in Pennsylvania, USA. G\u00fclen teaches an Anatolian version of Islam, deriving from Sunni Muslim scholar Bedi\u00fczzaman Said Nursi's teachings and modernizing them.",
+        "typeUri": "http://dbpedia.org/ontology/Philosopher",
+        "uri": "http://dbpedia.org/resource/Fethullah_G%C3%BClen"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ford_Motor_Company",
+        "description": "Ford Motor Company is an American multinational automaker based in Dearborn, Michigan, a suburb of Detroit. The automaker was founded by Henry Ford and incorporated on June 16, 1903. In addition to the Ford and Lincoln brands, Ford owns a small stake in Mazda in Japan and Aston Martin in the UK. Ford's former UK subsidiaries Jaguar and Land Rover were sold to Tata Motors of India in March 2008. In 2010 Ford sold Volvo to Geely Automobile.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Ford_Motor_Company"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Foreign_and_Commonwealth_Office",
+        "description": "The Foreign and Commonwealth Office, commonly called the Foreign Office or the FCO is a British government department responsible for promoting the interests of the United Kingdom overseas, created in 1968 by merging the Foreign Office and the Commonwealth Office. The head of the FCO is the Secretary of State for Foreign and Commonwealth Affairs, commonly abbreviated to \"Foreign Secretary\".",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/Foreign_and_Commonwealth_Office"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/France",
+        "description": "France, officially the French Republic, is a unitary semi-presidential republic in Western Europe with several overseas territories and islands located on other continents and in the Indian, Pacific, and Atlantic oceans. Metropolitan France extends from the Mediterranean Sea to the English Channel and the North Sea, and from the Rhine to the Atlantic Ocean. It is often referred to as l\u2019Hexagone because of the geometric shape of its territory.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/France"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Gateshead",
+        "description": "Gateshead is a town in Tyne and Wear, England, and is the main settlement in the Metropolitan Borough of Gateshead. Historically a part of County Durham, it lies on the southern bank of the River Tyne opposite Newcastle upon Tyne and together they form the urban core of Tyneside. Gateshead town centre and Newcastle City Centre are joined by seven different bridges across the Tyne, including the landmark Gateshead Millennium Bridge.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Gateshead"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Geneva",
+        "description": "Geneva is the second-most-populous city in Switzerland and is the most populous city of Romandy, the French-speaking part of Switzerland. Situated where the Rhone exits Lake Geneva, it is the capital of the Republic and Canton of Geneva. While the municipality itself (ville de Gen\u00e8ve) has a population (as of August 2011) of 191,803, the canton of Geneva (R\u00e9publique et Canton de Gen\u00e8ve, which includes the city) has 466,536 residents.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Geneva"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/George_Lyon_(Scottish_politician)",
+        "description": "George Lyon (born 16 July 1956 in Rothesay) is a Scottish Liberal Democrat politician, and a Member of the European Parliament for Scotland, elected on 4 June 2009 when he took over from Elspeth Attwooll who retired after ten years as Liberal Democrat MEP for Scotland. From 1999 to 2007 he was the Member of the Scottish Parliament for Argyll and Bute, and served as Deputy Minister for Finance, Public Service Reform and Parliamentary Business between 2005 and 2007.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/George_Lyon_(Scottish_politician)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Gerard_Batten",
+        "description": "Gerard Joseph Batten (born 27 March 1954, London) is a Member of the European Parliament for London for the United Kingdom Independence Party (UKIP). He was first elected in 2004. He sits as a member of the Independence and Democracy Group. He was a founder member of UKIP in September 1993. He was the first Party Secretary from 1994 to 1997. He has fought local elections, a by-election, a European election, and two general elections as a UKIP candidate.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Gerard_Batten"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Germany",
+        "description": "Germany, officially the Federal Republic of Germany, is a federal parliamentary republic in Europe. The country consists of 16 states while the capital and largest city is Berlin. Germany covers an area of 357,021\u00a0km and has a largely temperate seasonal climate. With 81.8\u00a0million inhabitants, it is the most populous member state and the largest economy in the European Union. It is one of the major political powers of the European continent and a technological leader in many fields.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Germany"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Gerry_Adams",
+        "description": "Gerry Adams is an Irish republican politician and Teachta D\u00e1la (TD) for the constituency of Louth. From 1983 to 1992 and from 1997 to 2011, he was an abstentionist Westminster Member of Parliament for Belfast West. He is the president of Sinn F\u00e9in, the second largest political party in Northern Ireland and the largest nationalist party.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Gerry_Adams"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Gibraltar",
+        "description": "Gibraltar is a British overseas territory located on the southern end of the Iberian Peninsula at the entrance of the Mediterranean. It has an area of 6.8 square kilometres (2.6\u00a0sq\u00a0mi) and a northern border with Andalusia, Spain. The Rock of Gibraltar is the major landmark of the region. At its foot is the densely populated city area, home to almost 30,000 Gibraltarians and other nationalities.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Gibraltar"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Giles_Chichester",
+        "description": "Giles Chichester (born 29 July 1946) is a British Conservative Party politician, and a Member of the European Parliament (MEP) for South West England and Gibraltar. He was elected as a temporary Vice President of the European Parliament on 6 July 2011 to replace Silvana Koch-Mehrin who had resigned over plagiarism allegations. Chichester was born in London.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Giles_Chichester"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Glenis_Willmott",
+        "description": "Glenis Willmott (born 4 March 1951) is a British politician, currently leader of the European Parliamentary Labour Party (EPLP) and Labour member of the European Parliament for East Midlands. Willmott was born in the mining village of Horden, County Durham, but moved to Mansfield with her family at the age of 10. She was educated in Mansfield and at Trent Polytechnic where she obtained an HNC in medical science.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Glenis_Willmott"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Godfrey_Bloom",
+        "description": "Godfrey Bloom (born 22 November 1949 in London) is a Member of the European Parliament for Yorkshire and the Humber for the United Kingdom Independence Party (UKIP). He was first elected in 2004, and re-elected in 2009. Before becoming an MEP, Bloom worked as a financial economist. Godfrey Bloom is the president of the European Alliance for Freedom, a eurosceptic pan-European political party.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Godfrey_Bloom"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Gordon_Brown",
+        "description": "James Gordon Brown (born 20 February 1951) is a British Labour Party politician who was the Prime Minister of the United Kingdom and Leader of the Labour Party from 2007 until 2010. He previously served as Chancellor of the Exchequer in the Labour Government from 1997 to 2007, becoming the longest-serving holder of that office in modern history. Brown has been a Member of Parliament (MP) since 1983, for Dunfermline East until 2005, and currently for Kirkcaldy and Cowdenbeath.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Gordon_Brown"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Greece",
+        "description": "Greece Listen/\u02c8\u0261ri\u02d0s/, officially the Hellenic Republic, is a country in Southern Europe, politically considered part of Western Europe. Athens is the capital and the largest city in the country (its urban area also including Piraeus). The population of the country is around 11 million. Greece has land borders with Albania, the Republic of Macedonia and Bulgaria to the north, and Turkey to the east.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Greece"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Green_Party_of_the_United_States",
+        "description": "The Green Party of the United States (GPUS) is a national US-American political party founded in 1991 as a voluntary association of state green parties. With its founding, the Green Party of the United States became the primary national Green organization in the United States, eclipsing the Greens/Green Party USA, which emphasized non-electoral movement building.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Green_Party_of_the_United_States"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Guy_Verhofstadt",
+        "description": "Guy Verhofstadt (born Guy Maurice Marie Louise Verhofstadt, 11 April 1953) is a Belgian politician, who served as the 47th Prime Minister of Belgium from 1999 to 2008. Since 2009, he has served as a Member of the European Parliament and leader of the Group of the Alliance of Liberals and Democrats for Europe.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Guy_Verhofstadt"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/HM_Revenue_and_Customs",
+        "description": "Her Majesty's Revenue and Customs (HMRC) (Welsh: Cyllid a Thollau Ei Mawrhydi) is a non-ministerial department of the UK Government responsible for the collection of taxes and the payment of some forms of state support. HMRC was formed by the merger of the Inland Revenue and Her Majesty's Customs and Excise which took effect on 18 April 2005. The department's logo is the St Edward's Crown enclosed within a circle.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/HM_Revenue_and_Customs"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Helmand_Province",
+        "description": "Helmand is the largest of the 34 provinces of Afghanistan. It is in the southwest of the country. Its capital is Lashkar Gah. The Helmand River flows through the mainly desert region, providing water for irrigation. Helmand is the world's largest opium-producing region, responsible for 75% of the world's total production. This is more than the whole of Burma, which is the second largest producing nation after Afghanistan. Afghan opium accounts for more than 90% of the global supply.",
+        "typeUri": "http://dbpedia.org/ontology/Place",
+        "uri": "http://dbpedia.org/resource/Helmand_Province"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Henry_Campbell-Bannerman",
+        "description": "Sir Henry Campbell-Bannerman GCB (7 September 1836\u00a0\u2013 22 April 1908) was a British Liberal Party politician who served as Prime Minister of the United Kingdom from 1905 to 1908 and Leader of the Liberal Party from 1899 to 1908. He also served as Secretary of State for War twice, in the Cabinets of Gladstone and Rosebery. He was the first First Lord of the Treasury to be officially called \"Prime Minister\", the term only coming into official usage five days after he took office.",
+        "typeUri": "http://dbpedia.org/ontology/PrimeMinister",
+        "uri": "http://dbpedia.org/resource/Henry_Campbell-Bannerman"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Henry_McLeish",
+        "description": "Henry Baird McLeish (born 15 June 1948) is a Scottish Labour Party politician, author and academic. Formerly a professional association football player, McLeish was the Member of Parliament (MP) for Central Fife from 1987 to 2001 and the Member of the Scottish Parliament for Central Fife from 1999 to 2003, during which time he also served as the second First Minister of Scotland, from 2000 to 2001, following the sudden death of Donald Dewar. He resigned in 2001 following a financial scandal.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Henry_McLeish"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Herman_Van_Rompuy",
+        "description": "Herman Achille Van Rompuy (born 31 October 1947) is the first long-term and full-time President of the European Council (until the Treaty of Lisbon, the position had rotated among the prime ministers of the member states for six months each, since then they choose a President of their meetings for a 2\u00bd year period, renewable once). This is an unelected position.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Herman_Van_Rompuy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Hillary_Rodham_Clinton",
+        "description": "Hillary Diane Rodham Clinton is the 67th United States Secretary of State, serving in the administration of President Barack Obama. She was a United States Senator for New York from 2001 to 2009. As the wife of the 42nd President of the United States, Bill Clinton, she was the First Lady of the United States from 1993 to 2001. In the 2008 election, Clinton was a leading candidate for the Democratic presidential nomination.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Hillary_Rodham_Clinton"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Hitachi",
+        "description": "is a Japanese multinational conglomerate headquartered in Marunouchi 1-chome, Chiyoda, Tokyo, Japan. The company is the parent of the Hitachi Group (Hitachi Gur\u016bpu) as part of the larger DKB Group companies. Hitachi has been a diversified company that has 11 business segments: Information and Telecommunication Systems, Electrical Systems, Social and Industrial Systems, Automotive Systems, Electronic Component Devices, Construction, and Financial services.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Hitachi"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Home_Office",
+        "description": "The Home Office is a Ministerial department of the UK Government responsible for immigration, security, and order. As such it is responsible for the police, UK Border Agency, and the Security Service. It is also in charge of government policy on security-related issues such as drugs, counter-terrorism, and ID cards. It was formerly responsible for the Prison Service and Probation Service, but these are now under a newly created Ministry of Justice.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/Home_Office"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Homs",
+        "description": "Homs, previously known as Emesa, is a city in western Syria and the capital of the Homs Governorate. It is 501 metres (1,644\u00a0ft) above sea level and is located 162 kilometres (101\u00a0mi) north of Damascus. Located on the Orontes River, Homs is also the central link between the interior cities and the Mediterranean coast.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Homs"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/House_of_Commons_of_the_United_Kingdom",
+        "description": "The House of Commons is the lower house of the Parliament of the United Kingdom, which also comprises the Sovereign and the House of Lords. Both Commons and Lords meet in the Palace of Westminster. The Commons is a democratically elected body, consisting of 650 members (since the 2010 general election), who are known as Members of Parliament (MPs). Members are elected through the first-past-the-post system by electoral districts known as constituencies.",
+        "typeUri": "http://dbpedia.org/ontology/Legislature",
+        "uri": "http://dbpedia.org/resource/House_of_Commons_of_the_United_Kingdom"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/House_of_Lords",
+        "description": "The House of Lords is the upper house of the Parliament of the United Kingdom. Like the House of Commons, it meets in the Palace of Westminster. The House of Lords is independent from, and complements the work of, the House of Commons \u2013 they share responsibility for making laws and checking government action. Bills can be introduced into either the House of Lords or the House of Commons and members of the Lords may also take on roles as Government Ministers.",
+        "typeUri": "http://dbpedia.org/ontology/Legislature",
+        "uri": "http://dbpedia.org/resource/House_of_Lords"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Hyundai",
+        "description": "Hyundai was a multinational conglomerate company headquartered in Seoul and one of the largest South Korean chaebol. It was founded by Chung Ju-yung in 1947 as a construction firm and Chung was directly in control of the company until his death in 2001.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Hyundai"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ian_Hudghton",
+        "description": "Ian Stewart Hudghton (born 19 September 1951) is a Scottish politician, and has been a Scottish National Party Member of the European Parliament for Scotland since 1998, when he won his seat in a rare European Parliamentary by-election, after the death of sitting SNP MEP Allan Macartney. Since the 2004 European elections, he has led the currently seven-strong European Free Alliance Group in the Parliament, which retains its own identity within the joint Green-European Free Alliance Group.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Ian_Hudghton"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ian_Kennedy",
+        "description": "Ian Patrick Kennedy (born December 19, 1984, in Huntington Beach, California) is a right-handed Major League Baseball pitcher for the Arizona Diamondbacks. He is 6' 0\" tall and weighs 190 pounds. He throws a fastball around 90\u00a0mph (tops out at 95\u00a0mph), knuckle-curve, cutter, and an above-average Vulcan changeup.",
+        "typeUri": "http://dbpedia.org/ontology/BaseballPlayer",
+        "uri": "http://dbpedia.org/resource/Ian_Kennedy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/International_Monetary_Fund",
+        "description": "The International Monetary Fund (IMF) is an international organization that was created on July 22, 1944 at the Bretton Woods Conference and came into existence on December 27, 1945 when 29 countries signed the Articles of Agreement. It originally had 45 members. The IMF's stated goal was to stabilize exchange rates and assist the reconstruction of the world\u2019s international payment system post World War II.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/International_Monetary_Fund"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Inverness",
+        "description": "Inverness (meaning \"Mouth of the River Ness\") is a city in the Scottish Highlands. It is the administrative centre for the Highland council area, and is regarded as the capital of the Highlands of Scotland. Inverness lies near two important battle sites: the 11th century battle of Bl\u00e0r nam F\u00e8inne against Norway which took place on The Aird and the 18th century Battle of Culloden which took place on Culloden Moor.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Inverness"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Iran",
+        "description": "Iran, officially the Islamic Republic of Iran, is a country in Southern and Western Asia. The name \"Iran\", which in Persian means \"Land of the Aryans\", has been in use natively since the Sassanian era. It came into use internationally in 1935, before which the country was known to the Western world as Persia. Both \"Persia\" and \"Iran\" are used interchangeably in cultural contexts; however, \"Iran\" is the name used officially in political contexts.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Iran"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ireland",
+        "description": "Ireland is an island to the northwest of continental Europe. It is the third-largest island in Europe and the twentieth-largest island on Earth. To its east is the larger island of Great Britain, from which it is separated by the Irish Sea. Politically, Ireland is divided between the Republic of Ireland, which covers just under five-sixths of the island, and Northern Ireland, a part of the United Kingdom, which covers the remainder and is located in the northeast of the island.",
+        "typeUri": "http://dbpedia.org/ontology/Island",
+        "uri": "http://dbpedia.org/resource/Ireland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Irene_Papas",
+        "description": "Irene Papas (Greek \u0395\u03b9\u03c1\u03ae\u03bd\u03b7 \u03a0\u03b1\u03c0\u03c0\u03ac; born 3 September 1926) is a Greek actress and occasional singer, who has starred in over seventy films in a career spanning more than fifty years.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Irene_Papas"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Israeli_Labor_Party",
+        "description": "The Israeli Labor Party, commonly known as HaAvoda, is a social-democratic and labour Zionist political party in Israel. The party is an observer member of both Socialist International and the Party of European Socialists. The Israeli Labor Party was established in 1968 by a merger of Mapai, Ahdut HaAvoda and Rafi. Until 1977, all Israeli Prime Ministers were affiliated with the Labor movement. Following a split in the party in 2011, Shelly Yachimovich was elected party leader.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Israeli_Labor_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Istanbul",
+        "description": "Istanbul is the largest city in Turkey, forming the country's economic, cultural, and historical heart. With a population of 13.4 million, the city is at the center of the second-largest urban area in Europe after Moscow, and among the world's largest cities by population within city limits. Istanbul's vast area of 5,343 square kilometers (2,063\u00a0sq\u00a0mi) is coterminous with Istanbul Province, of which the city is considered capital.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Istanbul"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Italy",
+        "description": "Italy Listen/\u02c8\u026at\u0259li/, officially the Italian Republic or the Republic of Italy, is a unitary parliamentary republic in south-central Europe. To the north, it borders France, Switzerland, Austria and Slovenia along the Alps. To the south, it consists of the entirety of the Italian Peninsula, Sicily, Sardinia\u2013the two largest islands in the Mediterranean Sea\u2013and many other smaller islands.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Italy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jackie_Baillie",
+        "description": "Jacqueline Marie Baillie (born 15 January 1964, Hong Kong) is a Scottish Labour Party Member of the Scottish Parliament for the Dumbarton constituency and Shadow Cabinet Secretary for Health, Wellbeing and Cities Strategy.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jackie_Baillie"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jacques_Delors",
+        "description": "Jacques Lucien Jean Delors (born 20 July 1925) is a French economist and politician, the eighth President of the European Commission and the first person to serve three terms in that office (between January 1985 and December 1994). He is the father of Martine Aubry, the leader of the Socialist Party of France.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jacques_Delors"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jean-Claude_Juncker",
+        "description": "Jean-Claude Juncker (born 9 December 1954) is a Luxembourg politician, 23rd and current Prime Minister of Luxembourg since 20 January 1995. He is the longest-serving head of government of any European Union state, and the longest-serving democratically elected current head of any government in the world. He has been President of the Euro Group, the political control over the euro currency, since the creation of a semi-permanent position in 2005.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jean-Claude_Juncker"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jeffrey_Titford",
+        "description": "Jeffrey William Titford is a British politician who served as leader of the UK Independence Party from 2000 until 2002. He served again as interim leader in September to November 2010 following the resignation of Lord Pearson of Rannoch. He is also a former Member of the European Parliament (MEP) for the East of England. He had been at various times a member of the Conservative Party (for whom he was a local councillor), the New Britain Party and the Referendum Party.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Jeffrey_Titford"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jillian_Evans",
+        "description": "Jillian Evans (born 8 May 1959) is Plaid Cymru Member of the European Parliament for Wales and First Vice President of The Greens\u2013European Free Alliance group - the fourth largest in the European Parliament. She is also President of Plaid Cymru and chair of CND Cymru. In June 1999, she and fellow candidate Eurig Wyn were elected as the first MEPs in Plaid Cymru's history. She was re-elected to the European Parliament in 2009.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jillian_Evans"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jim_Allister",
+        "description": "James Hugh \"Jim\" Allister, QC (born 2 April 1953) is a Northern Ireland Unionist politician and senior barrister. He is the leader of the Traditional Unionist Voice (TUV) political party, serving as MLA in the Northern Ireland Assembly, where he represents Antrim North. He was formerly a member of the Democratic Unionist Party (DUP), for which he successfully stood for election in 2004 to the European Parliament.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jim_Allister"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jim_Murphy",
+        "description": "James Francis \"Jim\" Murphy (born 23 August 1967) is a British Labour Party politician and is the Member of Parliament (MP) for East Renfrewshire. He is currently the Shadow Secretary of State for Defence. From October 2008 to May 2010 he served in government as Secretary of State for Scotland. Prior to this, he served as Minister for Europe from 2007\u201308, the Minister of State for Employment and Welfare Reform from 2006\u201307, and as Parliamentary Secretary at the Cabinet Office from 2005\u201306.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jim_Murphy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jimmy_Savile",
+        "description": "Sir James Wilson Vincent Savile OBE KCSG (31 October 1926 \u2013 29 October 2011) was an English disc jockey, television presenter and media personality, best known for his BBC television show Jim'll Fix It, and for being the first and last presenter of the long-running BBC music chart show Top of the Pops. He was also known for his fundraising and support of various charities, particularly Stoke Mandeville Hospital. He was widely described as a philanthropist and was honoured for his efforts.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Jimmy_Savile"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Johann_Lamont",
+        "description": "Johann McDougal Lamont (born 11 July 1957) is a Scottish politician. (Her first name is a variant of Joanne, the pronunciation is the same. ) She served as a junior minister in the Labour-Liberal Democrat coalition Scottish Executive, from 2004 until the coalition's defeat in 2007, and was elected deputy leader of the opposition Labour Group of MSPs in 2008.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Johann_Lamont"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/John_Bercow",
+        "description": "John Simon Bercow is a British politician who has been the Speaker of the House of Commons since June 2009. Prior to his election to Speaker he was a member of the Conservative Party. Bercow was born in Middlesex into a Jewish family and graduated from the University of Essex in 1985. In his youth, Bercow was active in the Conservative Party and was a member of several right-wing groups within the party.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/John_Bercow"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/John_Bufton",
+        "description": "John Bufton (born 31 August 1962 in Llanidloes), is a UKIP Member of the European Parliament for Wales.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/John_Bufton"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/John_Major",
+        "description": "Sir John Major, KG, CH, PC, ACIB (born 29 March 1943) is a British Conservative politician, who served as Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997. He held the posts of Foreign Secretary and Chancellor of the Exchequer in the Cabinet of Margaret Thatcher and was the Member of Parliament (MP) for Huntingdon from 1979 to 2001.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/John_Major"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/John_Swinney",
+        "description": "John Ramsey Swinney (born 13 April 1964) is the Cabinet Secretary for Finance, Employment and Sustainable Growth in the Scottish Government and the Scottish National Party Member of the Scottish Parliament for Perthshire North, having previously represented North Tayside (1999\u20132011). Perthshire North takes in Highland and East Perthshire, the Carse of Gowrie and the Perth City Centre ward of Perth and Kinross Council.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/John_Swinney"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jonny",
+        "description": null,
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Jonny"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Jos%C3%A9_Manuel_Barroso",
+        "description": "Jos\u00e9 Manuel Dur\u00e3o Barroso (born 23 March 1956) is the 11th and current President of the European Commission and a Portuguese politician. He served as Prime Minister of Portugal from 6 April 2002 to 17 July 2004.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Jos%C3%A9_Manuel_Barroso"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Julie_Girling",
+        "description": "Julie Girling MEP is a British Conservative politician, currently serving as a Member of European Parliament for the South West of England. Girling is a former Leader of Cotswold District Council, and Cabinet Member for the Environment on Gloucestershire County Council, resigning from both in the run-up to the 2009 elections.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Julie_Girling"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Karl_McCartney",
+        "description": "Karl Ian McCartney (born 25 October 1968, Birkenhead) is a politician in the United Kingdom. He is Conservative Party member of Parliament for Lincoln, and was first elected in 2010.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Karl_McCartney"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Kay_Swinburne",
+        "description": "Jacqueline Kay Swinburne (born 8 June 1967) is a Welsh politician. She is a Conservative Member of the European Parliament for Wales.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Kay_Swinburne"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Kent",
+        "description": "Kent /\u02c8k\u025bnt/ is a county in South East England, and one of the home counties. It borders East Sussex, Surrey and Greater London and has a defined boundary with Essex in the middle of the Thames Estuary. The ceremonial county boundaries of Kent include the shire county of Kent and the unitary borough of Medway. Kent has a nominal border with France halfway through the Channel Tunnel.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Kent"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Kirsty_Williams",
+        "description": "Victoria Kirsty Williams AM (born 19 March 1971) is a Welsh politician. She is the leader of the Welsh Liberal Democrats and the Member of the Welsh Assembly for Brecon and Radnorshire.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Kirsty_Williams"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Kosovo",
+        "description": "Kosovo is a region in southeastern Europe. In antiquity, it was known as the independent kingdom, and later Roman province, of Dardania. Part of the medieval Serbia, it was then conquered by the Ottoman Empire, later incorporated into Serbia after the First Balkan War and before the constitution of Yugoslavia, later still it became the Autonomous Province of Kosovo and Metohija within Serbia (Serbia then being one of the constituent republics of Yugoslavia).",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Kosovo"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Kynnersley",
+        "description": "Kynnersley is a village in Shropshire, England. Kynnersley lies in the borough of Telford and Wrekin, in a remote, rural location north of Telford. The village has a population of approximately 180 based on the most recent census (2001) and taking into account new housing. The population is expected to grow slightly as further new developments take place especially as former farm buildings are converted to residential use.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Kynnersley"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/LBC_97.3",
+        "description": "LBC 97.3 is a London-based talk and phone-in radio station. It is one half of the latest incarnation of LBC, the news and speech service which was Britain's first commercial radio station when it went on air in October 1973. LBC's current format - with talk on 97.3FM and rolling news on LBC News 1152 - was established in January 2003. The first bulletin on LBC was written by News Editor, later Programme Controller, Keith Belcher, and the first voice on air was Aussie import newsreader Ken Guy.",
+        "typeUri": "http://dbpedia.org/ontology/RadioStation",
+        "uri": "http://dbpedia.org/resource/LBC_97.3"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Labour_Party_(UK)",
+        "description": "The Labour Party is a centre-left political party in the United Kingdom, and one of the two main British political parties along with the Conservative Party. The Labour Party was founded in 1900 and overtook the Liberal Party in general elections during the early 1920s, forming minority governments under Ramsay MacDonald in 1924 and 1929\u20131931. The party was in a wartime coalition from 1940 to 1945, after which it formed a majority government under Clement Attlee.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Labour_Party_(UK)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lampedusa",
+        "description": "Lampedusa is the largest island of the Italian Pelagie Islands in the Mediterranean Sea. The comune of Lampedusa e Linosa is part of the Sicilian province of Agrigento which also includes the smaller islands of Linosa and Lampione. It is the southernmost part of Italy. Tunisia, which is about 113 kilometres (70\u00a0mi) away, is the closest landfall to the islands. Sicily is further at 176 kilometres (109\u00a0mi).",
+        "typeUri": "http://dbpedia.org/ontology/Island",
+        "uri": "http://dbpedia.org/resource/Lampedusa"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Latvia",
+        "description": "Latvia Listen/\u02c8l\u00e6tvi\u0259/, officially the Republic of Latvia, is a country in the Baltic region of Northern Europe. It is bordered to the north by Estonia (border length 343\u00a0km), to the south by Lithuania (588\u00a0km), to the east by the Russian Federation (276\u00a0km), to the southeast by Belarus (141\u00a0km), and shares maritime borders to the west with Sweden.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Latvia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Len_Goodman",
+        "description": "Leonard Gordon 'Len' Goodman (born 25 April 1944) is a British professional ballroom dancer, dance judge, and coach. He is a leading personality on television dance programmes such as Strictly Come Dancing and Dancing with the Stars and runs a ballroom dance school in Dartford, Kent.",
+        "typeUri": "http://dbpedia.org/ontology/Person",
+        "uri": "http://dbpedia.org/resource/Len_Goodman"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Liberal_Democrats",
+        "description": "The Liberal Democrats are a social liberal political party in the United Kingdom which supports constitutional and electoral reform, progressive taxation, wealth taxation, environmentalism, human rights laws, cultural liberalism, banking reform and civil liberties. The party was formed in 1988 by a merger of the Liberal Party and the Social Democratic Party. The two parties had formed the electoral SDP\u2013Liberal Alliance for seven years before then, since the SDP's formation.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Liberal_Democrats"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Liberal_Party_(UK)",
+        "description": "The Liberal Party was one of the two major political parties of the United Kingdom during the 19th and early 20th centuries. It was the third largest political party throughout the latter half of the 20th century. The party moved towards social liberalism during the late 19th and early 20th centuries, and came to be seen as being on the centre-left of British politics. It grew out of the Whig Party in 1859, and William Gladstone carried the party through governments in the late 19th century.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Liberal_Party_(UK)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Libya",
+        "description": "Libya, Berber: \u2d4d\u2d49\u2d31\u2d62\u2d30 is a country in the Maghreb region of North Africa bordered by the Mediterranean Sea to the north, Egypt to the east, Sudan to the southeast, Chad and Niger to the south, and Algeria and Tunisia to the west. With an area of almost 1.8 million square kilometres (700,000 sq\u00a0mi), Libya is the third largest country in Africa by area, and the 17th largest in the world. The largest city, Tripoli, is home to 1.7 million of Libya's 6.4 million people.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Libya"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lincolnshire",
+        "description": "Lincolnshire is a county in the east of England. It borders Norfolk to the south east, Cambridgeshire to the south, Rutland to the south west, Leicestershire and Nottinghamshire to the west, South Yorkshire to the northwest, and the East Riding of Yorkshire to the north. It also borders Northamptonshire in the south for just 20 yards (18\u00a0m), England's shortest county boundary. The county town is Lincoln, where the county council has its headquarters.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Lincolnshire"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lisbon",
+        "description": "Lisbon is the capital city and largest city of Portugal with a population of 547,631 within its administrative limits on a land area of 84.8\u00a0km (33\u00a0sq\u00a0mi). The urban area of Lisbon extends beyond the administrative city limits with a population of 3 million on an area of 958\u00a0km (370\u00a0sq\u00a0mi), making it the 9th most populous urban area in the European Union.",
+        "typeUri": "http://dbpedia.org/ontology/Place",
+        "uri": "http://dbpedia.org/resource/Lisbon"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lisburn",
+        "description": "Lisburn is a city in Northern Ireland. It is situated southwest of Belfast on the River Lagan which forms the boundary between County Antrim and County Down. Lisburn forms part of the Belfast metropolitan area. It had a population of 71,465 people in the 2001 Census and a population density of 243 per km\u00b2. The wider council area has a growing population of 114,000, making it the second largest council district, after Belfast.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Lisburn"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lithuania",
+        "description": "Lithuania, officially the Republic of Lithuania is a country in Northern Europe, the largest of the three Baltic states. It is situated along the southeastern shore of the Baltic Sea, whereby to the west lie Sweden and Denmark. It borders Latvia to the north, Belarus to the east and south, Poland to the south, and a Russian exclave to the southwest. Lithuania has an estimated population of 3.2\u00a0million as of 2011, and its capital and largest city is Vilnius.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Lithuania"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/London",
+        "description": "London Listen/\u02c8l\u028cnd\u0259n/ is the capital city of England and the United Kingdom, the largest metropolitan area in the United Kingdom, and the largest urban zone in the European Union by most measures. Located on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its square-mile mediaeval boundaries.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/London"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Luxembourg",
+        "description": "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in western Europe, bordered by Belgium, France, and Germany. It has two principal regions: the Oesling in the North as part of the Ardennes massif, and the Gutland (\"good country\") in the south. Luxembourg has a population of over half a million people in an area of approximately 2,586 square kilometres (998\u00a0sq\u00a0mi). A representative democracy with a constitutional monarch, it is ruled by a grand duke.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Luxembourg"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lyminster",
+        "description": "Lyminster is a village and civil parish in the Arun District of West Sussex, England. It is located on the outskirts of the built-up area of Littlehampton, two miles (3.2\u00a0km) north of the town centre. The civil parish covers an area of 586.91 hectares (1,450.3 acres) and has a population of 351 persons (2001 census). The parish also includes the settlement of Crossbush, on the A27.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Lyminster"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Lynne_Featherstone",
+        "description": "Lynne Choona Featherstone (born Lynne Choona Ryness, 20 December 1951), is a British Liberal Democrat politician, and the Member of Parliament (MP) for Hornsey and Wood Green. Under the Conservative \u2013 Liberal Democrat coalition in 2010 she was appointed as a junior Home Office minister with responsibility for equality. Previously she was Liberal Democrat spokesman for Youth and Equality issues, and chair of the Liberal Democrats technology board.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Lynne_Featherstone"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Madrid",
+        "description": "Madrid is the capital and largest city of Spain. The population of the city is roughly 3.3\u00a0million and the entire population of the Madrid metropolitan area is calculated to be 6.271 million. It is the third largest city in the European Union, after London and Berlin, and its metropolitan area is the third largest in the European Union after London and Paris. The city spans a total of 604.3\u00a0km (233.3\u00a0sq\u00a0mi).",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Madrid"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Malcolm_Rifkind",
+        "description": "Sir Malcolm Leslie Rifkind KCMG, PC, QC, MP (born 21 June 1946) is a British Conservative Party politician and Member of Parliament for Kensington. He served in various roles as a cabinet minister under Prime Ministers Margaret Thatcher and John Major, including Secretary of State for Scotland (1986\u20131990), Defence Secretary (1992\u20131995) and Foreign Secretary (1995\u20131997).",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Malcolm_Rifkind"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Malta",
+        "description": "Malta Listen/\u02c8m\u0252lt\u0259/, officially known as the Republic of Malta (Maltese: Repubblika ta' Malta), is a Southern European country consisting of an archipelago situated in the centre of the Mediterranean, 80\u00a0km (50\u00a0mi) south of Sicily, 284\u00a0km (176\u00a0mi) east of Tunisia and 333\u00a0km (207\u00a0mi) north of Libya, with Gibraltar 1,755\u00a0km (1,091\u00a0mi) to the west and Alexandria 1,508\u00a0km (937\u00a0mi) to the east.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Malta"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Manchester",
+        "description": "Manchester Listen/\u02c8m\u00e6nt\u0283\u025bst\u0259r/ is a city and metropolitan borough in Greater Manchester, England with an estimated population of 498,800 in 2010. Manchester lies within one of the United Kingdom's largest urban areas; the Greater Manchester Urban Area which has a population of 2.2\u00a0million. The demonym of Manchester is Mancunian and the local authority is Manchester City Council.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Manchester"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Marcus_Brigstocke",
+        "description": "Marcus Alexander Brigstocke (born 8 May 1973) is an English comedian, actor and satirist who has worked extensively in stand-up comedy, television, radio and in 2010-2011 musical theatre. He is particularly associated with the 6.30pm comedy slot on BBC Radio 4, having frequently appeared on several of its shows. Brigstocke also played a cameo role in Richard Curtis's romantic comedy Love Actually as Mike, a radio DJ who interviews Billy Mack.",
+        "typeUri": "http://dbpedia.org/ontology/Comedian",
+        "uri": "http://dbpedia.org/resource/Marcus_Brigstocke"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Margaret_Curran",
+        "description": "Margaret Patricia Curran (born 24 November 1958) is a Scottish Labour Party politician, who has been the Member of Parliament (MP) for Glasgow East since 2010, and is currently Shadow Secretary of State for Scotland. She was previously Member of the Scottish Parliament for Glasgow Baillieston from 1999 to 2011, and held a number of posts within the Scottish Executive, including Minister for Parliamentary Business, Minister for Social Justice and Minister for Communities.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Margaret_Curran"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Margaret_Thatcher",
+        "description": "Margaret Hilda Thatcher, Baroness Thatcher, LG, OM, PC, FRS, n\u00e9e Roberts (born 13\u00a0October 1925) is a British politician and the longest-serving (1979\u20131990) British prime minister of the 20th century, and the only woman ever to have held the post. A Soviet journalist nicknamed her the \"Iron Lady\", which later became associated with her uncompromising politics and leadership style. As prime minister, she implemented conservative policies that have come to be known as Thatcherism.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Margaret_Thatcher"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Mariano_Rajoy",
+        "description": "Mariano Rajoy Brey (born 27 March 1955) is a Spanish People's Party politician and the current Prime Minister of Spain, having served since 21 December 2011. Under Prime Minister Jos\u00e9 Mar\u00eda Aznar, Rajoy was Minister of Public Administration from 1996 to 1999 and Minister of Education from 1999 to 2000; he then served as Deputy Prime Minister from 2000 to 2003.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Mariano_Rajoy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Mark_Reckless",
+        "description": "Mark John Reckless (born 6 December 1970) is a British Conservative Party politician who is the Member of Parliament for Rochester and Strood, elected at the 2010 general election. He graduated in PPE from Oxford University; he also has an MBA from Columbia Business School. He trained as a barrister at the College of Law, gaining an LLB, and was called to the Bar in 2007.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Mark_Reckless"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Marta_Andreasen",
+        "description": "Marta Andreasen (born 26 November 1954) is an Argentine-born Spanish accountant, employed in January 2002 by the European Commission as Chief Accountant, and notable for raising concerns about flaws in the commission's accounting system which she felt left the commission vulnerable to potential fraud. She was subsequently elected as a Member of the European Parliament for United Kingdom Independence Party (UKIP) in 2009.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Marta_Andreasen"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Martin_Callanan",
+        "description": "Martin Callanan (born 8 August 1961) is a British Conservative Party politician. He has been a Member of the European Parliament for the North East England constituency since 1999, and was re-elected in 2004 and 2009. Callanan was born in Newcastle upon Tyne. Before becoming an MEP, he stood as a parliamentary candidate for Washington, Gateshead East, and Tynemouth. He vehemently opposed the erection of the \"Angel of the North\" sculpture by Antony Gormley.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Martin_Callanan"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Martin_McGuinness",
+        "description": "James Martin Pacelli McGuinness (Irish: M\u00e1irt\u00edn Mag Aonghusa; born 23 May 1950) is an Irish Sinn F\u00e9in politician and the current deputy First Minister of Northern Ireland. McGuinness was also the Sinn F\u00e9in candidate for the Irish presidential election, 2011. He was born in Derry, Northern Ireland. A former Provisional Irish Republican Army (IRA) leader, McGuinness is the MP for the Mid Ulster constituency.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Martin_McGuinness"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Martin_Schulz",
+        "description": "Martin Schulz (born on 20 December 1955 in Hehlrath) is a German politician and Member of the European Parliament for the Social Democratic Party of Germany, since 2004 leader of the Socialists in the European Parliament (formerly called the Party of European Socialists group and since 2009 called the Progressive Alliance of Socialists and Democrats). Martin Schulz has a secondary level of education, he attended high school Heilig Geist Gymnasium in W\u00fcrselen.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Martin_Schulz"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Martina_Anderson",
+        "description": "Martina Anderson (born 1962) is an Irish republican politician in Northern Ireland who is currently MEP representing Northern Ireland for Sinn F\u00e9in. She is a former volunteer of the Provisional Irish Republican Army (IRA). Between 2007 and 2012 she was a MLA representing Foyle.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Martina_Anderson"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Melton_Mowbray",
+        "description": "Melton Mowbray is a town in the Melton borough of Leicestershire, England. It is 14.5 miles (23\u00a0km) to the northeast of Leicester, and 18 miles (29\u00a0km) southeast of Nottingham. The town lies along the course of both the River Eye and the River Wreake and currently has a population of 25,554. Promoted as the \"Rural Capital of Food\", Melton Mowbray is perhaps best known for its culinary specialities, being the home of the eponymous pork pie and one of the six homes of Stilton cheese.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Melton_Mowbray"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Mevl%C3%BCt_%C3%87avu%C5%9Fo%C4%9Flu",
+        "description": "Mevl\u00fct \u00c7avu\u015fo\u011flu is a Member of the Grand National Assembly of Turkey, where he represents Antalya Province. First elected to Parliament in the 2002 general election, he is a founding member of the Justice and Development Party (AKP). He was the president of the Parliamentary Assembly of the Council of Europe from 2010 to 2012.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Mevl%C3%BCt_%C3%87avu%C5%9Fo%C4%9Flu"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Michael_Gove",
+        "description": "Michael Andrew Gove (born 26 August 1967) is a British politician, who currently serves as the Secretary of State for Education and as the Conservative Party Member of Parliament (MP) for the Surrey Heath constituency. He is also an author and former Times journalist who remains on friendly terms with proprietor Rupert Murdoch. Born in Edinburgh, Gove was raised in Aberdeen and made an early career as a journalist.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Michael_Gove"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Michael_McGimpsey",
+        "description": "Michael McGimpsey MLA (born 1 July 1948) is an Ulster Unionist Party (UUP) Member of the Legislative Assembly for Belfast South who has twice served in the Northern Ireland Executive. Once seen as a successor to David Trimble, McGimpsey served until 2011 as Northern Ireland's Health Minister with responsibility for nearly half of the NI Executive's budget. McGimpsey was born in Donaghadee, County Down and was educated in Regent House Grammar School and Trinity College, Dublin.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Michael_McGimpsey"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Mike_Nattrass",
+        "description": "Mike Nattrass MEP FRICS is an English politician and Member of the European Parliament, representing the West Midlands constituency for the UK Independence Party (UKIP), elected for the first time in June 2004 and re-elected in June 2009. Born on 14 December 1945 in Leeds, Yorkshire, with Black Country links on his mother\u2019s side, he is a Fellow of the Royal Institution of Chartered Surveyors (FRICS) and co-founder, in the 1980s, of Nattrass Giles, a commercial property business.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Mike_Nattrass"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Milford_Haven",
+        "description": "Milford Haven is a town and community in Pembrokeshire, Wales. It is situated on the north side of the Milford Haven, an estuary forming a natural harbour that has been used as a port since the Middle Ages. The town was founded in 1790 on the north side of the Waterway, from which it takes its name.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Milford_Haven"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Morriston_Hospital",
+        "description": "Morriston Hospital is a 750 bed hospital located in Cwmrhydyceirw near Morriston in Swansea, Wales. Morriston is the largest hospital in the city and county of Swansea and is operated by Abertawe Bro Morgannwg University Health Board. Alongside its role as a district general hospital, Morriston is a teaching hospital for medical students of Swansea University School of Medicine. Most services are housed in buildings constructed since 1981.",
+        "typeUri": "http://dbpedia.org/ontology/Hospital",
+        "uri": "http://dbpedia.org/resource/Morriston_Hospital"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Moscow",
+        "description": "Moscow is the capital and the most populous federal subject of Russia. The city is a major political, economic, cultural and scientific center of Russia and the continent. Moscow is the northernmost megacity on Earth, the most populous city in Europe, and the 6th largest city proper in the world. Its population, according to the results of the 2010 Census, is 11,503,501. Based on Forbes 2011, Moscow has the largest community of billionaires in the world.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Moscow"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Mourne_Mountains",
+        "description": "The Mourne Mountains are a granite mountain range in County Down in the south-east of Northern Ireland. It includes the highest mountains in Northern Ireland and the province of Ulster. The highest of these is Slieve Donard at 850 metres (2,790\u00a0ft). The Mournes is an area of outstanding natural beauty and has been proposed as the first national park in Northern Ireland. The area is partly owned by the National Trust and see a large number of visitors every year.",
+        "typeUri": "http://dbpedia.org/ontology/MountainRange",
+        "uri": "http://dbpedia.org/resource/Mourne_Mountains"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/NATO",
+        "description": "The North Atlantic Treaty Organization or NATO, also called the (North) Atlantic Alliance, is an intergovernmental military alliance based on the North Atlantic Treaty which was signed on 4\u00a0April 1949. The organization constitutes a system of collective defence whereby its member states agree to mutual defense in response to an attack by any external party.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/NATO"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/National_Trust_for_Places_of_Historic_Interest_or_Natural_Beauty",
+        "description": "The National Trust for Places of Historic Interest or Natural Beauty, usually known as the National Trust, is a conservation organisation in England, Wales and Northern Ireland. The Trust does not operate in Scotland, where there is an independent National Trust for Scotland. According to its website: \"The National Trust works to preserve and protect the coastline, countryside and buildings of England, Wales and Northern Ireland.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/National_Trust_for_Places_of_Historic_Interest_or_Natural_Beauty"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Navanethem_Pillay",
+        "description": "Navanethem \"Navi\" Pillay (Tamil: \u0ba8\u0bb5\u0ba8\u0bc0\u0ba4\u0bae\u0bcd \u0baa\u0bbf\u0bb3\u0bcd\u0bb3\u0bc8; born 23 September 1941) is the United Nations High Commissioner for Human Rights. A South African of Indian origin, she was the first non-white woman on the High Court of South Africa, and she has also served as a judge of the International Criminal Court and President of the International Criminal Tribunal for Rwanda. Her four-year term as High Commissioner for Human Rights began on 1 September 2008.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Navanethem_Pillay"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Neena_Gill",
+        "description": "Neena Gill was a Member of the European Parliament for the West Midlands for the Labour Party from 1999 to 2009. Prior to becoming a Member of the European Parliament, she was Chief Executive of ASRA and the Newlon Housing Group. Gill sat on the Urban Housing intergroup in the European Parliament.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Neena_Gill"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Neil_Kinnock",
+        "description": "Neil Gordon Kinnock, Baron Kinnock (born 28 March 1942) is a British politician belonging to the Labour Party. He served as a Member of Parliament from 1970 until 1995 and as Labour Leader and Leader of Her Majesty's Loyal Opposition from 1983 until 1992\u2014his leadership of the party during nearly nine years (all in opposition) making him the longest serving opposition leader in British political history.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Neil_Kinnock"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nelson_McCausland",
+        "description": "Nelson McCausland, MLA (born 15 August 1951) is a unionist politician from Northern Ireland. He is the current Minister (MLA) for Social Development in the Northern Irish Government.",
+        "typeUri": "http://dbpedia.org/ontology/Politician",
+        "uri": "http://dbpedia.org/resource/Nelson_McCausland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nick_Clegg",
+        "description": "Nicholas William Peter \"Nick\" Clegg (born 7 January 1967) is the British Liberal Democrat Leader since 2007 and currently the Deputy Prime Minister and Lord President of the Council (with special responsibility for political and constitutional reform) in the coalition government of which David Cameron is the Prime Minister. Clegg has been the Leader of the Liberal Democrats since 2007, and a Member of Parliament (MP) representing Sheffield Hallam since 2005.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Nick_Clegg"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nicola_Sturgeon",
+        "description": "Nicola Sturgeon (born 19 July 1970) is the Deputy First Minister of Scotland, Cabinet Secretary for Health, Wellbeing and Cities Strategy, Depute Leader of the Scottish National Party (SNP) and Member (MSP) for Glasgow Southside. Nicola Sturgeon became an MSP in the first elections to the Scottish Parliament in 1999, becoming the SNP's spokeswoman on justice, and later on education and health.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Nicola_Sturgeon"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nigel",
+        "description": "Nigel is an English masculine given name. The name is derived from the Latin Nigellus. This Latin word would seem to derive from the Latin niger, meaning \"black\"; however this is thought to be an example of an incorrect etymology created by French speaking clerics, who knew Latin as well, to translate the Norman first name Neel in the Latin written documents.",
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Nigel"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nigel_Farage",
+        "description": "Nigel Paul Farage, is a British politician and is the Leader of the UK Independence Party (UKIP), a position he also held from September 2006 to November 2009. He is a Member of the European Parliament for South East England and co-chairs the Eurosceptic Europe of Freedom and Democracy group. Farage is a founding member of the UKIP, having left the Conservative Party in 1992 after they signed the Maastricht Treaty.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Nigel_Farage"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Nikki_Sinclaire",
+        "description": "Nicole \"Nikki\" Sinclaire (born 26 July 1968 in London) is a European politician from the United Kingdom and is a current Member of the European Parliament for the West Midlands. She was elected MEP in June 2009 as a UK Independence Party candidate but had the UKIP whip withdrawn in 2010.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Nikki_Sinclaire"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/North_Yorkshire",
+        "description": "North Yorkshire is a county in England. It is a non-metropolitan or shire county located in the Yorkshire and the Humber region of England, and a ceremonial county primarily in that region but partly in North East England. Created in 1974 by the Local Government Act 1972 it covers an area of 8,654 square kilometres (3,341\u00a0sq\u00a0mi), making it the largest ceremonial county in England.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/North_Yorkshire"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Northampton",
+        "description": "Northampton Listen/n\u0254r\u02c8\u03b8\u00e6mpt\u0259n/ is a large market town and local government district in the East Midlands region of England. Situated about 67 miles (108\u00a0km) north-west of London and around 50 miles (80\u00a0km) south-east of Birmingham, Northampton lies on the River Nene and is the county town of Northamptonshire. The demonym of Northampton is Northamptonian. Original settlements in Northampton date back to the 6th century.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Northampton"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Northern_(automobile)",
+        "description": "Northern Manufacturing Company was a manufacturer of Brass Era automobiles in Detroit, Michigan, automobiles designed by Charles Brady King.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Northern_(automobile)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Northern_Ireland",
+        "description": "Northern Ireland is a part of the United Kingdom in the north-east of the island of Ireland. It shares a border with the Republic of Ireland to the south and west. As of 2001, its population was 1,685,000, constituting about 30% of the island's total population and about 3% of the population of the United Kingdom. Since the signing of the Good Friday Agreement in 1998, Northern Ireland is largely self-governing.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Northern_Ireland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Norway",
+        "description": "Norway Listen/\u02c8n\u0254rwe\u026a/, officially the Kingdom of Norway, is a Nordic unitary constitutional monarchy whose territory comprises the western portion of the Scandinavian Peninsula, Jan Mayen, the Arctic archipelago of Svalbard and the subantarctic Bouvet Island. Norway has a total area of 385,252 square kilometres (148,747 sq\u00a0mi) and a population of about 5 million. It is the second least densely populated country in Europe.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Norway"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Owen_Smith",
+        "description": "Owen Smith (born 2 May 1970) is a British Labour Party politician, who has been the Member of Parliament (MP) for Pontypridd since 2010, replacing the previous Labour MP Kim Howells, who decided to step down. In 2012, he joined Ed Miliband's Shadow Cabinet as Shadow Secretary of State for Wales. Smith joined the Labour Party at the age of 16, studying History and French at the University of Sussex.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Owen_Smith"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Oxfordshire",
+        "description": "Oxfordshire is a county in the South East region of England, bordering on Warwickshire and Northamptonshire (to the north/northeast), Buckinghamshire (to the east), Berkshire (to the south), Wiltshire (to the southwest) and Gloucestershire (to the west). The county has major education and tourist industries. The area is noted for the concentration of performance motorsport companies and facilities.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Oxfordshire"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/PSNI_F.C.",
+        "description": "PSNI is an intermediate, Northern Irish football club, associated with the Police Service of Northern Ireland. Its home ground is Newforge Lane in Belfast. It was founded in 1928 as RUC (Royal Ulster Constabulary) and changed its name in 2002, following the change in the name of the police. It competes in IFA Championship 2. The club joined the Northern Amateur Football League in 1956 and became one of its leading clubs before being elevated to the Irish League B Division in 1975.",
+        "typeUri": "http://dbpedia.org/ontology/SoccerClub",
+        "uri": "http://dbpedia.org/resource/PSNI_F.C."
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Palermo",
+        "description": "Palermo is a city in Southern Italy, the capital of both the autonomous region of Sicily and the Province of Palermo. The city is noted for its history, culture, architecture and gastronomy, playing an important role throughout much of its existence; it is over 2,700 years old. Palermo is located in the northwest of the island of Sicily, right by the Gulf of Palermo in the Tyrrhenian Sea.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Palermo"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Paris",
+        "description": "Paris is the capital and largest city of France. It is situated on the river Seine, in northern France, at the heart of the \u00cele-de-France region (or Paris Region, French: R\u00e9gion parisienne). As of January 2008 the city of Paris, within its administrative limits largely unchanged since 1860, has an estimated population of 2,211,297 and a metropolitan population of 12,089,098, and is one of the most populated metropolitan areas in Europe.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Paris"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Parliament_of_the_United_Kingdom",
+        "description": "\"Westminster Parliament\" redirects here; not to be confused with the Parliament of England or the Parliament of Great Britain. 50x40px This article includes a list of references, but its sources remain unclear because it has insufficient inline citations. Please help to improve this article by introducing more precise citations.",
+        "typeUri": "http://dbpedia.org/ontology/Legislature",
+        "uri": "http://dbpedia.org/resource/Parliament_of_the_United_Kingdom"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Patricia_Ferguson",
+        "description": "Patricia Josephine Ferguson (born 24 September 1958, Glasgow) is a Labour Member of the Scottish Parliament for Glasgow Maryhill, a seat which she has held since 1999.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Patricia_Ferguson"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Patrick_Harvie",
+        "description": "Patrick Harvie (born 18 March 1973) is the co-convenor of the Scottish Green Party and Member of the Scottish Parliament for the Glasgow region. He was first elected in the 2003 election and was re-elected in the 2007 election and in the 2011 election.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Patrick_Harvie"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Patsy_McGlone",
+        "description": "Cllr Patsy McGlone MLA is a Social Democratic and Labour Party (SDLP) Member of the Northern Ireland Assembly for Mid Ulster from Ballinderry, and Deputy Leader of the SDLP (since February 2010). He has been an MLA since 2003. From 1993 to 2009, McGlone was also Councillor in Cookstown District Council. He was chairman of the council in 2002-03 and 2005-06. Patsy was a delegate at talks which led to Good Friday Agreement and was a delegate to Forum of Peace and Reconciliation in December 2002.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Patsy_McGlone"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Peter_Hain",
+        "description": "Peter Gerald Hain (born 16 February 1950) is a British Labour Party politician, who has been the Member of Parliament (MP) for Neath since 1991, and served in the Cabinets of both Tony Blair and Gordon Brown. He was the Leader of the House of Commons from 2003 to 2005 and Secretary of State for Northern Ireland from 2005 to 2007 under Blair, and as Secretary of State for Work and Pensions and Secretary of State for Wales from 2007 to 2008 under Brown.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Peter_Hain"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Plaid_Cymru",
+        "description": "Plaid Cymru (English: The Party of Wales; often referred to simply as Plaid) is a political party in Wales. It advocates the establishment of an independent Welsh state. Plaid Cymru was formed in 1925 and won its first seat in 1966. Plaid Cymru by 2012 had 1 of 4 Welsh seats in the European Parliament, 3 of 40 Welsh seats in the Parliament of the United Kingdom, 11 of 60 seats in the National Assembly for Wales, and 206 of 1,264 principal local authority councillors.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Plaid_Cymru"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Portugal",
+        "description": "Portugal Listen/\u02c8p\u0254rt\u0283\u0289\u0261\u0259l/, officially the Portuguese Republic is a country situated in southwestern Europe on the Iberian Peninsula . Portugal is the westernmost country of mainland Europe, and is bordered by the Atlantic Ocean to the West and South and by Spain to the North and East. The Atlantic archipelagos of the Azores and Madeira are part of Portugal. The country is named after its second largest city, Porto, whose Latin name was Portus Cale.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Portugal"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Pszczyna",
+        "description": "Pless redirects here. For the former Principality or Duchy of Pless, see that article.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Pszczyna"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Qatar",
+        "description": "Qatar, also known as the country or State of Qatar or locally Dawlat Qa\u1e6dar, is a sovereign Arab state, located in Western Asia, occupying the small Qatar Peninsula on the northeasterly coast of the much larger Arabian Peninsula. Its sole land border is with Saudi Arabia to the south, with the rest of its territory surrounded by the Persian Gulf. A strait of the Persian Gulf separates Qatar from the nearby island state of Bahrain.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Qatar"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Recep_Tayyip_Erdo%C4%9Fan",
+        "description": "Recep Tayyip Erdo\u011fan (born 26 February 1954) has been Prime Minister of Turkey since 2003 and is chairman of the ruling Justice and Development Party (AK Party), which holds a majority of the seats in the Grand National Assembly of Turkey. Erdo\u011fan served as Mayor of Istanbul from 1994 to 1998. He graduated in 1981 from Marmara University's Faculty of Economics and Commercial Sciences. Erdo\u011fan was also a semi-professional footballer from 1969 to 1982.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Recep_Tayyip_Erdo%C4%9Fan"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Republic_of_Ireland",
+        "description": "Ireland is a sovereign state in Europe occupying about five-sixths of the island of Ireland. Its capital is Dublin. The population of the state was 4.59 million in 2011. It is a constitutional republic governed as a parliamentary democracy, with an elected president serving as head of state. In the 1937 constitution, the name of the state is given as simply \"Ireland\".",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Republic_of_Ireland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Reuters",
+        "description": "Reuters is an international news agency headquartered in London, United Kingdom and a division of Thomson Reuters. Until 2008 the Reuters news agency formed part of an independent company, Reuters Group plc, which was also a provider of financial market data. Since the acquisition of Reuters Group by The Thomson Corporation in 2008, the Reuters news agency has been a part of Thomson Reuters, forming part of its Markets Division.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Reuters"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Rhine",
+        "description": "The Rhine is a river that flows from Grisons in the eastern Swiss Alps to the North Sea coast in the Netherlands and is the twelfth longest river in Europe, at about 1,233\u00a0km (766\u00a0mi), with an average discharge of more than 2,000\u00a0m/s (71,000 cu\u00a0ft/s). The Rhine and the Danube formed most of the northern inland frontier of the Roman Empire and, since those days, the Rhine has been a vital and navigable waterway carrying trade and goods deep inland.",
+        "typeUri": "http://dbpedia.org/ontology/River",
+        "uri": "http://dbpedia.org/resource/Rhine"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Richard_Benyon",
+        "description": "Richard Henry Ronald Benyon MRICS (born 21 October 1960) is a British Conservative Party politician. He has been the Member of Parliament (MP) for Newbury since 2005 and a Parliamentary Under-Secretary of State at the Department for the Environment, Food and Rural Affairs since May 2010.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Richard_Benyon"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Richard_Howitt",
+        "description": "Richard Howitt (born 5 April 1961 in Reading, Berkshire) is a Member of the European Parliament for the Labour Party for the East of England. He has been a member of the European Parliament since 1994.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Richard_Howitt"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Robert_Kilroy-Silk",
+        "description": "Robert Michael Kilroy-Silk (born 19 May 1942) is an English former politician, former independent Member of the European Parliament, and former television presenter, best known for his daytime talk show Kilroy. He has been a university lecturer and Labour Party Member of Parliament (MP).",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Robert_Kilroy-Silk"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Robin_Ince",
+        "description": "Robin Ince (born 20 February 1969) is an English stand-up comedian, actor and writer. He is best known for presenting the BBC radio show The Infinite Monkey Cage with physicist Brian Cox.",
+        "typeUri": "http://dbpedia.org/ontology/Comedian",
+        "uri": "http://dbpedia.org/resource/Robin_Ince"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Rochester,_New_York",
+        "description": "Rochester is a city in Monroe County, New York, south of Lake Ontario in the United States. Known as The World's Image Centre, it was also once known as The Flour City, and more recently as The Flower City. It is the county seat for Monroe County. Rochester's city population according to the 2010 census is approximately 210,565, making it New York's third most populous city after New York City and Buffalo.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Rochester,_New_York"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Roger",
+        "description": null,
+        "typeUri": "http://dbpedia.org/ontology/GivenName",
+        "uri": "http://dbpedia.org/resource/Roger"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Roger_Helmer",
+        "description": "Roger Helmer (born 25 January 1944 in London) is a British business executive and politician and a United Kingdom Independence Party (UKIP) Member of the European Parliament for the East Midlands region. He was elected to the European Parliament in 1999 as a Conservative Party MEP, and re-elected in 2004 and 2009. In March 2012 he defected from the Conservatives to UKIP.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Roger_Helmer"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Romano_Prodi",
+        "description": "Romano Prodi (born 9 August 1939) is an Italian politician and statesman. He served as the Prime Minister of Italy, from 17 May 1996 to 21 October 1998 and from 17 May 2006 to 8 May 2008. He was also the tenth President of the European Commission from 1999 to 2004. Prodi ran in 1996 as lead candidate of The Olive Tree coalition, winning the general election and serving as Prime Minister of Italy until 1998.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Romano_Prodi"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Rome",
+        "description": "Rome is a city and special comune (\"Roma Capitale\") in Italy. Rome is the capital of Italy and the capital of Lazio. With 2.8\u00a0million residents in 1,285.3\u00a0km (496.3\u00a0sq\u00a0mi), it is also the country's largest and most populated comune and fourth-most populous city in the European Union by population within city limits. Between 3.2 and 3.7 million people live in the Rome metropolitan area.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Rome"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Royal_Navy",
+        "description": "The Royal Navy (RN) is the naval warfare service branch of the British Armed Forces. Tracing its origins to the 16th century, it is the oldest service branch and is known as the Senior Service. From the end of the 17th century until well into the 20th century it was the most powerful navy in the world, playing a key part in establishing the British Empire as the dominant world power.",
+        "typeUri": "http://dbpedia.org/ontology/MilitaryUnit",
+        "uri": "http://dbpedia.org/resource/Royal_Navy"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Russia",
+        "description": "Russia Listen/\u02c8r\u028c\u0283\u0259/ or /\u02c8r\u028a\u0283\u0259/, also officially known as the Russian Federation, is a country in northern Eurasia. It is a federal semi-presidential republic, comprising 83 federal subjects. From northwest to southeast, Russia shares borders with Norway, Finland, Estonia, Latvia, Lithuania and Poland, Belarus, Ukraine, Georgia, Azerbaijan, Kazakhstan, China, Mongolia, and North Korea.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Russia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Rwanda",
+        "description": "Rwanda \u00a0/ru\u02d0\u02c8\u0251\u02d0nd\u0259/ or \u00a0/ru\u02d0\u02c8\u00e6nd\u0259/, officially the Republic of Rwanda (Kinyarwanda: Repubulika y'u Rwanda; French: R\u00e9publique du Rwanda), is a country in central and eastern Africa with a population of approximately 11.7\u00a0million (2012). Located a few degrees south of the Equator, Rwanda is bordered by Uganda, Tanzania, Burundi and the Democratic Republic of the Congo.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Rwanda"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Sammy_Wilson",
+        "description": "Samuel Wilson (born 4 April 1953) is a politician from Northern Ireland who is a Member of Parliament (MP) and a Member of the Legislative Assembly (MLA) for East Antrim. He served as Lord Mayor of Belfast in 1986 \u2013 1987; and again from June 2000 to June 2001. He was the first person from the Democratic Unionist Party (DUP) to hold the office. He currently serves as Minister of Finance and Personnel in the Northern Ireland Executive.",
+        "typeUri": "http://dbpedia.org/ontology/MemberOfParliament",
+        "uri": "http://dbpedia.org/resource/Sammy_Wilson"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Schengen,_Luxembourg",
+        "description": "Schengen is a small wine-making village and commune in far south-eastern Luxembourg, near the tripoint where the borders of Germany, France, and Luxembourg meet. Other villages within the commune include Remerschen and Wintrange. As of 2005, the village has a population of 1527 with an area of 10.63\u00a0km\u00b2 (4.1 sq mi). The village became famous on 14 June 1985, when the Schengen Agreement was signed.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Schengen,_Luxembourg"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Scotland",
+        "description": "Scotland is a country that is part of the United Kingdom. Occupying the northern third of the island of Great Britain, it shares a border with England to the south and is bounded by the North Sea to the east, the Atlantic Ocean to the north and west, and the North Channel and Irish Sea to the southwest. In addition to the mainland, Scotland constitutes over 790 islands including the Northern Isles and the Hebrides.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Scotland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Scottish_Labour_Party",
+        "description": "The Scottish Labour Party (SLP; branded Scottish Labour) (Scottish Gaelic: P\u00e0rtaidh L\u00e0barach na h-Alba) is the section of the British Labour Party which operates in Scotland.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Scottish_Labour_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Scottish_National_Party",
+        "description": "The Scottish National Party (SNP; Scottish Gaelic: P\u00e0rtaidh N\u00e0iseanta na h-Alba; Scots: Scottis Naitional Pairtie) is a social democratic political party in Scotland which campaigns for Scottish independence from the United Kingdom. The SNP was founded in 1934, and has had continuous representation in the Parliament of the United Kingdom since Winnie Ewing's groundbreaking victory at the 1967 Hamilton by-election.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Scottish_National_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Serbia",
+        "description": "Serbia Listen/\u02c8s\u025crbi\u0259/, officially the Republic of Serbia, is a landlocked country located at the crossroads of Central and Southeast Europe, covering the southern part of the Carpathian basin and the central part of the Balkans. Serbia borders Hungary to the north; Romania and Bulgaria to the east; the Republic of Macedonia to the south; and Croatia, Bosnia and Herzegovina, and Montenegro to the west; additionally, it borders Albania through Kosovo, whose status as part of Serbia is disputed.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Serbia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Sinn_F%C3%A9in",
+        "description": "Sinn F\u00e9in is a left wing, Irish republican political party in Ireland. The name is Irish for \"ourselves\" or \"we ourselves\", although it is frequently mistranslated as \"ourselves alone\". Originating in the Sinn F\u00e9in organisation founded in 1905 by Arthur Griffith, it took its current form in 1970 after a split within the party. Sinn F\u00e9in is led by Gerry Adams. Sinn F\u00e9in is the only party in Ireland which has elected representatives in both Northern Ireland and the Republic of Ireland.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Sinn_F%C3%A9in"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Skegness",
+        "description": "Skegness is a seaside town and civil parish in the East Lindsey district of Lincolnshire, England. Located on the Lincolnshire coast of the North Sea, 43 miles (69\u00a0km) east of the city of Lincoln it has a total resident population of 18,910. The first Butlins holiday resort was opened in Skegness in 1936. Partially owing to this, the resort is one of the better known seaside resorts in the United Kingdom.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Skegness"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Sky_News",
+        "description": "Sky News is a 24-hour British and international satellite television news broadcaster with an emphasis on UK and international news stories. The service places emphasis on rolling news, including the latest breaking news. Sky News also hosts localised versions of the channel in Australia and in New Zealand, as well as their previously operated version in Ireland.",
+        "typeUri": "http://dbpedia.org/ontology/TelevisionStation",
+        "uri": "http://dbpedia.org/resource/Sky_News"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Slovenia",
+        "description": "Slovenia, officially the Republic of Slovenia is a Slavic nation state, situated in South-Central Europe, at the crossroad of main European cultural and trade routes. It borders Italy to the west, Austria to the north, Croatia to the south and southeast, and Hungary to the northeast. It covers 20,273 square kilometres (7,827\u00a0sq\u00a0mi) and has a population of 2.05\u00a0million. It is a parliamentary republic, member of the European Union and NATO.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Slovenia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Social_Democratic_and_Labour_Party",
+        "description": "The Social Democratic and Labour Party (SDLP; Irish: P\u00e1irt\u00ed S\u00f3isialta Daonlathach an Lucht Oibre) is a social-democratic, Irish nationalist political party in Northern Ireland. Its basic party platform advocates Irish reunification, and the further devolution of powers while Northern Ireland remains part of the United Kingdom.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Social_Democratic_and_Labour_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/South_Africa",
+        "description": "South Africa, officially the Republic of South Africa, is a country located at the southern tip of Africa. It is divided into nine provinces and has 2,798 kilometres (1,739\u00a0mi) of coastline. To the north of the country lie the neighbouring territories of Namibia, Botswana and Zimbabwe; to the east are Mozambique and Swaziland; while Lesotho is an enclave surrounded by South African territory. South Africa is multi-ethnic and has diverse cultures and languages.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/South_Africa"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/South_Korea",
+        "description": "South Korea, officially the Republic of Korea, is a sovereign state in the southern part of the Korean Peninsula. The name \"Korea\" is derived from Goryeo, a dynasty which ruled in the Middle Ages (an initial \"G\" in Korean is pronounced like an English \"K\"). Its neighbors are China to the west, Japan to the east, North Korea to the north, and the Korea Strait to the south. South Korea lies in the north temperate zone with a predominantly mountainous terrain.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/South_Korea"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Spain",
+        "description": "Spain, officially the Kingdom of Spain (Spanish: Reino de Espa\u00f1a), is a sovereign state and a member of the European Union located in southwestern Europe on the Iberian Peninsula. Its mainland is bordered to the south and east by the Mediterranean Sea except for a small land boundary with the British Overseas Territory of Gibraltar; to the north and north east by France, Andorra, and the Bay of Biscay; and to the northwest and west by the Atlantic Ocean and Portugal.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Spain"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Staffordshire",
+        "description": "Staffordshire is a landlocked county in the West Midlands region of England. Part of the National Forest lies within its borders. It adjoins the ceremonial counties of Cheshire (to the north west), Derbyshire (to the east), Leicestershire (to the east), Warwickshire (to the south east), West Midlands (to the south), Worcestershire (to the south), and Shropshire (to the west).",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/Staffordshire"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Strasbourg",
+        "description": "Strasbourg is the capital and principal city of the Alsace region in eastern France and is the official seat of the European Parliament. Located close to the border with Germany, it is the capital of the Bas-Rhin d\u00e9partement. The city and the region of Alsace are historically German-speaking, explaining the city's Germanic name. In 2006, the city proper had 272,975 inhabitants and its urban community 467,375 inhabitants.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Strasbourg"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Struan_Stevenson",
+        "description": "Struan Stevenson is a Scottish politician. He is a Member of the European Parliament (MEP) for Scotland and Vice Chair of the Committee on Fisheries, in addition to which, he is member of the Executive of the Scottish Conservative party.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Struan_Stevenson"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Swansea",
+        "description": "Swansea is a coastal city and county in Wales. Swansea is in the historic county boundaries of Glamorgan. Situated on the sandy South West Wales coast, the county area includes the Gower Peninsula and the Lliw uplands. Swansea had a population of 169,880 in 2001 and is the second most populous city in Wales after Cardiff and the third most populous county in Wales after Cardiff and Rhondda Cynon Taf.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Swansea"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Sweden",
+        "description": "Sweden, officially the Kingdom of Sweden, is a Nordic country on the Scandinavian Peninsula in Northern Europe. Sweden borders with Norway and Finland, and is connected to Denmark by a bridge-tunnel across the \u00d8resund. At 450,295 square kilometres (173,860 sq\u00a0mi), Sweden is the third largest country in the European Union by area, with a total population of about 9.4 million.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Sweden"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Switzerland",
+        "description": "Switzerland, in its full name the Swiss Confederation, is a federal republic consisting of 26\u00a0cantons, with Bern as the seat of the federal authorities. The country is situated in western Europe, where it is bordered by Germany to the north, France to the west, Italy to the south, and Austria and Liechtenstein to the east. Switzerland is a landlocked country geographically divided between the Alps, the Swiss Plateau and the Jura, spanning an area of 41,285\u00a0km (15,940\u00a0sq\u00a0mi).",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Switzerland"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Syria",
+        "description": "Syria, officially the Syrian Arab Republic, is a country in Western Asia, bordering Lebanon and the Mediterranean Sea to the West, Turkey to the north, Iraq to the east, Jordan to the south, and Israel to the southwest. In English, the name Syria was formerly synonymous with the Levant, known in Arabic as Sham, while the modern state encompasses the sites of several ancient kingdoms and empires, including the Eblan civilization of the third millennium BC.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Syria"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Tbilisi_State_University",
+        "description": "Ivane Javakhishvili Tbilisi State University (Ivane Javaxishvilis saxelobis Tbilisis saxelmts'ipo universit'et'i), better known as Tbilisi State University (TSU), is a university established on 8 February 1918 in Tbilisi, Georgia. TSU is the oldest university in the whole Caucasus region. Over 18,000 students are enrolled and the total number of faculty and staff (collaborators) is approximately 5,000.",
+        "typeUri": "http://dbpedia.org/ontology/University",
+        "uri": "http://dbpedia.org/resource/Tbilisi_State_University"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Thame",
+        "description": "Thame (pronounced \"Tame\", with a silent \"h\") is a town and civil parish in Oxfordshire, about 7 miles (11\u00a0km) southwest of the Buckinghamshire town of Aylesbury. It derives its toponym from the River Thame which flows past the north side of the town. Thame was founded in the Anglo-Saxon era and lay within the territory of the kingdom of Wessex.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Thame"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/The_Democrats_(Italy)",
+        "description": "The Democrats is a former political party in Italy, launched by Romano Prodi in 1998. One of the party's main goals was the establishment of a bipolar political system. The name and symbol of the party is a direct reference to the U.S. Democratic Party.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/The_Democrats_(Italy)"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/The_Huffington_Post",
+        "description": "The Huffington Post is a liberal or leftist American news website, content aggregator, and blog\u2014founded as an alternative to existing conservative online media outlets such as the Drudge Report\u2014by Arianna Huffington, Kenneth Lerer, the late Andrew Breitbart, and Jonah Peretti, featuring various leftist columnists and various news sources.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/The_Huffington_Post"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Theresa_May",
+        "description": "Theresa Mary May (n\u00e9e Brasier, born 1 October 1956) is a British Conservative politician who is Home Secretary in the Conservative \u2013 Liberal Democrat Coalition government. She was elected to Parliament in 1997 as the Member of Parliament for Maidenhead, and served as the Chairman of the Conservative Party, 2003\u201304.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Theresa_May"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Tina_Mckenzie",
+        "description": "Tina Mckenzie is an Australian wheelchair basketball player. She was part of the silver medal winning Australia women's national wheelchair basketball team at the 2004 Summer Paralympics. She was also part of the bronze medal winning Australia women's national wheelchair basketball team at the 2008 Summer Paralympics.",
+        "typeUri": "http://dbpedia.org/ontology/Athlete",
+        "uri": "http://dbpedia.org/resource/Tina_Mckenzie"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Tony_Blair",
+        "description": "Anthony Charles Lynton Blair (born 6 May 1953) is a British Labour Party politician who served as the Prime Minister of the United Kingdom from 2 May 1997 to 27 June 2007. He was the Member of Parliament (MP) for Sedgefield from 1983 to 2007 and Leader of the Labour Party from 1994 to 2007. He resigned from all of these positions in June 2007. Blair was elected Leader of the Labour Party in the leadership election of July 1994, following the sudden death of his predecessor, John Smith.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Tony_Blair"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Torquay",
+        "description": "Torquay is a town in the unitary authority area of Torbay and ceremonial county of Devon, England. It lies 22 miles (35\u00a0km) south of Exeter along the A380 on the north of Torbay, 38 miles (61\u00a0km) north-east of Plymouth and adjoins the neighbouring town of Paignton on the west of the bay. Torquay\u2019s population of 63,998 during the 2001 UK Census made it the third largest settlement in Devon.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Torquay"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Trade_Unionist_and_Socialist_Coalition",
+        "description": "Trade Unionist and Socialist Coalition (TUSC) is a socialist electoral alliance launched in Britain for the 2010 General Election. The coalition was negotiated between groups which had taken part in the No2EU coalition that fought the June 2009 European elections.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Trade_Unionist_and_Socialist_Coalition"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Trapani",
+        "description": "Trapani \u00a0 is a city and comune on the west coast of Sicily in Italy. It is the capital of the Province of Trapani. Founded by Elymians, the city is still an important fishing port and the main gateway to the nearby Egadi Islands.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Trapani"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Tunisia",
+        "description": "Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. It is an Arab Maghreb country and is bordered by Algeria to the west, Libya to the southeast, and the Mediterranean Sea to the north and east. Its area is almost 165,000 square kilometres (64,000 sq\u00a0mi), with an estimated population of just under 10.7 million. Its name is derived from the capital Tunis located in the northeast. Tunisia is the smallest country in North Africa.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Tunisia"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Turkey",
+        "description": "Turkey, known officially as the Republic of Turkey, is a Eurasian country located in Western Asia (mostly in the Anatolian peninsula) and in East Thrace in Southeastern Europe. Turkey is bordered by eight countries: Bulgaria to the northwest; Greece to the west; Georgia to the northeast; Armenia, Azerbaijan and Iran to the east; and Iraq and Syria to the southeast. The Mediterranean Sea and Cyprus are to the south; the Aegean Sea is to the west; and the Black Sea is to the north.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Turkey"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Twitter",
+        "description": "Twitter is an online social networking service and microblogging service that enables its users to send and read text-based posts of up to 140 characters, known as \"tweets\". It was created in March 2006 by Jack Dorsey and launched that July. The service rapidly gained worldwide popularity, with over 140 million active users as of 2012, generating over 340 million tweets daily and handling over 1.6 billion search queries per day. It has been described as \"the SMS of the Internet.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Twitter"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/UEFA",
+        "description": "The Union of European Football Associations (-f\u0259), is the administrative body for Association football in Europe. Fifty-three national associations are members. UEFA represents the national football associations of Europe, runs national and club competitions, and controls the prize money, regulations and media rights to those competitions. UEFA was founded in 1954 in Basel, Switzerland. Henri Delaunay was the first General Secretary and Ebbe Schwartz the first president.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/UEFA"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/UK_Independence_Party",
+        "description": "The UK Independence Party is a Eurosceptic and right-wing populist political party in the United Kingdom. The party was founded on the idea of Britain's withdrawal from the European Union but has since become a multi-issue party with a full manifesto. UKIP has never won a seat in the House of Commons. UKIP holds two in the unelected House of Lords, both due to defections from Conservative peers.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/UK_Independence_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ukraine",
+        "description": "Ukraine is a country in Central and Eastern Europe. Ukraine borders the Russian Federation to the east and northeast, Belarus to the northwest, Poland, Slovakia and Hungary to the west, Romania and Moldova to the southwest, and the Black Sea and Sea of Azov to the south and southeast, respectively. It has an area of 603,628\u00a0km\u00b2, making it the second largest contiguous country on the European continent, after the Russian Federation.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Ukraine"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ulster",
+        "description": "Ulster is one of the four provinces of Ireland, located in the north of the island. In ancient Ireland, it was one of the fifths ruled by a \"king of over-kings\" Irish: r\u00ed ruirech. In modern times, clusters of counties have been attributed to certain provinces but these clusters have no legal status. The province itself, while enjoying common usage and forming a strong part of local identity, has no official function for local government purposes. Ulster is composed of nine counties.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Ulster"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Ulster_Unionist_Party",
+        "description": "The Ulster Unionist Party (UUP) \u2013 sometimes referred to as the Official Unionist Party (OUP) or, in a historic sense, simply the Unionist Party \u2013 is the older of the two main unionist political parties in Northern Ireland. Before the split in unionism in the late 1960s, when the former Protestant Unionist Party began to attract more hardline support away from the UUP, it governed Northern Ireland between 1921 and 1972 as the sole major unionist party.",
+        "typeUri": "http://dbpedia.org/ontology/PoliticalParty",
+        "uri": "http://dbpedia.org/resource/Ulster_Unionist_Party"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Unilever",
+        "description": "Unilever is a British\u2013Dutch multinational consumer goods company. Its products include foods, beverages, cleaning agents and personal care products. It is the world's third-largest consumer goods company measured by 2011 revenues and the world's largest maker of ice cream. Unilever is a dual-listed company consisting of Unilever N.V. in Rotterdam, Netherlands and Unilever PLC in London, United Kingdom. Both Unilever companies have the same directors and they operate as a single business.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Unilever"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Union,_Iowa",
+        "description": "Union is a city in Hardin County, Iowa, United States. The population was 427 at the 2000 census.",
+        "typeUri": "http://dbpedia.org/ontology/City",
+        "uri": "http://dbpedia.org/resource/Union,_Iowa"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Union_of_European_Federalists",
+        "description": "The Union of European Federalists (UEF) is a non-governmental European organisation, campaigning for a federal Europe. It consists of 20 constituent organisations and it has been active at the European, national and local levels for more than 50 years.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/Union_of_European_Federalists"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/United_Kingdom",
+        "description": "The United Kingdom of Great Britain and Northern Ireland (commonly known as the United Kingdom, the UK, or Britain) is a sovereign state located off the north-western coast of continental Europe. The country includes the island of Great Britain, the north-eastern part of the island of Ireland and many smaller islands. Northern Ireland is the only part of the UK that shares a land border with another sovereign state\u2014the Republic of Ireland.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/United_Kingdom"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/United_States",
+        "description": "United States of America Flag of the United States Great Seal of the United States Motto:\u00a0In God We Trust\u00a0\u00a0E Pluribus Unum\u00a0\u00a0 Anthem:\u00a0\"The Star-Spangled Banner\"File:Star Spangled Banner instrumental. ogg Location of the United States CapitalWashington, D.C.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/United_States"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/United_States_Census_Bureau",
+        "description": "The United States Census Bureau (officially the Bureau of the Census, as defined in Title 13 U.S.C. \u00a0\u00a7\u00a011) is the government agency that is responsible for the United States Census. It also gathers other national demographic and economic data. As part of the United States Department of Commerce, the Census Bureau serves as a leading source of data about America's people and economy.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/United_States_Census_Bureau"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Valero_Energy_Corporation",
+        "description": "Valero Energy Corporation is a Fortune 500 international manufacturer and a marketer of transportation fuels, other petrochemical products, and power that is based in San Antonio, Texas, United States.",
+        "typeUri": "http://dbpedia.org/ontology/Company",
+        "uri": "http://dbpedia.org/resource/Valero_Energy_Corporation"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Vince_Cable",
+        "description": "John Vincent \"Vince\" Cable (born 9 May 1943) is a British Liberal Democrat politician and economist who is currently the Business Secretary in the coalition cabinet of David Cameron. He has been Member of Parliament for Twickenham since 1997. Cable studied economics at university and became an economic advisor to the Kenyan government in 1966. He was an advisor to the British government and to the Commonwealth Secretary-General in the 1970s and 1980s.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Vince_Cable"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Viviane_Reding",
+        "description": "Viviane Reding (born 27 April 1951 in Esch-sur-Alzette) is a Luxembourg politician, currently serving as European Commissioner for Justice, Fundamental Rights and Citizenship. Before starting a professional career as a journalist for the leading newspaper in Luxembourg, the Luxemburger Wort, she obtained a doctorate in human sciences at the Sorbonne. From 1986 to 1998, she was President of the Luxembourg Union of Journalists.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Viviane_Reding"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Vladimir_Putin",
+        "description": "Vladimir Vladimirovich Putin (born 7 October 1952) is a Russian politician who has been the President of Russia since 7 May 2012. Putin previously served as President from 2000 to 2008 and as Prime Minister of Russia from 1999 to 2000, and again from 2008 to 2012. Putin also serves as chairman of United Russia and Chairman of the Council of Ministers of the Union of Russia and Belarus. He became acting President on 31 December 1999, when president Boris Yeltsin resigned in a surprising move.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Vladimir_Putin"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Wales",
+        "description": "Wales Listen/\u02c8we\u026alz/ is a country that is part of the United Kingdom and the island of Great Britain, bordered by England to its east and the Atlantic Ocean and Irish Sea to its west. It has a population of three million, and a total area of 20,779\u00a0km (8,023\u00a0sq\u00a0mi). Wales has over 1,200\u00a0km (750\u00a0mi) of coastline, including its offshore islands; the largest, Anglesey (Ynys M\u00f4n), is also the largest island in the Irish Sea.",
+        "typeUri": "http://dbpedia.org/ontology/Country",
+        "uri": "http://dbpedia.org/resource/Wales"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Walsall",
+        "description": "Walsall is a large industrial town in the West Midlands of England. It is located northwest of Birmingham and east of Wolverhampton. Historically a part of Staffordshire, Walsall is a component area of the West Midlands conurbation and part of the Black Country. Walsall is the administrative headquarters of the Metropolitan Borough of Walsall, though it has changed its name to Walsall Council.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Walsall"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Welsh_Government",
+        "description": "The Welsh Government is the executive branch of the devolved government in Wales. It is accountable to the National Assembly for Wales, the legislature which represents the interests of the Welsh people and makes laws for Wales. The National Assembly was created by the Government of Wales Act 1998. The Welsh Government and the National Assembly for Wales were established as separate institutions under the Government of Wales Act 2006.",
+        "typeUri": "http://dbpedia.org/ontology/GovernmentAgency",
+        "uri": "http://dbpedia.org/resource/Welsh_Government"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Welsh_people",
+        "description": "The Welsh people are an ethnic group and nation native to Wales and associated with the Welsh language. Welsh people historically spoke the Welsh language; however, in recent years English has predominated in most of Wales. John Davies argues that the origin of the \"Welsh nation\" can be traced to the late 4th and early 5th centuries, following the Roman departure from Britain, although Brythonic Celtic languages seem to have been spoken in Wales far longer.",
+        "typeUri": "http://dbpedia.org/ontology/EthnicGroup",
+        "uri": "http://dbpedia.org/resource/Welsh_people"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/West_Sussex",
+        "description": "West Sussex is a county in the south of England, bordering East Sussex, Hampshire and Surrey. The county of Sussex has been divided into East and West since the 12th century, and obtained separate county councils in 1888, but it remained a single ceremonial county until 1974 and the coming into force of the Local Government Act 1972. At the same time the Mid Sussex region was transferred from East Sussex. West Sussex has a wide range of scenery, including Wealden, Downland and coastal.",
+        "typeUri": "http://dbpedia.org/ontology/AdministrativeRegion",
+        "uri": "http://dbpedia.org/resource/West_Sussex"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Westminster",
+        "description": "Westminster /\u02c8w\u025bs\u1d57m\u026anst\u0259/ is an area of central London, within the City of Westminster, England. It lies on the north bank of the River Thames, southwest of the City of London and 0.5 miles (0.8\u00a0km) southwest of Charing Cross. It has a large concentration of London's historic and prestigious landmarks and visitor attractions, including the Palace of Westminster, Buckingham Palace, Westminster Abbey, and Westminster Cathedral.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Westminster"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Whitby",
+        "description": "Whitby is a seaside town, port and civil parish in the Scarborough borough of North Yorkshire, England. Situated on the east coast of Yorkshire at the mouth of the River Esk, Whitby has a combined maritime, mineral and tourist heritage, and is home to the ruins of Whitby Abbey where Caedmon, the earliest English poet, lived. The fishing port emerged during the Middle Ages and developed important herring and whaling fleets, and was where Captain Cook learned seamanship.",
+        "typeUri": "http://dbpedia.org/ontology/Settlement",
+        "uri": "http://dbpedia.org/resource/Whitby"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/William_Hague",
+        "description": "William Jefferson Hague MP FRSL (born 26 March 1961) is a British politician, who is the current Foreign Secretary and First Secretary of State. He served as Leader of the Conservative Party from June 1997 to September 2001. In Parliament, he has represented the constituency of Richmond (Yorks) since 1989.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/William_Hague"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Winston_Churchill",
+        "description": "Sir Winston Leonard Spencer-Churchill, KG, OM, CH, TD, PC, DL, FRS, Hon. RA (30 November 1874 \u2013 24 January 1965) was a British Conservative politician and statesman known for his leadership of the United Kingdom during the Second World War. Widely regarded as one of the greatest wartime leaders of the century, he served as Prime Minister twice. A noted statesman and orator, Churchill was also an officer in the British Army, a historian, a writer, and an artist.",
+        "typeUri": "http://dbpedia.org/ontology/OfficeHolder",
+        "uri": "http://dbpedia.org/resource/Winston_Churchill"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/Worcestershire_Regiment",
+        "description": "The Worcestershire Regiment was an infantry regiment of the line in the British Army, formed in 1881 by the amalgamation of the 29th (Worcestershire) Regiment of Foot and the 36th (Herefordshire) Regiment of Foot. During 1903 to 1905 the 4th Battalion were stationed in the West Indies, being responsible for guarding prisoners from the Boer War. In 1906-1907 they were stationed in Malta. From 1908-1913 they were stationed at Bareilly, India.",
+        "typeUri": "http://dbpedia.org/ontology/MilitaryUnit",
+        "uri": "http://dbpedia.org/resource/Worcestershire_Regiment"
+    },
+    {
+        "_id": "http://dbpedia.org/resource/World_Trade_Organization",
+        "description": "The World Trade Organization (WTO) is an organization that intends to supervise and liberalize international trade. The organization officially commenced on January 1, 1995 under the Marrakech Agreement, replacing the General Agreement on Tariffs and Trade (GATT), which commenced in 1948.",
+        "typeUri": "http://dbpedia.org/ontology/Organisation",
+        "uri": "http://dbpedia.org/resource/World_Trade_Organization"
+    },
+    {
+        "_id": "http://www.bbc.co.uk/things/27975ce4-b824-464e-83fb-7fbd2dc0915e#id",
+        "description": "A political party is a political organization that typically seeks to influence, or entirely control, government policy, usually by nominating their own candidates and trying to seat them in political office.",
+        "typeUri": "http://www.bbc.co.uk/ontologies/news/Theme",
+        "uri": "http://www.bbc.co.uk/things/27975ce4-b824-464e-83fb-7fbd2dc0915e#id"
+    },
+    {
+        "_id": "http://www.bbc.co.uk/things/3c964686-db4d-4043-bd01-505505b36f18",
+        "description": null,
+        "typeUri": "http://www.bbc.co.uk/ontologies/news/Event",
+        "uri": "http://www.bbc.co.uk/things/3c964686-db4d-4043-bd01-505505b36f18"
+    }
+]
