@@ -16,6 +16,7 @@
             // NB: Can't use addClass() and removeClass as they don't work    
             // cross browser with SVG elements.
             var element = this;
+            var region = $(element).attr('id').replace(/\-/g,' ');            
             var cssClass = $(element).attr('class');
 
             // Remove 'active' class from each active map element
@@ -25,7 +26,9 @@
 
             // If not selected, display it
             $(element).attr('class', cssClass+' active');
-    
+
+            $('#candidiates-for').html('Candidiates for '+region);
+
             $('#candidate-info').hide();
               var region = $(this).attr('id');
               $.getJSON("src/candidates.json", findStuff);
@@ -57,7 +60,7 @@
             var parentObject = this;
             // The handling here is so that the graph is updated nicely
             $('#candidate-info').hide(0, function() {
-                $('#mentions-for').html(' for '+$(parentObject).text() );
+                $('#candidate-name').html('Menitons of '+$(parentObject).text());
                 var uri = $(parentObject).data('uri');
                 var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
                 var numberOfDays = 90;
@@ -139,10 +142,10 @@
   <body>
     <div class="container">
         <div class="col-sm-6" style="z-index: 10;">
-            <h3>Candidates</h3>
+            <h3 id="candidiates-for"></h3>
             <div id="articles"></div>
             <div id="candidate-info" class="hidden">
-                <h3>Candidate Mentions <small id="mentions-for"></small></h3>
+                <h3 id="candidate-name"></h3>
                 <canvas id="candidate-mentions" width="400" height="400"></canvas>
                 <h3>Mentioned in relation to</h3>
                 <div id="related-concepts"></div>
