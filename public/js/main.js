@@ -150,7 +150,7 @@ $(document).on("click touch", "svg path", function(e) {
         });
     }
 
-    $('#candidiates-for').html('Candidiates for ' + region);
+    $('#candidiates-for').html('Candidates for ' + region);
 
     $('#candidate-info').hide();
     var region = $(this).attr('id');
@@ -183,18 +183,25 @@ $(document).on("click touch", "#candidates li a", function(e) {
         $('#candidate-name').html('Mentions of ' + $(parentObject).text() + ' in the media');
         var uri = $(parentObject).data('uri');
         var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
-        var numberOfDays = 90;
+        var numberOfDays = 30;
         var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, numberOfDays);
         bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
 
         $('#related-concepts').html('');
-        var relatedConcepts = bbcNewsLabs.getRelatedConcepts(uri, conceptTypeUri, 30);
-        for (var i = 0; i < relatedConcepts.length; i++) {
-            var concept = relatedConcepts[i];
-            // Skip menitons of candidates in relation to themselves
-            if (concept.thing != uri)
-                $('#related-concepts').append('<span class="label label-info pull-left">' + concept.label + ' (' + concept.occurrence + ')</span>');
-        }
+        
+        $("#candidates ul").html('');
+        $.getJSON("data/candidates.json?v2", function(candidates) {
+            // First, print all canidiates we have concept URIs for
+            for (var i = 0; i < candidates.length; i++) {
+                var candidate = candidates[i];
+                if (candidate.uri == $(parentObject).data('uri')) {
+                    for (var j = 0; j < candidate.relatedConcepts.length; j++) {
+                        var concept = candidate.relatedConcepts[j];
+                        $('#related-concepts').append('<span class="label label-info pull-left">' + concept.name + ' (' + concept.occurrences +')</span>');
+                    }
+                }
+            }
+        });
         $('#candidate-info').removeClass('hidden').show();
     });
 });
