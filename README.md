@@ -7,7 +7,11 @@ Unnecessary exploration of the 2014 European election in the UK.
 This content is not published by BBC News and must not be considered as BBC words.
 
 ####To-do
-- Convince Matt. Really.
+- **Convince Matt. Really.**
+- Add Parliament half-doughnuts *somewhere*.
+- Fix cross-domain issues
+- Fix Firefox click issues
+- Pre-calculate the results
 
 ####Ideas
 - Dashboard to follow the elections
