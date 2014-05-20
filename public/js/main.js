@@ -140,13 +140,7 @@ $(document).on("click touch", "svg path", function(e) {
     var articlesDisplayed = 0;
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
-<<<<<<< HEAD
-            
             if (articlesDisplayed > 5)
-=======
-
-            if (articlesDisplayed > 10)
->>>>>>> cb0ea84231adae84c559689b59830ce8d03dd99f
                 return;
 
             var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -220,8 +214,6 @@ $(document).on("click touch", "#candidates li a", function(e) {
 String.prototype.capitalize = function() {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
-<<<<<<< HEAD
-
 
 $(window).scroll(function(){
   $('.fade-in').each( function(i) {
@@ -231,7 +223,7 @@ $(window).scroll(function(){
           $(this).animate({'opacity':'1'},500);
   });
 });
-=======
+
 //piecharts
 var candidatesPie = $.getJSON("data/candidatesbyparty.json", candidatesDraw);
 function candidatesDraw(candidatesPie) {
@@ -250,4 +242,3 @@ var options = {
 }
   var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie, options);
 }
->>>>>>> cb0ea84231adae84c559689b59830ce8d03dd99f
