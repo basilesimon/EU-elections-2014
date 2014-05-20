@@ -8,13 +8,13 @@ This content is not published by BBC News and must not be considered as BBC word
 
 ####To-do
 ######Basile le Simon
-- [x] Model dashboard 
+- [x] Model dashboard
 
 ######Iain Herr Collins
 - [x] Tell le Basile how to get the number of occurrences for a concept
-- News map: 
+- News map:
     - [ ] Clicking on an article displays greyed box with article description
-- Nav: 
+- Nav:
     - [ ] Flattened list on landing screen with section titles
     - [ ] Nav sticks to top (under BBC masthead) when scrolling
 
@@ -27,4 +27,6 @@ This content is not published by BBC News and must not be considered as BBC word
 
 #####External data sources
 
-[YouGov national poll 18.05.2014](http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/eh81zosob6/YG-Archive-Pol-Sunday-Times-results-140516.pdf)
+- [YouGov national poll 18.05.2014](http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/eh81zosob6/YG-Archive-Pol-Sunday-Times-results-140516.pdf)
+- [Base files for list of candidates by xavriley (github)](https://github.com/basilesimon/uk-mep-candidates-2014)
+- [Number of candidates by party and mentions by party (Google spreadsheet)](https://docs.google.com/spreadsheets/d/1875deO7un6yF0k9hTGdhevJqW8tg6rPkj3R8gaWxspE/edit?usp=sharing)
