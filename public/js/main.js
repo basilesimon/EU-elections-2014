@@ -127,6 +127,8 @@ $(document).on("click touch", "svg path", function(e) {
     var region = $(element).attr('id').replace(/\-/g, ' ');
     var cssClass = $(element).attr('class');
 
+    $('#select-region').hide();
+    
     // NB: Can't use addClass() and removeClass as they don't work with SVGs!
     $('.map .active').attr('class', '');
     $(element).attr('class', cssClass + ' active');
@@ -139,7 +141,7 @@ $(document).on("click touch", "svg path", function(e) {
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
             
-            if (articlesDisplayed > 10)
+            if (articlesDisplayed > 5)
                 return;
 
             var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -189,7 +191,7 @@ $(document).on("click touch", "#candidates li a", function(e) {
         $('#candidate-name').html('Mentions of ' + $(parentObject).text() + ' in the media');
         var uri = $(parentObject).data('uri');
         var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
-        var numberOfDays = 30;
+        var numberOfDays = 90;
         var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, numberOfDays);
         bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
 
@@ -213,3 +215,13 @@ $(document).on("click touch", "#candidates li a", function(e) {
 String.prototype.capitalize = function() {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
+
+
+$(window).scroll(function(){
+  $('.fade-in').each( function(i) {
+      var middleOfObject = $(this).position().top + ($(this).outerHeight() / 2);
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > middleOfObject)
+          $(this).animate({'opacity':'1'},500);
+  });
+});

@@ -110,3 +110,12 @@ h1 {
     left: 600px;
     width: 500px;
 }*/
+
+.fade-in {
+    opacity: 0;
+}
+
+#select-region {
+    font-size: 48px;
+    font-weight: 600;
+}
