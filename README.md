@@ -27,7 +27,7 @@ This content is not published by BBC News and must not be considered as BBC word
 - [Number of candidates by party and mentions by party (Google spreadsheet)](https://docs.google.com/spreadsheets/d/1875deO7un6yF0k9hTGdhevJqW8tg6rPkj3R8gaWxspE/edit?usp=sharing)
 
 #####Structure
-
+```
 .
 +-- _config.yml
 +-- _drafts
@@ -46,3 +46,4 @@ This content is not published by BBC News and must not be considered as BBC word
 |   +-- members.yml
 +-- _site
 +-- index.html
+```
