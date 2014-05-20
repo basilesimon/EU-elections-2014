@@ -141,7 +141,7 @@ $(document).on("click touch", "svg path", function(e) {
     var cssClass = $(element).attr('class');
 
     $('#select-region').hide();
-    
+
     // NB: Can't use addClass() and removeClass as they don't work with SVGs!
     $('.map .active').attr('class', '');
     $(element).attr('class', cssClass + ' active');
@@ -191,7 +191,29 @@ $(document).on("click touch", "svg path", function(e) {
         }
     });
 
+    function localPoll(region) {
+      if (region === "london") {
+        var data = $.getJSON("data/londonpolls.json", draw);
+      } else if (region === "scotland") {
+        var data = $.getJSON("data/scotlandpolls.json", draw);
+      } else if (region === "east-midlands" || region === "west-midlands" || region === "wales") {
+        var data = $.getJSON("data/midlandspolls.json", draw);
+      } else if (region === "north-west" || region === "north-east" || region === "yorkshire-and-the-humber") {
+        var data = $.getJSON("data/northpolls.json", draw);
+      } else {
+        var data = $.getJSON("data/southpolls.json", draw);
+      }
+      function draw(data) {
+        var ctx = document.getElementById("regionalcanvas").getContext("2d");
+        var options = { segmentStrokeWidth : 1 };
+        var chart = new Chart(ctx).Doughnut(data, options);
+          ctx.rotate(-90*Math.PI/180);
+          ctx.translate(-300,0);
+      }
+    }
+    localPoll(region);
     $('#region-info').removeClass('hidden');
+    $('#votes').remove();
 });
 
 // @todo Refactor!
@@ -200,7 +222,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
     $('a[data-uri="'+ $(this).data('uri')+'"]').addClass('active');
     e.preventDefault();
     var parentObject = this;
-    
+
     $.getJSON("data/candidates.json?v2", function(candidates) {
         var candidate = {};
         for (var i = 0; i < candidates.length; i++) {
@@ -208,7 +230,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
                 candidate = candidates[i];
             }
         }
-    
+
         // The handling here is so that the graph is updated nicely
         $('#candidate-info').hide(0, function() {
             $('#candidate-name').html(candidate.name+" ("+candidate.party+")");
@@ -224,18 +246,18 @@ $(document).on("click touch", "a[data-uri]", function(e) {
                 for (var i = 0; i < candidates.length; i++) {
                     var candidate = candidates[i];
                     if (candidate.uri == $(parentObject).data('uri')) {
-                        
+
                         var conceptsByType = {};
-                        
+
                         for (var j = 0; j < candidate.relatedConcepts.length; j++) {
                             var concept = getConcept( candidate.relatedConcepts[j].uri );
                             concept.name = candidate.relatedConcepts[j].name;
                             concept.occurrences = candidate.relatedConcepts[j].occurrences;
                             var conceptType = new String(concept.typeUri);
-                            
+
                             if (conceptType == 'undefined')
                                 conceptType = "Other";
-                            
+
                             // @todo Add spaces in convert camel names
                             conceptType = conceptType.replace(/http:\/\/dbpedia.org\/ontology\//, '').replace(/_/, '');
 
@@ -244,7 +266,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
                                 conceptsByType[conceptType] = [];
                             conceptsByType[conceptType].push(concept);
                         }
-                        
+
                         for (var conceptType in conceptsByType) {
                             $('#related-concepts').append('<strong span class="label label-default pull-left">'+conceptType+'</strong>');
                             for (var j = 0; j < conceptsByType[conceptType].length; j++) {
@@ -345,7 +367,7 @@ function getConcept(uri, callback) {
     async = false;
     if (typeof(callback) === 'function')
         async = true;
-        
+
     $.ajax({
       url: "data/concepts.json",
       dataType: 'json',
@@ -364,4 +386,16 @@ function getConcept(uri, callback) {
       }
     });
     return result;
+}
+
+//Projected votes - always visible
+$("#votes ul").html('');
+var nationalPoll = $.getJSON("data/globalspolls.json", chartDraw);
+function chartDraw(nationalPoll) {
+  var ctx = document.getElementById("nationalpoll").getContext("2d");
+  var options = { segmentStrokeWidth : 1,
+                  segmentShowStroke : false };
+  var pollsChart = new Chart(ctx).Doughnut(nationalPoll, options);
+    ctx.rotate(-90*Math.PI/180);
+    ctx.translate(-250,0);
 }
