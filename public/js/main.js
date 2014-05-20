@@ -1,6 +1,6 @@
 var bbcNewsLabs = new function() {
 
-        /** 
+        /**
          * @example getNumberOfConceptMentionsInArticles("http://dbpedia.org/resource/Nigel_Farage", 'http://dbpedia.org/ontology/Person', 7);
          */
         this.getNumberOfConceptMentionsInArticles = function(conceptUri, conceptTypeUri, numberOfDays) {
@@ -33,7 +33,7 @@ var bbcNewsLabs = new function() {
             return conceptMentionsByDate;
         };
 
-        /** 
+        /**
          * Get related concepts
          * @example getRelatedConcepts("http://dbpedia.org/resource/Nigel_Farage", 'http://dbpedia.org/ontology/Person', 7);
          */
@@ -47,7 +47,7 @@ var bbcNewsLabs = new function() {
             return concepts;
         };
 
-        /** 
+        /**
          * Turn an an array of date + value pairs into a graph
          * @param   canvasId    The ID for a canvas object
          * @param   graphData   An array of objects [{date: 'YYYY-MM-DD', value: 10}, {date: 'YYYY-MM-DD', value: 25}, ... ]
@@ -134,14 +134,19 @@ $(document).on("click touch", "svg path", function(e) {
     $(element).attr('class', cssClass + ' active');
 
     $('#region-name').html(region.capitalize());
-    
+
     var response = juicerApi.getArticles('("european elections" | "european parliament" | "eu elections")' + region, null, null, null, null, "2014-04-01", null);
     $('#region-articles ul').html('');
     var articlesDisplayed = 0;
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
+<<<<<<< HEAD
             
             if (articlesDisplayed > 5)
+=======
+
+            if (articlesDisplayed > 10)
+>>>>>>> cb0ea84231adae84c559689b59830ce8d03dd99f
                 return;
 
             var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -149,7 +154,7 @@ $(document).on("click touch", "svg path", function(e) {
             hostname = hostname.replace(/^www\./, '');
             hostname = hostname.replace(/^feeds\./, '');
             hostname = hostname.replace(/^rss\./, '');
-            
+
             if (hostname == "twitter.com")
                 return;
 
@@ -178,7 +183,7 @@ $(document).on("click touch", "svg path", function(e) {
             */
         }
     });
-    
+
     $('#region-info').removeClass('hidden');
 });
 
@@ -215,6 +220,7 @@ $(document).on("click touch", "#candidates li a", function(e) {
 String.prototype.capitalize = function() {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
+<<<<<<< HEAD
 
 
 $(window).scroll(function(){
@@ -225,3 +231,23 @@ $(window).scroll(function(){
           $(this).animate({'opacity':'1'},500);
   });
 });
+=======
+//piecharts
+var candidatesPie = $.getJSON("data/candidatesbyparty.json", candidatesDraw);
+function candidatesDraw(candidatesPie) {
+  var ctxCandidates = document.getElementById("candidates").getContext("2d");
+var options = {
+  segmentStrokeWidth : 1
+}
+  var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie, options);
+}
+
+var mentionsPie = $.getJSON("data/partymentions.json", mentionsDraw);
+function mentionsDraw(mentionsPie) {
+  var ctxMentions = document.getElementById("mentions").getContext("2d");
+var options = {
+  segmentStrokeWidth : 1
+}
+  var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie, options);
+}
+>>>>>>> cb0ea84231adae84c559689b59830ce8d03dd99f
