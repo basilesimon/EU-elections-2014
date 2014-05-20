@@ -139,7 +139,7 @@ $(document).on("click touch", "svg path", function(e) {
     if (response && response.articles.length > 0) {
         response.articles.forEach(function(article) {
             
-            if (articlesDisplayed > 5)
+            if (articlesDisplayed > 10)
                 return;
 
             var matches = article.url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
@@ -194,8 +194,6 @@ $(document).on("click touch", "#candidates li a", function(e) {
         bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
 
         $('#related-concepts').html('');
-        
-        $("#candidates ul").html('');
         $.getJSON("data/candidates.json?v2", function(candidates) {
             // First, print all canidiates we have concept URIs for
             for (var i = 0; i < candidates.length; i++) {

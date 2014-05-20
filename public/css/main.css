@@ -1,10 +1,23 @@
 .navbar {
-    background-color: #a4000e;
+    background-color: #b01;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
     padding-bottom: 5px;
 }
 
-a.navbar-brand {
+a.navbar-brand span {
     color: #fff !important;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 600;
 }
 
 .container-map {
@@ -75,3 +88,25 @@ a.navbar-brand {
     box-shadow: 0 2px 0 #dddddd;
 }
 
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.alert {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+    border-left-width: 5px;
+}
+
+.alert a {
+    font-weight: bold;
+}
+
+/*#candidates {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 500px;
+}*/

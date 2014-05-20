@@ -25,24 +25,56 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="img/bbc_blocks.png" width="84" height="24" class="hidden" title="logo"/>BBC News Labs</a>
+                    <a class="navbar-brand" href="http://twitter.com/BBC_News_Labs"><img src="img/bbc_blocks.png" width="84" height="24" title="logo"/> <span>News Labs</span></a>
+                </div>
+            </div>
+        </div>
+        <div style="background: #eee; color: #666 !important; position: relative; top: -20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="img/news-labs.png" class="pull-right" height="120" style="margin-top: 20px; margin-left: 10px; margin-bottom: 20px;" alt="BBC News Labs" />
+                        <h1>European Elections 2014</h1>
+                        <h3>An experimental dashboard around European Election data in the UK</h3>
+                        <p id="top">
+                            By <a href="http://twitter.com/iaincollins"><em>@IainCollins</em></a> and <a href="http://twitter.com/basilesimon"><em>@BasileSimon</em></a> for <a href="http://twitter.com/BBC_News_Labs">@BBC_News_Labs</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row hidden">
                 <div class="col-sm-12">
-                    <img src="img/news-labs.jpg" class="pull-right" height="120" style="margin-top: 20px; margin-right: 10px; margin-bottom: 20px;" alt="BBC News Labs" />
-                    <h1>European Elections 2014</h1>
-                    <h2>An experimental dashboard around European Election data in the UK</h2>
-                    <p id="top">
-                        By <a href="http://twitter.com/iaincollins"><em>@IainCollins</em></a> and <a href="http://twitter.com/basilesimon"><em>@BasileSimon</em></a> for <a href="http://twitter.com/BBC_News_Labs">@BBC_News_Labs</a>
+                    <p class="alert alert-info">
+                        <i class="fa fa-lg fa-info-circle"></i> <a href="http://www.bbc.co.uk/news/events/vote2014">BBC News - Vote 2014</a> has official BBC coverage of the European Elections
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <h3>Party weight in terms of candidates <em>versus</em> media coverage</h3>
+                    <p class="lead">
+                        We've aggregated content from 40+ news organisations and put it through the BBC News Labs <a href="http://www.bbc.co.uk/partnersandsuppliers/connectedstudio/newslabs/projects/juicer.html"><strong>News Juicer</strong></a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Sources</h4>
+                    <p>
+                        The publishers range from national publications (including the <em>BBC, The Guardian, Sky News, The Huffington Post</em> and others) to local newspapers (such as the <em>Yorkshire Evening Post, Birmingham Post, Belfast Telegraph</em> and <em>The Evening Standard</em>).
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Semantic Analysis</h4>
+                    <p>
+                         Using semantic analysis the News Juicer has extracted conceptual entities which are, broadly speaking, split up in to people (e.g. "Nigel Farage"), places (e.g. "Birmingham", "Europe") organizations (e.g. "The Labour Party") and topics (e.g. "immigration").
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Number of candidates <em>versus</em> media coverage</h2>
                 </div>
             </div>
             <div class="row" style="margin-bottom: 40px;">
@@ -59,14 +91,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="lead">
-                        The "number of mentions in the media" was calculated from April 1st, 2014, to election day.
-                    </p>
-                    <p class="lead">
-                        We aggregated all the content content from 40+ major news organisations in the UK and used semantic analysis to extract conceptual entities, e.g. "Nigel Farage", or "The Conservative Party", for example. <br>
-                    </p>
-                    <p class="lead">
-                        The publishers collection ranges from national publications (<em>The Guardian, Sky News, The Financial Times, The Huffington Post...</em>) to local newspapers (<em>Yorkshire Evening Post, Birmingham Post, Belfast Telegraph, The Evening Standard</em>).
+                    <p>
+                        * The "number of mentions in the media" was calculated from April 1st, 2014, to election day.
                     </p>
                 </div>
             </div>
@@ -88,12 +114,6 @@
                                 <div class="ul-wrapper">
                                     <ul class="fa-ul"></ul>
                                 </div>
-                            </div>
-                            <div id="candidate-info" class="hidden">
-                                <h3 id="candidate-name"></h3>
-                                <canvas id="candidate-mentions" width="400" height="400"></canvas>
-                                <h3>Mentioned in relation to</h3>
-                                <div id="related-concepts"></div>
                             </div>
                         </div>
                     </div>
@@ -138,10 +158,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>...</p>
+                    <h2>Explore candidates and parties</h2>
+                    <div id="candidate-info" class="hidden">
+                        <h3 id="candidate-name"></h3>
+                        <canvas id="candidate-mentions" width="400" height="400"></canvas>
+                        <h3>In the news in relation to</h3>
+                        <div id="related-concepts"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <br/>
+        <br/>
         <div class"container">
             <div id="footer">
               <div class="container">
