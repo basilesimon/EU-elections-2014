@@ -14,13 +14,19 @@
   var candidatesPie = $.getJSON("data/candidatesbyparty.json", candidatesDraw);
   function candidatesDraw(candidatesPie) {
     var ctxCandidates = document.getElementById("candidates").getContext("2d");
-    var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie);
+  var options = {
+    segmentStrokeWidth : 1
+  }
+    var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie, options);
   }
 
   var mentionsPie = $.getJSON("data/partymentions.json", mentionsDraw);
   function mentionsDraw(mentionsPie) {
     var ctxMentions = document.getElementById("mentions").getContext("2d");
-    var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie);
+  var options = {
+    segmentStrokeWidth : 1
+  }
+    var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie, options);
   }
 </script>
 </body>
