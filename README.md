@@ -29,21 +29,44 @@ This content is not published by BBC News and must not be considered as BBC word
 #####Structure
 ```
 .
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
++-- README
++-- .gitignore
++-- /public
+|   +-- index.html (webpage core)
+|   +-- /css
+|       +-- bootstrap.min.css
+|       +-- main css (custom styles)
+|   +-- /img (obvious)
+|   +-- /js
+|       +-- main.js (custom script core)
+|       +-- /lib
+|           +-- bootstrap.min.js
+|           +-- chart.js
+|           +-- d3.js
+|           +-- jquery-1.10.2.min.js
+|           +-- juicer-api.js (bbc)
+|           +-- newslabs-api.js (bbc)
+|           +-- moment.min.js
+|   +-- /data
+|       +-- candidates.csv (party, region, name and twitter handles)
+|       +-- candidates.json (same + DBPedia URI)
+|       +-- candidatesbyparty.json (number of candidates for each party)
+|       +-- concepts.json
+|       +-- constituencies.json (geoJSON file)
+|       +-- councils.json
+|       +-- councils.xls
+|       +-- euroregions_geojson.json
+|       +-- euroregions_topojson.json
+|       +-- globalpolls.json (18.05.14 UK-wide polls)
+|       +-- londonpolls.json (18.05.14 London-wide polls)
+|       +-- midlandspolls.json (18.05.014 Midlands-wide polls)
+|       +-- northpolls.json (18.05.14 North-wide polls)
+|       +-- parties.json (list of parties with number of candidates and related concepts)
+|       +-- partymentions.json (number of mentions since 01.04.14 for each parties)
+|       +-- regions.json
+|       +-- scotlandpolls.json (18.05.14 Scotland-wide polls)
+|       +-- southpolls.json (18.05.14 South-wide polls)
+|       +-- topoconstituencies.json
+|       +-- uk.json (geojson borders and cities)
+
 ```
