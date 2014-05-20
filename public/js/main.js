@@ -1,3 +1,16 @@
+var regions = [ "east-midlands",
+                "eastern",
+                "london",
+                "north-east",
+                "north-west",
+                "northern-ireland",
+                "scotland",
+                "south-east",
+                "south-west",
+                "wales",
+                "west-midlands",
+                "yorkshire-and-the-humber"];
+
 var bbcNewsLabs = new function() {
 
         /**
@@ -182,7 +195,7 @@ $(document).on("click touch", "svg path", function(e) {
 });
 
 // @todo Refactor!
-$(document).on("click touch", "#candidates li a", function(e) {
+$(document).on("click touch", "#candidates li a, #tab-explore-candidates-list a", function(e) {
     e.preventDefault();
     var parentObject = this;
     // The handling here is so that the graph is updated nicely
@@ -207,7 +220,7 @@ $(document).on("click touch", "#candidates li a", function(e) {
                 }
             }
         });
-        $('#candidate-info').removeClass('hidden').show();
+        $('#candidate-info').show();
     });
 });
 
@@ -217,28 +230,47 @@ String.prototype.capitalize = function() {
 
 $(window).scroll(function(){
   $('.fade-in').each( function(i) {
-      var middleOfObject = $(this).position().top + ($(this).outerHeight() / 2);
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > middleOfObject)
+      if (bottomOfWindow > ($(this).position().top + 100))
           $(this).animate({'opacity':'1'},500);
   });
 });
 
-//piecharts
+/**
+ * Pie charts
+ */
 var candidatesPie = $.getJSON("data/candidatesbyparty.json", candidatesDraw);
 function candidatesDraw(candidatesPie) {
-  var ctxCandidates = document.getElementById("candidates").getContext("2d");
-var options = {
-  segmentStrokeWidth : 1
-}
-  var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie, options);
+    var ctxCandidates = document.getElementById("candidates").getContext("2d");
+    var options = { segmentStrokeWidth : 1 };
+    var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie, options);
 }
 
 var mentionsPie = $.getJSON("data/partymentions.json", mentionsDraw);
 function mentionsDraw(mentionsPie) {
-  var ctxMentions = document.getElementById("mentions").getContext("2d");
-var options = {
-  segmentStrokeWidth : 1
+    var ctxMentions = document.getElementById("mentions").getContext("2d");
+    var options = { segmentStrokeWidth : 1 };
+    var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie, options);
 }
-  var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsPie, options);
+
+$(function() {
+    addCandidatesByRegion();
+});
+
+function addCandidatesByRegion() {
+    $.getJSON("data/candidates.json", function (candidates) {
+        for (var r = 0; r < regions.length; r++) {
+            $('#tab-explore-candidates-list').append('<h4>'+regions[r].capitalize()+'</h4>');
+            for (var i = 0; i < candidates.length; i++) {
+                var candidate = candidates[i];
+                if (candidate.region == regions[r] && candidate.uri.length > 2)
+                    $('#tab-explore-candidates-list').append('<a href="#" data-uri="' + candidate.uri + '" class="list-group-item"><i class="fa fa-user fa-lg pull-left" style="margin-right: 10px; margin-bottom: 20px;"></i> <strong>' + candidate.name + '</strong><br/><span class="text-muted">'+candidate.party+'</span></a>');
+            }
+        }
+    });
 }
+
+$('.nav.nav-tabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+});

@@ -50,8 +50,8 @@ h1 {
 
 .map path {
     fill: rgb(190,0,7) !important;
-    stroke: rgba(255,255,255,0.5) !important;
-    stroke-width: 0.5px !important;
+    stroke: rgba(255,255,255,1) !important;
+    stroke-width: 0.2px !important;
 }
 
 .map path:hover {
@@ -65,7 +65,9 @@ h1 {
 
 .map path.disabled,
 .map path.disabled:hover {
+    cursor: default;
     fill: #dddddd !important;
+    stroke: #dddddd !important;
 }
 
 .label.label-info {
