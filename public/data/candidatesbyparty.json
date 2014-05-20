@@ -1,0 +1,220 @@
+[
+  {
+    "label":"Conservative Party",
+    "value":71,
+    "color":"#0099c6",
+    "labelColor" : "white",
+    "labelFontSize" : "16"
+
+  },
+  {
+    "color" : "#741b47",
+    "label" : "UKIP",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":71
+  },
+  {
+    "color" : "#ff9900",
+    "label" : "Liberal Democrats",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":70
+  },
+  {
+    "color" : "#cc0000",
+    "label" : "Labour",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":70
+  },
+  {
+    "color" : "#073763",
+    "label" : "BNP",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":70
+  },
+  {
+    "color" : "#38761d",
+    "label" : "Greem Party",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":64
+  },
+  {
+    "label":"English Democrats",
+    "color" : "#dd4477",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":60
+  },
+  {
+    "label":"An Independence From Europe",
+    "color" : "#66aa00",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":60
+  },
+  {
+    "label":"No2EU",
+    "color" : "#b82e2e",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":46
+  },
+  {
+    "label":"Christian Peoples Alliance",
+    "color" : "#316395",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":24
+  },
+  {
+    "label":"Socialist Party of Great Britain",
+    "color" : "#994499",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":14
+  },
+  {
+    "label":"Britain First",
+    "color" : "#22aa99",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":10
+  },
+  {
+    "label":"The Peace Party - Non-violence",
+    "color" : "#aaaa11",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":10
+  },
+  {
+    "label":"National Liberal Party – True Liberalism",
+    "color" : "#6633cc",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"Communities United Party",
+    "color" : "#e67300",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"Socialist Equality Party (UK)",
+    "color" : "#8b0707",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"National Health Action Party",
+    "color" : "#651067",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"4 Freedoms Party",
+    "color" : "#329262",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"Animal Welfare Party",
+    "color" : "#5574a6",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":8
+  },
+  {
+    "label":"We Demand a Referendum",
+    "color" : "#3b3eac",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":7
+  },
+  {
+    "label":"Scottish National Party",
+    "color" : "#766AFF",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":6
+  },
+  {
+    "label":"Scottish Green Party",
+    "color" : "#38761d",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":6
+  },
+  {
+    "label":"Europeans Party",
+    "color" : "#b91383",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":6
+  },
+  {
+    "label":"Harmony Party",
+    "color" : "#316395",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":5
+  },
+  {
+    "label":"Socialist Labour",
+    "color" : "#9c5935",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":4
+  },
+  {
+    "label":"Plaid Cymru",
+    "color" : "#a9c413",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":4
+  },
+  {
+    "label":"Pirate Party UK",
+    "color" : "#2a778d",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":3
+  },
+  {
+    "label":"Yorkshire First",
+    "color" : "#668d1c",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":3
+  },
+  {
+    "label":"Liberty GB",
+    "color" : "#bea413",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":3
+  },
+  {
+    "label":"YOURvoice Party",
+    "color" : "#0c5922",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":3
+  },
+  {
+    "label":"Others 1 candidate parties",
+    "color" : "#cccccc",
+    "labelColor" : "white",
+    "labelFontSize" : "16",
+    "value":10
+  }
+]
