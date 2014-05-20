@@ -7,58 +7,76 @@
 </head>
 <body>
 <h1>Projected votes - YouGov 18.05.2014</h1>
-<canvas id="nationalpoll" width="400" height="400"></canvas>
+<canvas id="nationalpoll" width="250" height="250"></canvas>
 
 <h1>London</h1>
-<canvas id="londonpoll" width="400" height="400"></canvas>
+<canvas id="londonpoll" width="250" height="250"></canvas>
 
 <h1>Rest of South</h1>
-<canvas id="southpoll" width="400" height="400"></canvas>
+<canvas id="southpoll" width="250" height="250"></canvas>
 
 <h1>Midlands and Wales</h1>
-<canvas id="midlandspoll" width="400" height="400"></canvas>
+<canvas id="midlandspoll" width="250" height="250"></canvas>
 
 <h1>North</h1>
-<canvas id="northpoll" width="400" height="400"></canvas>
+<canvas id="northpoll" width="250" height="250"></canvas>
 
 <h1>Scotland</h1>
-<canvas id="scotpoll" width="400" height="400"></canvas>
+<canvas id="scotpoll" width="250" height="250"></canvas>
 
 <script>
   var nationalPoll = $.getJSON("data/globalspolls.json", chartDraw);
   function chartDraw(nationalPoll) {
     var ctx = document.getElementById("nationalpoll").getContext("2d");
-    var pollsChart = new Chart(ctx).Doughnut(nationalPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var pollsChart = new Chart(ctx).Doughnut(nationalPoll, options);
+      ctx.rotate(-90*Math.PI/180);
+      ctx.translate(-300,0);
   }
 
   var londonPoll = $.getJSON("data/londonpolls.json", londonDraw);
   function londonDraw(londonPoll) {
     var ctxLondon = document.getElementById("londonpoll").getContext("2d");
-    var londonChart = new Chart(ctxLondon).Doughnut(londonPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var londonChart = new Chart(ctxLondon).Doughnut(londonPoll, options);
+      ctxLondon.rotate(-90*Math.PI/180);
+      ctxLondon.translate(-300,0);
   }
 
   var southPoll = $.getJSON("data/southpolls.json", southDraw);
   function southDraw(southPoll) {
     var ctxSouth = document.getElementById("southpoll").getContext("2d");
-    var southChart = new Chart(ctxSouth).Doughnut(southPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var southChart = new Chart(ctxSouth).Doughnut(southPoll, options);
+      ctxSouth.rotate(-90*Math.PI/180);
+      ctxSouth.translate(-300,0);
   }
 
   var midlandsPoll = $.getJSON("data/midlandspolls.json", midlandsDraw);
   function midlandsDraw(midlandsPoll) {
     var ctxMidlands = document.getElementById("midlandspoll").getContext("2d");
-    var midlandsChart = new Chart(ctxMidlands).Doughnut(midlandsPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var midlandsChart = new Chart(ctxMidlands).Doughnut(midlandsPoll, options);
+      ctxMidlands.rotate(-90*Math.PI/180);
+      ctxMidlands.translate(-300,0);
   }
 
   var northPoll = $.getJSON("data/northpolls.json", northDraw);
   function northDraw(northPoll) {
     var ctxNorth = document.getElementById("northpoll").getContext("2d");
-    var northChart = new Chart(ctxNorth).Doughnut(northPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var northChart = new Chart(ctxNorth).Doughnut(northPoll, options);
+      ctxNorth.rotate(-90*Math.PI/180);
+      ctxNorth.translate(-300,0);
   }
 
   var scotlandPoll = $.getJSON("data/scotlandpolls.json", scotlandDraw);
   function scotlandDraw(scotlandPoll) {
     var ctxScotland = document.getElementById("scotpoll").getContext("2d");
-    var scotChart = new Chart(ctxScotland).Doughnut(scotlandPoll);
+    var options = { segmentStrokeWidth : 1 };
+    var scotChart = new Chart(ctxScotland).Doughnut(scotlandPoll, options);
+      ctxScotland.rotate(-90*Math.PI/180);
+      ctxScotland.translate(-300,0);
   }
 </script>
 </body>
