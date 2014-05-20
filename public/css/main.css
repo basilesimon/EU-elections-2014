@@ -70,9 +70,12 @@ h1 {
     stroke: #dddddd !important;
 }
 
-.label.label-info {
+.label {
     font-size: 15px;
     line-height: 19px;
+}
+
+.label.pull-left {
     margin-right: 5px;
     margin-bottom: 10px;
 }
@@ -97,6 +100,7 @@ h1 {
 
 .alert {
     -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     border-width: 0;
     border-left-width: 5px;
@@ -120,4 +124,28 @@ h1 {
 #select-region {
     font-size: 48px;
     font-weight: 600;
+}
+
+.panel-accordian {
+    background: #eee;
+}
+
+.panel-accordian .panel-title a {
+    display: block;
+    cursor: pointer;
+}
+
+.panel-accordian .list-group {
+    margin-bottom: 5px;
+}
+.panel-accordian .list-group-item {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item.active .text-muted {
+    color: #fff;
 }

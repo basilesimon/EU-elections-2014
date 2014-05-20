@@ -113,17 +113,17 @@ var bbcNewsLabs = new function() {
             // Note if there are a large number of things I let it do it's own thing
             // otherwise the graph looks bunched up. Can fix this better later.
             // Chart.js doesn't have a 'use integer values only' option :(
-            // var chartOptions = {};
-            // if (maxValue < 20) {
-            var steps = 30;
-            var max = 30;
-            chartOptions = {
-                scaleOverride: true,
-                scaleSteps: steps,
-                scaleStepWidth: Math.ceil(max / steps),
-                scaleStartValue: 0
-            };
-            // }
+            var chartOptions = {};
+            if (maxValue < 20) {
+                var steps = maxValue;
+                var max = maxValue;
+                chartOptions = {
+                    scaleOverride: true,
+                    scaleSteps: steps,
+                    scaleStepWidth: Math.ceil(max / steps),
+                    scaleStartValue: 0
+                };
+            }
 
             ctx.canvas.height = $('#' + canvasId).attr('origionalHeight');
             ctx.canvas.width = $('#' + canvasId).attr('origionalWidth');
@@ -195,32 +195,69 @@ $(document).on("click touch", "svg path", function(e) {
 });
 
 // @todo Refactor!
-$(document).on("click touch", "#candidates li a, #tab-explore-candidates-list a", function(e) {
+$(document).on("click touch", "a[data-uri]", function(e) {
+    $('a[data-uri]').removeClass('active');
+    $('a[data-uri="'+ $(this).data('uri')+'"]').addClass('active');
     e.preventDefault();
     var parentObject = this;
-    // The handling here is so that the graph is updated nicely
-    $('#candidate-info').hide(0, function() {
-        $('#candidate-name').html('Mentions of ' + $(parentObject).text() + ' in the media');
-        var uri = $(parentObject).data('uri');
-        var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
-        var numberOfDays = 90;
-        var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, numberOfDays);
-        bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
+    
+    $.getJSON("data/candidates.json?v2", function(candidates) {
+        var candidate = {};
+        for (var i = 0; i < candidates.length; i++) {
+            if ($(parentObject).data('uri') == candidates[i].uri) {
+                candidate = candidates[i];
+            }
+        }
+    
+        // The handling here is so that the graph is updated nicely
+        $('#candidate-info').hide(0, function() {
+            $('#candidate-name').html(candidate.name+" ("+candidate.party+")");
+            var uri = $(parentObject).data('uri');
+            var conceptTypeUri = 'http://dbpedia.org/ontology/Person';
+            var numberOfDays = 7;
+            var mentionsByDay = bbcNewsLabs.getNumberOfConceptMentionsInArticles(uri, conceptTypeUri, numberOfDays);
+            bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
 
-        $('#related-concepts').html('');
-        $.getJSON("data/candidates.json?v2", function(candidates) {
-            // First, print all canidiates we have concept URIs for
-            for (var i = 0; i < candidates.length; i++) {
-                var candidate = candidates[i];
-                if (candidate.uri == $(parentObject).data('uri')) {
-                    for (var j = 0; j < candidate.relatedConcepts.length; j++) {
-                        var concept = candidate.relatedConcepts[j];
-                        $('#related-concepts').append('<span class="label label-info pull-left">' + concept.name + ' (' + concept.occurrences +')</span>');
+            $('#related-concepts').html('');
+            $.getJSON("data/candidates.json?v2", function(candidates) {
+                // First, print all canidiates we have concept URIs for
+                for (var i = 0; i < candidates.length; i++) {
+                    var candidate = candidates[i];
+                    if (candidate.uri == $(parentObject).data('uri')) {
+                        
+                        var conceptsByType = {};
+                        
+                        for (var j = 0; j < candidate.relatedConcepts.length; j++) {
+                            var concept = getConcept( candidate.relatedConcepts[j].uri );
+                            concept.name = candidate.relatedConcepts[j].name;
+                            concept.occurrences = candidate.relatedConcepts[j].occurrences;
+                            var conceptType = new String(concept.typeUri);
+                            
+                            if (conceptType == 'undefined')
+                                conceptType = "Other";
+                            
+                            // @todo Add spaces in convert camel names
+                            conceptType = conceptType.replace(/http:\/\/dbpedia.org\/ontology\//, '').replace(/_/, '');
+
+                            // @todo Normalize concept types
+                            if (!conceptsByType[conceptType])
+                                conceptsByType[conceptType] = [];
+                            conceptsByType[conceptType].push(concept);
+                        }
+                        
+                        for (var conceptType in conceptsByType) {
+                            $('#related-concepts').append('<strong span class="label label-default pull-left">'+conceptType+'</strong>');
+                            for (var j = 0; j < conceptsByType[conceptType].length; j++) {
+                                var concept = conceptsByType[conceptType][j];
+                                console.log(concept);
+                                $('#related-concepts').append('<span class="label label-info pull-left">' + concept.name + ' (' + concept.occurrences +')</span>');
+                            }
+                        }
                     }
                 }
-            }
+            });
+            $('#candidate-info').show();
         });
-        $('#candidate-info').show();
     });
 });
 
@@ -257,15 +294,35 @@ $(function() {
     addCandidatesByRegion();
 });
 
+
 function addCandidatesByRegion() {
     $.getJSON("data/candidates.json", function (candidates) {
+        $('#tab-explore-candidates').html('<div class="panel-group" id="candiates-by-region-accordion"></div>');
         for (var r = 0; r < regions.length; r++) {
-            $('#tab-explore-candidates-list').append('<h4>'+regions[r].capitalize()+'</h4>');
+            var region = regions[r];
+
+            var html = '';
             for (var i = 0; i < candidates.length; i++) {
                 var candidate = candidates[i];
-                if (candidate.region == regions[r] && candidate.uri.length > 2)
-                    $('#tab-explore-candidates-list').append('<a href="#" data-uri="' + candidate.uri + '" class="list-group-item"><i class="fa fa-user fa-lg pull-left" style="margin-right: 10px; margin-bottom: 20px;"></i> <strong>' + candidate.name + '</strong><br/><span class="text-muted">'+candidate.party+'</span></a>');
+                if (candidate.region == region && candidate.uri.length > 2) {
+                   html += '<a href="#" data-uri="' + candidate.uri + '" class="list-group-item"><i class="fa fa-user fa-lg pull-left" style="margin-top: 10px; margin-right: 10px; margin-bottom: 20px;"></i> <strong>' + candidate.name + '</strong><br/><span class="text-muted">'+candidate.party+'</span></a>';
+                }
             }
+            $('#candiates-by-region-accordion').append('<div class="panel panel-default panel-accordian">'
+                                                       +'  <div class="panel-heading">'
+                                                       +'    <h4 class="panel-title">'
+                                                       +'      <a data-toggle="collapse" data-parent="#candiates-by-region-accordion" data-target="#candidates-by-region-'+region+'">'
+                                                       + region.replace(/-/g, ' ').capitalize()
+                                                       +'      </a>'
+                                                       +'    </h4>'
+                                                       +'  </div>'
+                                                       +'  <div id="candidates-by-region-'+region+'" class="panel-collapse collapse">'
+                                                       +'    <div #candidates-by-region-'+region+'-group" class="list-group">'
+                                                       + html
+                                                       +'    </div>'
+                                                       +'  </div>'
+                                                       +'</div>'
+                                                   );
         }
     });
 }
@@ -274,3 +331,37 @@ $('.nav.nav-tabs a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
 });
+
+//$('#candiates-by-region-accordion').collapse();
+
+
+$('#candiates-by-region-accordion').on('show hide', function() {
+    $(this).css('height', 'auto');
+});
+
+function getConcept(uri, callback) {
+    console.log(uri);
+    var result = {};
+    async = false;
+    if (typeof(callback) === 'function')
+        async = true;
+        
+    $.ajax({
+      url: "data/concepts.json",
+      dataType: 'json',
+      async: false,
+      success: function(concepts) {
+          for (var i = 0; i < concepts.length; i++) {
+              var concept = concepts[i];
+              if (concept.uri == uri) {
+                  if (typeof(callback) === 'function') {
+                      callback(concept);
+                  } else {
+                      result = concept;
+                  }
+              }
+          }
+      }
+    });
+    return result;
+}

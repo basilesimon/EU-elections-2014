@@ -173,18 +173,12 @@
             </div>
             <div class="row fade-in">
                 <div class="col-sm-3">
-                    <ul id="tabs-explore" class="nav nav-tabs">
+                    <ul id="tabs-explore" class="nav nav-tabs" style="margin-bottom: 10px;">
                         <li class="active"><a href="#tab-explore-candidates" data-toggle="tab">By Region</a></li>
                         <li><a href="#tab-explore-parties" data-toggle="tab">By Party</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div id="tab-explore-candidates" class="tab-pane active">
-                            <div class="input-group hidden">
-                                <div class="input-group-addon"><i class="fa fa-search"></i></div>
-                                <input name="form" class="form-control input-lg" placeholder="candidate name" />
-                            </div>
-                            <div id="tab-explore-candidates-list" class="list-group"></div>
-                        </div>
+                        <div id="tab-explore-candidates" class="tab-pane active"></div>
                         <div id="tab-explore-parties" class="tab-pane">
                             <div class="input-group hidden">
                                 <div class="input-group-addon"><i class="fa fa-search"></i></div>
@@ -196,7 +190,7 @@
                 <div class="col-sm-9">
                     <div id="candidate-info">
                         <h3 id="candidate-name"></h3>
-                        <canvas id="candidate-mentions" width="400" height="400"></canvas>
+                        <canvas id="candidate-mentions" width="800" height="300"></canvas>
                         <div id="related-concepts"></div>
                     </div>
                 </div>
