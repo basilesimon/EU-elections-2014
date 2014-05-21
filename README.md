@@ -7,7 +7,6 @@ Unnecessary exploration of the 2014 European election in the UK.
 This content is not published by BBC News and must not be considered as BBC words.
 
 ####To-do
-- **[New poll](http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/ljf9nyfq9s/YG-Archive-Pol-Sun-results-190514-EU.pdf)**
 - **Convince Matt. Really.**
 - Fix cross-domain issues
 - Pre-calculate the results
@@ -23,6 +22,7 @@ This content is not published by BBC News and must not be considered as BBC word
 #####External data sources
 
 - [YouGov national poll 18.05.2014](http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/eh81zosob6/YG-Archive-Pol-Sunday-Times-results-140516.pdf)
+- [YouGov national poll 19.05.2014](http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/ljf9nyfq9s/YG-Archive-Pol-Sun-results-190514-EU.pdf)
 - [Base files for list of candidates by xavriley (github)](https://github.com/basilesimon/uk-mep-candidates-2014)
 - [Number of candidates by party and mentions by party (Google spreadsheet)](https://docs.google.com/spreadsheets/d/1875deO7un6yF0k9hTGdhevJqW8tg6rPkj3R8gaWxspE/edit?usp=sharing)
 
