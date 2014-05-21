@@ -1,0 +1,18 @@
+{
+  "name": "BBC News Labs - European Election 2014",
+  "description": "BBC News Labs - European Election 2014",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.*",
+    "express-partials": "*",
+    "ejs": "*",
+    "mongojs": "*",
+    "request": "*",
+    "q": "*",
+    "csvtojson": "*",
+    "xml2js": "*",
+    "cheerio": "*",
+    "dateformat": "*"
+  }
+}
