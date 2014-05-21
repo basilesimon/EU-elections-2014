@@ -9,14 +9,14 @@ This content is not published by BBC News and must not be considered as BBC word
 ####To-do
 - [ ] Fix cross-domain issues
 - [ ] Pre-calculate the results
-- [ ] Fix tooltip position on poll predictions
-    - [ ] remove tooltip
-    - [ ] add legends
+- [x] Fix tooltip position on poll predictions
+    - [x] remove tooltip
+    - [x] add legends
 - [ ] Design UI for semantic data section
 - [ ] **Feature:** filter media coverage breakdown by publisher
 - [ ] Update mentions by party JSON
 - [ ] **Feature:** graph mentions by party over time
-- [ ] Remove stokes from region polls and put on grey background
+- [x] Remove stokes from region polls and put on grey background
 
 ####Ideas
 - Dashboard to follow the elections
