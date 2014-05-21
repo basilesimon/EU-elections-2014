@@ -204,12 +204,25 @@ $(document).on("click touch", "svg path", function(e) {
         var data = $.getJSON("data/southpolls.json", draw);
       }
       function draw(data) {
-        var ctx = document.getElementById("regionalcanvas").getContext("2d");
-        var options = { segmentStrokeWidth : 1,
-                        segmentShowStroke : false  };
-        var chart = new Chart(ctx).Doughnut(data, options);
-          ctx.rotate(-90*Math.PI/180);
-          ctx.translate(-300,0);
+          var canvasId = "regionalcanvas";
+          var canvas = document.getElementById(canvasId);
+          var ctx = canvas.getContext("2d");
+        
+            // Hack to stop Chart.js incorrectly resizing graph on subsquent
+            // redraws on some displays (a known bug).
+            if (!$('#' + canvasId).attr('origionalHeight')) {
+                $('#' + canvasId).attr('origionalHeight', canvas.height);
+                $('#' + canvasId).attr('origionalWidth', canvas.width);
+            }
+
+            var options = { segmentStrokeWidth : 1 };
+        
+            ctx.canvas.height = $('#' + canvasId).attr('origionalHeight');
+            ctx.canvas.width = $('#' + canvasId).attr('origionalWidth');
+
+            var chart = new Chart(ctx).Doughnut(data, options);
+              ctx.rotate(-90*Math.PI/180);
+              ctx.translate(-300,0);
       }
     }
     localPoll(region);
