@@ -108,22 +108,19 @@ var bbcNewsLabs = new function() {
                 }]
             }
 
-            // Hack to force the graph to draw nicely when displaying a small number
-            // of things (so it doesn't use floats!)
-            // Note if there are a large number of things I let it do it's own thing
-            // otherwise the graph looks bunched up. Can fix this better later.
-            // Chart.js doesn't have a 'use integer values only' option :(
             var chartOptions = {};
-            if (maxValue < 20) {
-                var steps = maxValue;
-                var max = maxValue;
-                chartOptions = {
-                    scaleOverride: true,
-                    scaleSteps: steps,
-                    scaleStepWidth: Math.ceil(max / steps),
-                    scaleStartValue: 0
-                };
+            var steps = 10;
+            var max = 50;
+            if (maxValue < 10) {
+                var steps = 10;
+                var max = 10;
             }
+            chartOptions = {
+                scaleOverride: true,
+                scaleSteps: steps,
+                scaleStepWidth: Math.ceil(max / steps),
+                scaleStartValue: 0
+            };
 
             ctx.canvas.height = $('#' + canvasId).attr('origionalHeight');
             ctx.canvas.width = $('#' + canvasId).attr('origionalWidth');
@@ -274,7 +271,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
                                 conceptType = "Other";
 
                             // @todo Add spaces in convert camel names
-                            conceptType = conceptType.replace(/http:\/\/dbpedia.org\/ontology\//, '').replace(/_/, '');
+                            conceptType = conceptType.replace(/^http:(.*)?\//, '').replace(/_/, '');
 
                             // @todo Normalize concept types
                             if (!conceptsByType[conceptType])
