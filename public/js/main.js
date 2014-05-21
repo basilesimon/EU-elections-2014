@@ -205,7 +205,8 @@ $(document).on("click touch", "svg path", function(e) {
       }
       function draw(data) {
         var ctx = document.getElementById("regionalcanvas").getContext("2d");
-        var options = { segmentStrokeWidth : 1 };
+        var options = { segmentStrokeWidth : 1,
+                        segmentShowStroke : false  };
         var chart = new Chart(ctx).Doughnut(data, options);
           ctx.rotate(-90*Math.PI/180);
           ctx.translate(-300,0);

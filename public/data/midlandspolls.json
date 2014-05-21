@@ -1,63 +1,39 @@
 [
     {
       "value": 12.5,
-      "color":"#0099c6",
-      "label" : "Conservatives",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color":"#0099c6"
     },
     {
       "value" : 13.5,
-      "color" : "#cc0000",
-      "label" : "Labour",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#cc0000"
     },
     {
       "value" : 4.5,
-      "color" : "#ff9900",
-      "label" : "Liberal Democrats",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#ff9900"
     },
     {
       "value" : 14,
-      "color" : "#741b47",
-      "label" : "UKIP",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#741b47"
     },
     {
       "value" : 3,
-      "color" : "#38761d",
-      "label" : "Green Party",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#38761d"
     },
     {
       "value" : 1,
-      "color" : "#766AFF",
-      "label" : "SNP/PCY",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#766AFF"
     },
     {
       "value" : 1,
-      "color" : "#073763",
-      "label" : "BNP",
-      "labelColor" : "white",
-      "labelFontSize" : "16"
+      "color" : "#073763"
     },
     {
       "value": 0.5,
-      "color": "grey",
-      "label": "other",
-      "labelColor": "white",
-      "labelFontSize": "16"
+      "color": "grey"
     },
     {
       "value" : 50,
-      "color" : "white"
+      "color" : "#eeeeee"
     }
 
 ]
