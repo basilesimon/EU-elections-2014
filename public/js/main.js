@@ -268,12 +268,14 @@ $(document).on("click touch", "a[data-uri]", function(e) {
                         }
 
                         for (var conceptType in conceptsByType) {
-                            $('#related-concepts').append('<strong span class="label label-default pull-left">'+conceptType+'</strong>');
+                            var relatedConceptsHtml = '';
+                            relatedConceptsHtml += '<strong span class="label label-default pull-left">'+conceptType+'</strong>';
                             for (var j = 0; j < conceptsByType[conceptType].length; j++) {
                                 var concept = conceptsByType[conceptType][j];
-                                console.log(concept);
-                                $('#related-concepts').append('<span class="label label-info pull-left">' + concept.name + ' (' + concept.occurrences +')</span>');
+                                // relatedConceptsHtml += '<span class="label label-info pull-left">' + concept.name + ' <span class="badge">' + concept.occurrences +'</span></span>';
+                                relatedConceptsHtml += '<span class="label label-info pull-left">' + concept.name + '</span>';
                             }
+                            $('#related-concepts').append('<div class="row clearfix" style="height: 32px; overflow: hidden;">'+relatedConceptsHtml+'</div>');
                         }
                     }
                 }

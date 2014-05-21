@@ -73,11 +73,29 @@ h1 {
 .label {
     font-size: 15px;
     line-height: 19px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .label.pull-left {
     margin-right: 5px;
     margin-bottom: 10px;
+}
+
+.label.label-default {
+    background-color: #888;
+}
+
+.label.label-info {
+    background-color: #259eff;
+}
+
+.label.label-info .badge {
+    position: relative;
+    left: 2px;
+    background-color: #ffffff;
+    color: #259eff;
 }
 
 .fa-ul li {
@@ -125,14 +143,36 @@ h1 {
     font-size: 48px;
     font-weight: 600;
 }
-
-.panel-accordian {
-    background: #eee;
-}
-
 .panel-accordian .panel-title a {
     display: block;
     cursor: pointer;
+    padding: 10px;
+}
+
+.panel-accordian.panel,
+.panel-accordian.panel .panel-heading {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0px;
+}
+
+.panel-accordian.panel .panel-heading {
+    background-color: #1050a2 !important;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-accordian .list-group-item.active,
+.panel-accordian.panel .panel-heading:hover {
+    border-color: #259eff !important;
+    background-color: #259eff !important;
+    color: #fff;
+}
+
+.panel-accordian.panel .panel-heading a,
+.panel-accordian.panel .panel-heading a:hover {
+    text-decoration: none;
 }
 
 .panel-accordian .list-group {
