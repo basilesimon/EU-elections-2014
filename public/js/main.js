@@ -207,7 +207,7 @@ $(document).on("click touch", "svg path", function(e) {
           var canvasId = "regionalcanvas";
           var canvas = document.getElementById(canvasId);
           var ctx = canvas.getContext("2d");
-        
+
             // Hack to stop Chart.js incorrectly resizing graph on subsquent
             // redraws on some displays (a known bug).
             if (!$('#' + canvasId).attr('origionalHeight')) {
@@ -215,8 +215,9 @@ $(document).on("click touch", "svg path", function(e) {
                 $('#' + canvasId).attr('origionalWidth', canvas.width);
             }
 
-            var options = { segmentStrokeWidth : 1 };
-        
+            var options = { segmentStrokeWidth : 1,
+                            segmentShowStroke : false };
+
             ctx.canvas.height = $('#' + canvasId).attr('origionalHeight');
             ctx.canvas.width = $('#' + canvasId).attr('origionalWidth');
 
