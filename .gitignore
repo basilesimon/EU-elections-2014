@@ -3,3 +3,7 @@ api.js
 .DS_Store
 /public/-DS_Store
 /public/js/.DS_Store
+
+/node_modules/
+
+/config.json

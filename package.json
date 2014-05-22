@@ -1,5 +1,5 @@
 {
-  "name": "BBC News Labs - European Election 2014",
+  "name": "eu-election-coverage",
   "description": "BBC News Labs - European Election 2014",
   "version": "0.1.0",
   "private": true,
@@ -10,9 +10,8 @@
     "mongojs": "*",
     "request": "*",
     "q": "*",
+    "moment": "*",
     "csvtojson": "*",
-    "xml2js": "*",
-    "cheerio": "*",
-    "dateformat": "*"
+    "newsquery": "*"
   }
 }

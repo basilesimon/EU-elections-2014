@@ -1,5 +1,5 @@
 /**
- * BBC News Labs - European Election Data Insight
+ * BBC News Labs - European Election Coverage Insight
  */
 
 var express = require('express');
@@ -9,8 +9,10 @@ var mongoJs = require('mongojs');
 var Q = require('q');
 var dateFormat = require('dateformat');
 var fs = require('fs');
+var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
+var config = require(__dirname + '/config.json');
 
-GLOBAL.db = mongoJs.connect("127.0.0.1/eu-bbc-news-labs", ["candidates", "parties", "concepts", "regions"]);
+GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "concepts", "regions"]);
 
 // Initialise and configure Express and Express Partials
 var app = express();
