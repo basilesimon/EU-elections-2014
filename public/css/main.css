@@ -192,10 +192,10 @@ h1 {
 
 .minibox {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 3px 3px 3px 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0,0,0,.2);
+    width: 14px;
+    height: 14px;
+    margin: 0 7px;
+    position: relative;
+    top: 1px;
+    border: 1px solid rgba(0,0,0,.2);
 }

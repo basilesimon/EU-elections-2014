@@ -12,11 +12,11 @@ var fs = require('fs');
 var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
 var config = require(__dirname + '/config.json');
 
-GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "concepts", "regions"]);
+GLOBAL.config = config;
+GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "regions", "concepts"]);
 
 // Initialise and configure Express and Express Partials
 var app = express();
-// Allows all JSON files (e.g. map GeoJSON) to be accessed from any domain
 app.use(function(req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();

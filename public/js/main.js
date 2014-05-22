@@ -170,7 +170,7 @@ $(document).on("click touch", "svg path", function(e) {
     $('#candidate-info').hide();
     var region = $(this).attr('id');
     $("#candidates ul").html('');
-    $.getJSON("data/candidates.json", function (candidates) {
+    $.getJSON("json/candidates.json", function (candidates) {
         // First, print all canidiates we have concept URIs for
         for (var i = 0; i < candidates.length; i++) {
             var candidate = candidates[i];
@@ -190,15 +190,15 @@ $(document).on("click touch", "svg path", function(e) {
 
     function localPoll(region) {
       if (region === "london") {
-        var data = $.getJSON("data/londonpolls.json", draw);
+        var data = $.getJSON("json/londonpolls.json", draw);
       } else if (region === "scotland") {
-        var data = $.getJSON("data/scotlandpolls.json", draw);
+        var data = $.getJSON("json/scotlandpolls.json", draw);
       } else if (region === "east-midlands" || region === "west-midlands" || region === "wales") {
-        var data = $.getJSON("data/midlandspolls.json", draw);
+        var data = $.getJSON("json/midlandspolls.json", draw);
       } else if (region === "north-west" || region === "north-east" || region === "yorkshire-and-the-humber") {
-        var data = $.getJSON("data/northpolls.json", draw);
+        var data = $.getJSON("json/northpolls.json", draw);
       } else {
-        var data = $.getJSON("data/southpolls.json", draw);
+        var data = $.getJSON("json/southpolls.json", draw);
       }
       function draw(data) {
           var canvasId = "regionalcanvas";
@@ -235,7 +235,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
     e.preventDefault();
     var parentObject = this;
 
-    $.getJSON("data/candidates.json?v2", function(candidates) {
+    $.getJSON("json/candidates.json?v2", function(candidates) {
         var candidate = {};
         for (var i = 0; i < candidates.length; i++) {
             if ($(parentObject).data('uri') == candidates[i].uri) {
@@ -253,7 +253,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
             bbcNewsLabs.plotGraphByDate('candidate-mentions', mentionsByDay, true);
 
             $('#related-concepts').html('');
-            $.getJSON("data/candidates.json?v2", function(candidates) {
+            $.getJSON("json/candidates.json?v2", function(candidates) {
                 // First, print all canidiates we have concept URIs for
                 for (var i = 0; i < candidates.length; i++) {
                     var candidate = candidates[i];
@@ -312,14 +312,14 @@ $(window).scroll(function(){
 /**
  * Pie charts
  */
-var candidatesPie = $.getJSON("data/candidatesbyparty.json", candidatesDraw);
+var candidatesPie = $.getJSON("json/candidatesbyparty.json", candidatesDraw);
 function candidatesDraw(candidatesPie) {
     var ctxCandidates = document.getElementById("candidates").getContext("2d");
     var options = { segmentStrokeWidth : 1 };
     var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesPie, options);
 }
 
-var mentionsPie = $.getJSON("data/partymentions.json", mentionsDraw);
+var mentionsPie = $.getJSON("json/partymentions.json", mentionsDraw);
 function mentionsDraw(mentionsPie) {
     var ctxMentions = document.getElementById("mentions").getContext("2d");
     var options = { segmentStrokeWidth : 1 };
@@ -332,7 +332,7 @@ $(function() {
 
 
 function addCandidatesByRegion() {
-    $.getJSON("data/candidates.json", function (candidates) {
+    $.getJSON("json/candidates.json", function (candidates) {
         $('#tab-explore-candidates').html('<div class="panel-group" id="candiates-by-region-accordion"></div>');
         for (var r = 0; r < regions.length; r++) {
             var region = regions[r];
@@ -383,7 +383,7 @@ function getConcept(uri, callback) {
         async = true;
 
     $.ajax({
-      url: "data/concepts.json",
+      url: "json/concepts.json",
       dataType: 'json',
       async: false,
       success: function(concepts) {
@@ -404,7 +404,7 @@ function getConcept(uri, callback) {
 
 //Projected votes - always visible
 $("#votes ul").html('');
-var nationalPoll = $.getJSON("data/globalspolls.json", chartDraw);
+var nationalPoll = $.getJSON("json/globalspolls.json", chartDraw);
 function chartDraw(nationalPoll) {
   var ctx = document.getElementById("nationalpoll").getContext("2d");
   var options = { segmentStrokeWidth : 1,
