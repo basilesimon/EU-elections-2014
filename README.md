@@ -7,16 +7,16 @@ Unnecessary exploration of the 2014 European election in the UK.
 This content is not published by BBC News and must not be considered as BBC words.
 
 ####To-do
-- [ ] Fix cross-domain issues
-- [ ] Pre-calculate the results
-- [x] Fix tooltip position on poll predictions
-    - [x] remove tooltip
-    - [x] add legends
+- Cross-domain issues
+    - [ ] Fix at deployment
+- Pre-calculate the results
+    - [ ] Partly done at deployment
+- [ ] Candidates occurrences graph to set to April 1st - election day range
 - [ ] Design UI for semantic data section
 - [ ] **Feature:** filter media coverage breakdown by publisher
-- [ ] Update mentions by party JSON
 - [ ] **Feature:** graph mentions by party over time
-- [x] Remove stokes from region polls and put on grey background
+    - [ ] Line chart (each line has the party's colour)
+- [ ] **Feature:** Add Abstract two-liners for candidates
 
 ####Ideas
 - Dashboard to follow the elections

@@ -1,7 +1,7 @@
 [
   {
     "label":"Conservative Party",
-    "value":1324,
+    "value":1526,
     "color":"#0099c6",
     "labelColor" : "white",
     "labelFontSize" : "16"
@@ -11,21 +11,21 @@
     "label" : "UKIP",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":1728
+    "value":2004
   },
   {
     "color" : "#ff9900",
     "label" : "Liberal Democrats",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":1320
+    "value":1458
   },
   {
     "color" : "#cc0000",
     "label" : "Labour",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":3544
+    "value":4081
   },
   {
     "color" : "#073763",
@@ -39,55 +39,55 @@
     "label" : "Greem Party",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":3
+    "value":5
   },
   {
     "label":"Scottish National Party",
     "color" : "#766AFF",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":410
+    "value":451
   },
   {
     "label":"Plaid Cymru",
     "color" : "#a9c413",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":48
+    "value":53
   },
   {
     "label": "Social Democratic and Labour Party",
     "color": "#cc0000",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":145
+    "value":160
   },
   {
     "label": "Democratic Unionist Party",
     "color": "#cc0000",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":66
+    "value":71
   },
   {
     "label": "Traditional Unionist Voice",
     "color": "#0099c6",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":13
+    "value":1
   },
   {
     "label": "Ulster Unionist Party",
     "color": "#dd4477",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":173
+    "value":180
   },
   {
     "label":"Others",
     "color" : "#cccccc",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":12
+    "value":13
   }
 ]

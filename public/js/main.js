@@ -281,7 +281,7 @@ $(document).on("click touch", "a[data-uri]", function(e) {
 
                         for (var conceptType in conceptsByType) {
                             var relatedConceptsHtml = '';
-                            relatedConceptsHtml += '<strong span class="label label-default pull-left">'+conceptType+'</strong>';
+                            relatedConceptsHtml += '<strong span class="label label-default pull-left"><i class="fa fa-tag"></i>  '+conceptType+'</strong>';
                             for (var j = 0; j < conceptsByType[conceptType].length; j++) {
                                 var concept = conceptsByType[conceptType][j];
                                 // relatedConceptsHtml += '<span class="label label-info pull-left">' + concept.name + ' <span class="badge">' + concept.occurrences +'</span></span>';
