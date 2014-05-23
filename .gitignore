@@ -7,3 +7,5 @@ api.js
 /node_modules/
 
 /config.json
+
+/public/.DS_Store

@@ -12,6 +12,6 @@
     "q": "*",
     "moment": "*",
     "csvtojson": "*",
-    "newsquery": "*"
+    "newsquery": "0.3.*"
   }
 }
