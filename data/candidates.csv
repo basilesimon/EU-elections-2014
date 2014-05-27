@@ -1,4 +1,4 @@
-party,region,candidate,twitter
+party,region,name,twitter,uri
 National Liberal Party – True Liberalism,London,Graham Williamson,
 National Liberal Party – True Liberalism,London,Jagdeesh Singh,
 National Liberal Party – True Liberalism,London,Sockalingam Yogalingam,
@@ -35,7 +35,7 @@ An Independence From Europe,East of England,Edmond Rosenthal,
 An Independence From Europe,East of England,Rupert Smith,
 An Independence From Europe,East of England,Dennis Wiffen,
 An Independence From Europe,East of England,Betty Wiffen,
-An Independence From Europe,West Midlands,Mike Nattrass,
+An Independence From Europe,West Midlands,Mike Nattrass,,http://dbpedia.org/resource/Mike_Nattrass
 An Independence From Europe,West Midlands,Mark nattrass,
 An Independence From Europe,West Midlands,Joshna Pattni,
 An Independence From Europe,West Midlands,Carl Humphries,
@@ -66,7 +66,7 @@ An Independence From Europe,London,Jean Atkins,
 An Independence From Europe,North East England,Sherri Forbes,
 An Independence From Europe,North East England,Nawal Hizan,
 An Independence From Europe,North East England,Mary Forbes,
-An Independence From Europe,South East England,Laurence Stassen,
+An Independence From Europe,South East England,Laurence Stassen,,http://dbpedia.org/resource/Laurence_Stassen
 An Independence From Europe,South East England,Joyce Nattrass,
 An Independence From Europe,South East England,Paul Godfrey,
 An Independence From Europe,South East England,Alan Sheath,
@@ -83,12 +83,12 @@ Socialist Labour,Wales,Andrew Jordan,AndrewJordanSLP
 Socialist Labour,Wales,Katherine Jones,
 Socialist Labour,Wales,David Lloyd Jones,
 Socialist Labour,Wales,Liz Screen,
-Sinn Féin,Northern Ireland,Martina Anderson,MEPStandingUp4U
+Sinn Féin,Northern Ireland,Martina Anderson,MEPStandingUp4U,http://dbpedia.org/resource/Martina_Anderson
 National Health Action Party,London,Dr Louise Irvine,drmarielouise
 National Health Action Party,London,Dr Chidi Ejimofo,Nytspider
 National Health Action Party,London,Marcus Chown,
 National Health Action Party,London,Kathryn Anderson,
-National Health Action Party,London,Rufus Hound,RufusHound
+National Health Action Party,London,Rufus Hound,RufusHound,http://dbpedia.org/resource/Rufus_Hound
 National Health Action Party,London,Jessica Ormerod,
 National Health Action Party,London,Andrew Sharp,Andrewsharp1
 National Health Action Party,London,Alex Ashman,
@@ -100,7 +100,7 @@ Europeans Party,London,Robin Ashenden,
 Europeans Party,London,Emil Rusanov,
 Europeans Party,London,Georgios Papagrigorakis,
 NI21,Northern Ireland,Tina McKenzie,Tina4Europe
-Social Democratic and Labour Party,Northern Ireland,Alex Attwood,AlexForEurope
+Social Democratic and Labour Party,Northern Ireland,Alex Attwood,AlexForEurope,http://dbpedia.org/resource/Alex_Attwood
 No2EU,North West England,Roger Bannister,
 No2EU,North West England,George Waterhouse,
 No2EU,North West England,Jacqueline Grunsell,
@@ -134,7 +134,7 @@ No2EU,London,Mary Davis,
 No2EU,London,Paula Mitchell,
 No2EU,London,Natasha Hoarau,
 No2EU,London,Michael Carty,
-No2EU,West Midlands,Dave Nellist,davenellist
+No2EU,West Midlands,Dave Nellist,davenellist,http://dbpedia.org/resource/Dave_Nellist
 No2EU,West Midlands,Pat Collins,
 No2EU,West Midlands,Joanne Stevenson,
 No2EU,West Midlands,Sophia Hussain,
@@ -171,11 +171,11 @@ British National Party,West Midlands,Simon Patten,
 British National Party,West Midlands,David Bradnock,
 British National Party,West Midlands,Mark Badrick,
 British National Party,West Midlands,Phil Kimberley,
-British National Party,North West England,Nick Griffin,nickgriffinmep
+British National Party,North West England,Nick Griffin,nickgriffinmep,http://dbpedia.org/resource/Nick_Griffin
 British National Party,North West England,Dawn Charlton,
 British National Party,North West England,Clive Jefferson,
 British National Party,North West England,Eddy O'Sullivan,
-British National Party,North West England,Simon Darby,
+British National Party,North West England,Simon Darby,,http://dbpedia.org/resource/Simon_Darby
 British National Party,North West England,Kay Pollitt,
 British National Party,North West England,Derek Adams,
 British National Party,North West England,David O'Loughlin,
@@ -231,24 +231,24 @@ Yorkshire First,Yorkshire and the Humber,Richard Honnoraty,
 Liberty GB,South East England,Paul Weston,paulwestonlibgb
 Liberty GB,South East England,Enza Ferreri,EnzaFerreri
 Liberty GB,South East England,Jack Buckby,jackbuckby
-Conservative Party,North East England,Martin Callanan,
+Conservative Party,North East England,Martin Callanan,,http://dbpedia.org/resource/Martin_Callanan
 Conservative Party,North East England,Ben Houchen,BenHouchen
 Conservative Party,North East England,Andrew Lee,
-Conservative Party,Yorkshire and the Humber,Timothy Kirkhope,TimKirkhopeMEP
+Conservative Party,Yorkshire and the Humber,Timothy Kirkhope,TimKirkhopeMEP,http://dbpedia.org/resource/Timothy_Kirkhope
 Conservative Party,Yorkshire and the Humber,Alex Story,
 Conservative Party,Yorkshire and the Humber,John Procter,
 Conservative Party,Yorkshire and the Humber,Carolyn Abbott,CarolynAbbottRe
 Conservative Party,Yorkshire and the Humber,Michael Naughton,
 Conservative Party,Yorkshire and the Humber,Ryan Stephenson,
 Conservative Party,East of England,Vicky Ford,vickyford
-Conservative Party,East of England,Geoffrey van Orden,
-Conservative Party,East of England,David Campbell Bannerman,DCBMEP
+Conservative Party,East of England,Geoffrey van Orden,,http://dbpedia.org/resource/Geoffrey_Van_Orden
+Conservative Party,East of England,David Campbell Bannerman,DCBMEP,http://dbpedia.org/resource/David_Campbell_Bannerman
 Conservative Party,East of England,John Flack,GiveEuropeFlack
 Conservative Party,East of England,Tom Hunt,cllrtomhunt1
 Conservative Party,East of England,Margaret Simons,Margaret_Simons
 Conservative Party,East of England,Jonathan Collett,JonCollett
 Conservative Party,North West England,Jacqueline Foster,jfostermep
-Conservative Party,North West England,Sajjad Karim,SHKMEP
+Conservative Party,North West England,Sajjad Karim,SHKMEP,http://dbpedia.org/resource/Sajjad_Karim
 Conservative Party,North West England,Kevin Beaty,kevcow
 Conservative Party,North West England,Deborah Dunleavy,
 Conservative Party,North West England,Joe Barker-Willis,JMVBarker
@@ -256,7 +256,7 @@ Conservative Party,North West England,Daniel Hamilton,danielrhamilton
 Conservative Party,North West England,Chris Whiteside,ChrisWhiteside3
 Conservative Party,North West England,James Walsh,
 Conservative Party,West Midlands,Philip Bradbourn,
-Conservative Party,West Midlands,Anthea McIntyre,anthea_mcintyre
+Conservative Party,West Midlands,Anthea McIntyre,anthea_mcintyre,http://dbpedia.org/resource/Anthea_McIntyre
 Conservative Party,West Midlands,Daniel Dalton,
 Conservative Party,West Midlands,Michael Burnett,
 Conservative Party,West Midlands,Sibby Buckle,sibbuc
@@ -268,23 +268,23 @@ Conservative Party,Scotland,Nosheena Mobarik,
 Conservative Party,Scotland,Jamie Gardiner,
 Conservative Party,Scotland,Iain McGill,IainMcGill
 Conservative Party,Scotland,Stuart McIntyre,stuartgmcintyre
-Conservative Party,East Midlands,Emma McClarkin,EmmaMcClarkin
+Conservative Party,East Midlands,Emma McClarkin,EmmaMcClarkin,http://dbpedia.org/resource/Emma_McClarkin
 Conservative Party,East Midlands,Andrew Lewer,
 Conservative Party,East Midlands,Rupert Matthews,RupertMatthews
 Conservative Party,East Midlands,Stephen Castens,
 Conservative Party,East Midlands,Brendan Clarke-Smith,
-Conservative Party,London,Syed Kamall,SyedKamall
-Conservative Party,London,Charles Tannock,CharlesTannock
-Conservative Party,London,Marina Yannakoudakis,MarinaMEP
+Conservative Party,London,Syed Kamall,SyedKamall,http://dbpedia.org/resource/Syed_Kamall
+Conservative Party,London,Charles Tannock,CharlesTannock,http://dbpedia.org/resource/Charles_Tannock
+Conservative Party,London,Marina Yannakoudakis,MarinaMEP,http://dbpedia.org/resource/Marina_Yannakoudakis
 Conservative Party,London,Caroline Attfield,
 Conservative Party,London,Lynne Hack,
 Conservative Party,London,Sheila Lawlor,
 Conservative Party,London,Glyn Chambers,
 Conservative Party,London,Annesley Abercorn,
-Conservative Party,South East England,Daniel Hannan,DanHannanMEP
-Conservative Party,South East England,Nirj Deva,NirjDeva
+Conservative Party,South East England,Daniel Hannan,DanHannanMEP,http://dbpedia.org/resource/Daniel_Hannan
+Conservative Party,South East England,Nirj Deva,NirjDeva,http://dbpedia.org/resource/Nirj_Deva
 Conservative Party,South East England,Richard Ashworth,RichardAshMEP
-Conservative Party,South East England,Marta Andreasen,mandreasen
+Conservative Party,South East England,Marta Andreasen,mandreasen,http://dbpedia.org/resource/Marta_Andreasen
 Conservative Party,South East England,Richard Robinson,RRsoutheast
 Conservative Party,South East England,Graham Knight,GrahamKNIGHT2
 Conservative Party,South East England,Julie Marson,JulieMarson
@@ -292,12 +292,12 @@ Conservative Party,South East England,George Jeffrey,
 Conservative Party,South East England,Rory Love,
 Conservative Party,South East England,Adrian Pepper,thepepperview
 Conservative Party,Northern Ireland,Mark Brotherston,MarkBrotherston
-Conservative Party,Wales,Kay Swinburne,
+Conservative Party,Wales,Kay Swinburne,,http://dbpedia.org/resource/Kay_Swinburne
 Conservative Party,Wales,Aled Davies,Aled_Glanogeu
 Conservative Party,Wales,Dan Boucher,Dan4SwanseaEast
 Conservative Party,Wales,Richard Hopkin,RichardHopkin
-Conservative Party,South West England,Ashley Fox,Ashleyfoxmep
-Conservative Party,South West England,Julie Girling,juliegirling
+Conservative Party,South West England,Ashley Fox,Ashleyfoxmep,http://dbpedia.org/resource/Ashley_Fox
+Conservative Party,South West England,Julie Girling,juliegirling,http://dbpedia.org/resource/Julie_Girling
 Conservative Party,South West England,James Cracknell,JamesCracknell
 Conservative Party,South West England,Georgina Butler,gbdiplo
 Conservative Party,South West England,Sophie Swire,SwireSophie
@@ -329,13 +329,13 @@ Socialist Party of Great Britain,Wales,Howard Moss,
 Labour Party,North East England,Judith Kirton-Darling,Jude_KD
 Labour Party,North East England,Paul Brannen,PaulBrannenNE
 Labour Party,North East England,Jayne Shotton,jshttn
-Labour Party,Yorkshire and the Humber,Linda McAvan,LindaMcAvanMEP
-Labour Party,Yorkshire and the Humber,Richard Corbett,RichardC2014
+Labour Party,Yorkshire and the Humber,Linda McAvan,LindaMcAvanMEP,http://dbpedia.org/resource/Linda_McAvan
+Labour Party,Yorkshire and the Humber,Richard Corbett,RichardC2014,http://dbpedia.org/resource/Richard_Corbett
 Labour Party,Yorkshire and the Humber,Eleanor Tunnicliffe,ejtunnicliffe
 Labour Party,Yorkshire and the Humber,Asghar Khan,asgharlab
 Labour Party,Yorkshire and the Humber,Helen Mirfin-Boukouris,MirfinBoukouris
 Labour Party,Yorkshire and the Humber,Darren Hughes,darrenjlhughes
-Labour Party,East of England,Richard Howitt,richardhowitt
+Labour Party,East of England,Richard Howitt,richardhowitt,http://dbpedia.org/resource/Richard_Howitt_(politician)
 Labour Party,East of England,Alex Mayer,alexlmayer
 Labour Party,East of England,Sandy Martin,sandyofipswich
 Labour Party,East of England,Bhavna Joshi,BhavnaJoshi
@@ -345,25 +345,25 @@ Labour Party,East of England,Chris Ostrowski,
 Labour Party,North West England,Theresa Griffin,TheresaG_EU
 Labour Party,North West England,Afzal Khan,cllrakhan
 Labour Party,North West England,Julie Ward,julie4nw
-Labour Party,North West England,Wajid Khan,wajid4europe
+Labour Party,North West England,Wajid Khan,wajid4europe,http://dbpedia.org/resource/Wajid_Khan
 Labour Party,North West England,Angeliki Stogia,Angeliki4eu
 Labour Party,North West England,Steve Carter,SteveCarter001
 Labour Party,North West England,Pascale Lamb,PascaleLamb
 Labour Party,North West England,Nick Parnell,
-Labour Party,West Midlands,Neena Gill,neenaformep
-Labour Party,West Midlands,Siôn Simon,sionsimon
-Labour Party,West Midlands,Lynda Waltho,LW4WM
+Labour Party,West Midlands,Neena Gill,neenaformep,http://dbpedia.org/resource/Neena_Gill
+Labour Party,West Midlands,Siôn Simon,sionsimon,http://dbpedia.org/resource/Si%C3%B4n_Simon
+Labour Party,West Midlands,Lynda Waltho,LW4WM,http://dbpedia.org/resource/Lynda_Waltho
 Labour Party,West Midlands,Ansar Ali Khan,ansar_ali_khan
 Labour Party,West Midlands,Olwen Hamer,OlwenHamer
 Labour Party,West Midlands,Tony Ethapemi,
 Labour Party,West Midlands,Philippa Roberts,
-Labour Party,Scotland,David Martin,davidmartinmep
-Labour Party,Scotland,Catherine Stihler,C_Stihler_MEP
+Labour Party,Scotland,David Martin,davidmartinmep,http://dbpedia.org/resource/David_Martin_(Scottish_politician)
+Labour Party,Scotland,Catherine Stihler,C_Stihler_MEP,http://dbpedia.org/resource/Catherine_Stihler
 Labour Party,Scotland,Derek Munn,Derek4Europe
 Labour Party,Scotland,Katrina Murray,katrinamurray71
 Labour Party,Scotland,Asim Khan,asim_rel
 Labour Party,Scotland,Kirsty O'Brien,Coisty_OB
-Labour Party,East Midlands,Glenis Willmott,GlenisWillmott
+Labour Party,East Midlands,Glenis Willmott,GlenisWillmott,http://dbpedia.org/resource/Glenis_Willmott
 Labour Party,East Midlands,Rory Palmer,Rory_Palmer
 Labour Party,East Midlands,Linda Woodings,LindaWoodings
 Labour Party,East Midlands,Khalid Hadadi,
@@ -386,7 +386,7 @@ Labour Party,London,Ivana Bartoletti,IvanaBartoletti
 Labour Party,London,Kamaljeet Jandu,KamaljeetJandu
 Labour Party,London,Sanchia Alasia,sanchia4europe
 Labour Party,London,Andrea Biondi,biondi4europe
-Labour Party,Wales,Derek Vaughan,derekvaughan
+Labour Party,Wales,Derek Vaughan,derekvaughan,http://dbpedia.org/resource/Derek_Vaughan
 Labour Party,Wales,Jayne Bryant,
 Labour Party,Wales,Alex Thomas,
 Labour Party,Wales,Christina Rees,ReesEurope
@@ -417,33 +417,33 @@ Animal Welfare Party,London,Dimple Patel,
 Animal Welfare Party,London,Meg Mathews,
 Animal Welfare Party,London,Guy Dessoy,
 Animal Welfare Party,London,Ranjan Joshi,
-Democratic Unionist Party,Northern Ireland,Diane Dodds,DianeDoddsMEP
+Democratic Unionist Party,Northern Ireland,Diane Dodds,DianeDoddsMEP,http://dbpedia.org/resource/Diane_Dodds
 Scottish Green Party,Scotland,Maggie Chapman,MaggieEdinburgh
 Scottish Green Party,Scotland,Chas Booth,CllrChasBooth
 Scottish Green Party,Scotland,Grace Murray,
 Scottish Green Party,Scotland,Alastair Whitelaw,
 Scottish Green Party,Scotland,Anne Thomas,
 Scottish Green Party,Scotland,Steen Parish,steenparish
-The Peace Party - Non-violence,Justice,Environment,South East England,John Morris,
-The Peace Party - Non-violence,Justice,Environment,South East England,Jim Duggan,
-The Peace Party - Non-violence,Justice,Environment,South East England,Julie Roxburgh,
-The Peace Party - Non-violence,Justice,Environment,South East England,Jeff Bolam,
-The Peace Party - Non-violence,Justice,Environment,South East England,Geoff Pay,
-The Peace Party - Non-violence,Justice,Environment,South East England,David Brown,
-The Peace Party - Non-violence,Justice,Environment,South East England,Keith Scott,
-The Peace Party - Non-violence,Justice,Environment,South East England,Imdad Hussain,
-The Peace Party - Non-violence,Justice,Environment,South East England,Munim Choudhury,
-The Peace Party - Non-violence,Justice,Environment,South East England,Charles Wilkinson,
-Traditional Unionist Voice,Northern Ireland,Jim Allister,JimAllister
+The Peace Party,South East England,John Morris,
+The Peace Party,South East England,Jim Duggan,
+The Peace Party,South East England,Julie Roxburgh,
+The Peace Party,South East England,Jeff Bolam,
+The Peace Party,South East England,Geoff Pay,
+The Peace Party,South East England,David Brown,
+The Peace Party,South East England,Keith Scott,
+The Peace Party,South East England,Imdad Hussain,
+The Peace Party,South East England,Munim Choudhury,
+The Peace Party,South East England,Charles Wilkinson,
+Traditional Unionist Voice,Northern Ireland,Jim Allister,JimAllister,http://dbpedia.org/resource/Jim_Allister
 Ulster Unionist Party,Northern Ireland,Jim Nicholson,JNicholsonMEP
-We Demand a Referendum,West Midlands,Nikki Sinclaire,NSinclaireMEP
+We Demand a Referendum,West Midlands,Nikki Sinclaire,NSinclaireMEP,,http://dbpedia.org/resource/Nikki_Sinclaire
 We Demand a Referendum,West Midlands,Andy Adris,
 We Demand a Referendum,West Midlands,Linda Brown,
 We Demand a Referendum,West Midlands,David Bennett,
 We Demand a Referendum,West Midlands,Judith Smart,
 We Demand a Referendum,West Midlands,Thomas Reid,
 We Demand a Referendum,West Midlands,Amanda Wilson,
-UKIP,North East England,Jonathan Arnott,JonathanArnott
+UKIP,North East England,Jonathan Arnott,JonathanArnott,http://dbpedia.org/resource/Jonathan_Arnott
 UKIP,North East England,Richard Elvin,globalrichard
 UKIP,North East England,Philip Broughton,
 UKIP,Yorkshire and the Humber,Jane Collins,Jane4ukip
@@ -453,13 +453,13 @@ UKIP,Yorkshire and the Humber,Gary Shores,
 UKIP,Yorkshire and the Humber,Jason Smith,JasonSmithUKIP
 UKIP,Yorkshire and the Humber,Anne Murgatroyd,
 UKIP,East of England,Patrick O'Flynn,
-UKIP,East of England,Stuart Agnew,
+UKIP,East of England,Stuart Agnew,,http://dbpedia.org/resource/Stuart_Agnew
 UKIP,East of England,Tim Aker,Tim_Aker
 UKIP,East of England,Michael Heaver,Michael_Heaver
 UKIP,East of England,Mick McGough,mickmcgough
 UKIP,East of England,Andy Monk,
 UKIP,East of England,Mark Hughes,MarkJHughes
-UKIP,North West England,Paul Nuttall,paulnuttallukip
+UKIP,North West England,Paul Nuttall,paulnuttallukip,http://dbpedia.org/resource/Paul_Nuttall
 UKIP,North West England,Louise Bours,
 UKIP,North West England,Steven Woolfe,Steven_Woolfe
 UKIP,North West England,Shneur Odze,ShneurOdzeUKIP
@@ -480,12 +480,12 @@ UKIP,Scotland,Otto Inglis,OttoInglis
 UKIP,Scotland,Denise Baykal,UKIPCowdenbeath
 UKIP,Scotland,Hugh Hatrick,hughhatrick
 UKIP,Scotland,Malcolm Mackay,
-UKIP,East Midlands,Roger Helmer,RogerHelmerMEP
+UKIP,East Midlands,Roger Helmer,RogerHelmerMEP,http://dbpedia.org/resource/Roger_Helmer
 UKIP,East Midlands,Margot Parker,MargotLJParker
 UKIP,East Midlands,Jonathan Bullock,
 UKIP,East Midlands,Nigel Wickens,NigelWickens
 UKIP,East Midlands,Barry Mahoney,
-UKIP,London,Gerard Batten,GerardBattenMEP
+UKIP,London,Gerard Batten,GerardBattenMEP,http://dbpedia.org/resource/Gerard_Batten
 UKIP,London,Paul Oakley,PaulJamesOakley
 UKIP,London,Elizabeth Jones,UKIPbrixtonHill
 UKIP,London,Lawrence Webb,UKIPWebb4London
@@ -493,7 +493,7 @@ UKIP,London,Alastair McFarlane,
 UKIP,London,Anthony Brown,libertariantony
 UKIP,London,Andrew McNeilis,andrewmcneilis
 UKIP,London,Peter Whittle,
-UKIP,South East England,Nigel Farage,Nigel_Farage
+UKIP,South East England,Nigel Farage,Nigel_Farage,http://dbpedia.org/resource/Nigel_Farage
 UKIP,South East England,Janice Atkinson,JaniceUKIP
 UKIP,South East England,Diane James,DianeUKIP
 UKIP,South East England,Ray Finch,raymondfinch
@@ -514,13 +514,13 @@ UKIP,South West England,Gawain Towler,GawainTowler
 UKIP,South West England,Tony McIntyre,
 UKIP,South West England,Robert Smith,
 UKIP,South West England,Keith Crawford,
-Scottish National Party,Scotland,Ian Hudghton,hudghtonmepSNP
-Scottish National Party,Scotland,Alyn Smith,AlynSmithMEP
+Scottish National Party,Scotland,Ian Hudghton,hudghtonmepSNP,http://dbpedia.org/resource/Ian_Hudghton
+Scottish National Party,Scotland,Alyn Smith,AlynSmithMEP,http://dbpedia.org/resource/Alyn_Smith
 Scottish National Party,Scotland,Tasmina Ahmed-Sheikh,TasminaSheikh
 Scottish National Party,Scotland,Stephen Gethins,StephenGethins
 Scottish National Party,Scotland,Toni Giugliano,ToniGiugliano
 Scottish National Party,Scotland,Chris Stephens,CStephenssnp
-Plaid Cymru,Wales,Jill Evans,JillEvansMEP
+Plaid Cymru,Wales,Jill Evans,JillEvansMEP,http://dbpedia.org/resource/Jillian_Evans
 Plaid Cymru,Wales,Marc Jones,marcvjones
 Plaid Cymru,Wales,Stephen Cornelius,
 Plaid Cymru,Wales,Ioan Bellin,Ioanbellin
@@ -607,24 +607,24 @@ Christian Peoples Alliance,East of England,Chris Olley,
 Christian Peoples Alliance,East of England,Stephen Todd,
 Christian Peoples Alliance,East of England,Jane Clamp,
 Christian Peoples Alliance,East of England,Kirsty Evans,
-Christian Peoples Alliance,East of England,Kevin Austin,
+Christian Peoples Alliance,East of England,Kevin Austin,,http://dbpedia.org/resource/Kevin_Austin
 Liberal Democrats,North East England,Angelika Schneider,Angel4theNorth
 Liberal Democrats,North East England,Owen Temple,OwenTemple2
 Liberal Democrats,North East England,Christian Vassie,christianvassie
-Liberal Democrats,Yorkshire and the Humber,Edward McMillan-Scott,emcmillanscott
+Liberal Democrats,Yorkshire and the Humber,Edward McMillan-Scott,emcmillanscott,http://dbpedia.org/resource/Edward_McMillan-Scott
 Liberal Democrats,Yorkshire and the Humber,James Monaghan,JamesMonaghan
 Liberal Democrats,Yorkshire and the Humber,Joe Otten,CllrJoeOtten
 Liberal Democrats,Yorkshire and the Humber,Chris Foote-Wood,ChrisasDickens
 Liberal Democrats,Yorkshire and the Humber,Jacqueline Bell,
 Liberal Democrats,Yorkshire and the Humber,Aqila Choudhry,
-Liberal Democrats,East of England,Andrew Duff,Andrew_Duff_MEP
+Liberal Democrats,East of England,Andrew Duff,Andrew_Duff_MEP,http://dbpedia.org/resource/Andrew_Duff
 Liberal Democrats,East of England,Josephine Hayes,JoHayesLibDem
 Liberal Democrats,East of England,Belinda Brooks-Gordon,BelindaBG
 Liberal Democrats,East of England,Stephen Robinson,sj_robinson
 Liberal Democrats,East of England,Michael Green,michaelgreen01
 Liberal Democrats,East of England,Linda Jack,Lindylooz
 Liberal Democrats,East of England,Hugh Annand,Hugh_Annand
-Liberal Democrats,North West England,Chris Davies,ChrisDaviesMEP
+Liberal Democrats,North West England,Chris Davies,ChrisDaviesMEP,http://dbpedia.org/resource/Chris_Davies
 Liberal Democrats,North West England,Helen Foster-Grime,helen_fg
 Liberal Democrats,North West England,Jo Crotty,ProfJoCrotty
 Liberal Democrats,North West England,Qassim Afzal,QassimAfzal
@@ -632,25 +632,25 @@ Liberal Democrats,North West England,Jane Brophy,Cllr_JaneBrophy
 Liberal Democrats,North West England,Sue McGuire,sue_mcguire
 Liberal Democrats,North West England,Gordon Lishman,
 Liberal Democrats,North West England,Neil Christian,Neil_Christian
-Liberal Democrats,West Midlands,Phil Bennion,PhilBennionMEP
+Liberal Democrats,West Midlands,Phil Bennion,PhilBennionMEP,http://dbpedia.org/resource/Phil_Bennion
 Liberal Democrats,West Midlands,Jonathan Webber,JPMWebber
 Liberal Democrats,West Midlands,Christine Tinker,ctinker2
 Liberal Democrats,West Midlands,Ayoub Khan,AyoubKhanPCC
 Liberal Democrats,West Midlands,Tim Bearder,timbearder
 Liberal Democrats,West Midlands,Neville Farmer,nevillefarmer
 Liberal Democrats,West Midlands,John Redfern,
-Liberal Democrats,Scotland,George Lyon,georgelyonmep
+Liberal Democrats,Scotland,George Lyon,georgelyonmep,http://dbpedia.org/resource/George_Lyon_(Scottish_politician)
 Liberal Democrats,Scotland,Christine Jardine,Cajardine
 Liberal Democrats,Scotland,Richard Brodie,
 Liberal Democrats,Scotland,Jade Holden,JadeEHolden
 Liberal Democrats,Scotland,Siobhan Mathers,
 Liberal Democrats,Scotland,Euan Davidson,euandavidson
-Liberal Democrats,East Midlands,Bill Newton Dunn,billnewtondunn
+Liberal Democrats,East Midlands,Bill Newton Dunn,billnewtondunn,http://dbpedia.org/resource/Bill_Newton_Dunn
 Liberal Democrats,East Midlands,Issan Ghazni,Issanghazni
 Liberal Democrats,East Midlands,Phil Knowles,PhilKnowlesLD
 Liberal Democrats,East Midlands,George Smid,GeorgeSmid
 Liberal Democrats,East Midlands,Deborah Newton-Cook,DNewtonCook
-Liberal Democrats,South East England,Catherine Bearder,catherinemep
+Liberal Democrats,South East England,Catherine Bearder,catherinemep,http://dbpedia.org/resource/Catherine_Bearder
 Liberal Democrats,South East England,Anthony Hook,antonyhook
 Liberal Democrats,South East England,Dinti Batstone,DintiBatstone
 Liberal Democrats,South East England,Giles Goodall,GoodallGiles
@@ -660,8 +660,8 @@ Liberal Democrats,South East England,Steve Sollitt,stevesollitt
 Liberal Democrats,South East England,Bruce Tennent,BruceTennent
 Liberal Democrats,South East England,John Vincent,
 Liberal Democrats,South East England,Alan Bullion,AlanBullion
-Liberal Democrats,London,Sarah Ludford,SarahLudfordMEP
-Liberal Democrats,London,Jonathan Fryer,jonathanfryer
+Liberal Democrats,London,Sarah Ludford,SarahLudfordMEP,http://dbpedia.org/resource/Sarah_Ludford,_Baroness_Ludford
+Liberal Democrats,London,Jonathan Fryer,jonathanfryer,http://dbpedia.org/resource/Jonathan_Fryer
 Liberal Democrats,London,Richard Davis,DrDickyD
 Liberal Democrats,London,Anuja Prashar,AnujaPrashar
 Liberal Democrats,London,Rosina Robson,RosinaRobson
@@ -672,13 +672,13 @@ Liberal Democrats,Wales,Alec Dauncey,alecaberystwyth
 Liberal Democrats,Wales,Rob Speht,
 Liberal Democrats,Wales,Jackie Radford,
 Liberal Democrats,Wales,Bruce Roberts,WxmBruce
-Liberal Democrats,South West England,Graham Watson,grahamwatsonmep
+Liberal Democrats,South West England,Graham Watson,grahamwatsonmep,http://dbpedia.org/resource/Graham_Watson
 Liberal Democrats,South West England,Kay Barnard,Kay_Barnard
 Liberal Democrats,South West England,Brian Matthew,
 Liberal Democrats,South West England,Andrew Wigley,andrewwigley
 Liberal Democrats,South West England,Jay Risbridger,JayRisbridger
 Liberal Democrats,South West England,Lyana Armstrong-Emery,
-YOURvoice Party,South East England,Julian James,
+YOURvoice Party,South East England,Julian James,,http://dbpedia.org/resource/Julian_James
 YOURvoice Party,South East England,Rachel Ling,LocalRachel
 YOURvoice Party,South East England,Fulvia James,
 The Roman Party.AVE,South East England,Jean-Louis Pascual,
@@ -694,8 +694,8 @@ Green Party,Yorkshire and the Humber,Dr Vicky Dunn,HumberGreen
 Green Party,Yorkshire and the Humber,Denise Craghill,DeniseCraghill
 Green Party,Yorkshire and the Humber,Martin Hemingway,yorksgreenmarti
 Green Party,Yorkshire and the Humber,Kevin Warnes,kevinwarnes
-Green Party,East of England,Rupert Read,GreenRupertRead
-Green Party,East of England,Mark Ereira-Guyer,markereiraguyer
+Green Party,East of England,Rupert Read,GreenRupertRead,http://dbpedia.org/resource/Rupert_Read
+Green Party,East of England,Mark Ereira-Guyer,markereiraguyer,http://dbpedia.org/resource/Mark_Ereira-Guyer
 Green Party,East of England,Jill Mills,
 Green Party,East of England,Ash Haynes,ashlizhaynes
 Green Party,East of England,Marc Scheimann,
@@ -721,7 +721,7 @@ Green Party,North West England,John Knight,
 Green Party,North West England,Ulrike Zeshan,
 Green Party,North West England,Lewis Coyne,LewisCoyne
 Green Party,North West England,Jake Welsh,veganfishcake
-Green Party,London,Jean Lambert,GreenJeanMEP
+Green Party,London,Jean Lambert,GreenJeanMEP,http://dbpedia.org/resource/Jean_Lambert
 Green Party,London,Caroline Allen,Green_Caroline
 Green Party,London,Haroon Saad,HaroonSaad1
 Green Party,London,Shahrar Ali,shahrarali
@@ -736,7 +736,7 @@ Green Party,Wales,Rozz Cutler,
 Green Party,North East England,Shirley Ford,ShirleyFord15
 Green Party,North East England,Alison Whalley,alisonjwhalley
 Green Party,North East England,Caroline Robinson,
-Green Party,South East England,Keith Taylor,GreenKeithMEP
+Green Party,South East England,Keith Taylor,GreenKeithMEP,http://dbpedia.org/resource/Keith_Taylor_(British_politician)
 Green Party,South East England,Alexandra Phillips,
 Green Party,South East England,Derek Wall,Anothergreen
 Green Party,South East England,Jason Kitcat,jasonkitcat

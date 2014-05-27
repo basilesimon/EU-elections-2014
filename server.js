@@ -9,8 +9,8 @@ var mongoJs = require('mongojs');
 var Q = require('q');
 var dateFormat = require('dateformat');
 var fs = require('fs');
-var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
 var config = require(__dirname + '/config.json');
+var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
 
 GLOBAL.config = config;
 GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "regions", "concepts"]);
@@ -30,60 +30,66 @@ app.engine('ejs', ejs.__express);
 partials.register('.ejs', ejs);
 
 /**
- * Get all candidates
- */
-app.get('/uk/candidates', function(req, res, next) {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
-});
-
-/**
- * Get detailed candidate info by candidate name
- */
-app.get('/uk/candidates/:name', function(req, res, next) {
-    var candidate = req.params.candidate;
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
-});
-
-/**
- * Get all parties
- */
-app.get('/uk/parties', function(req, res, next) {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
-});
-
-/**
- * Get detailed party info by party name
- */
-app.get('/uk/parties/:name', function(req, res, next) {
-    var party = req.params.party;
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
-});
-
-/**
  * Get regions
  */
-app.get('/uk/regions', function(req, res, next) {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
+app.get('/:country/regions', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    euElectionCoverage.getRegions(country)
+    .then(function(regions) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(regions);
+    });
 });
 
-/**
- * Get regional candidates
- */
-app.get('/uk/:region/candidates', function(req, res, next) {
-    var region = req.params.region;
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send( JSON.stringify() );
+app.get('/:country/:region/candidates', function(req, res, next) {
+    var region = req.params.region.replace(/_/g, ' ');
+    var country = req.params.country.replace(/_/g, ' ');
+    euElectionCoverage.getCandidates(country, region)
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
+});
+
+app.get('/:country/candidates', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    euElectionCoverage.getCandidates(country)
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
+});
+
+app.get('/candidates', function(req, res, next) {
+    euElectionCoverage.getCandidates()
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
+});
+
+app.get('/parties', function(req, res, next) {
+    euElectionCoverage.getParties()
+    .then(function(parties) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(parties);
+    });
+});
+
+
+app.get('/candidate/:id', function(req, res, next) {
+    var candidateId = req.params.id;
+    euElectionCoverage.getCandidateById(candidateId)
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
 });
 
 /**
  * Get regional parties
  */
-app.get('/uk/:region/parties', function(req, res, next) {
+app.get('/:country/:region/parties', function(req, res, next) {
     var region = req.params.region;
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     res.send( JSON.stringify() );
@@ -92,7 +98,7 @@ app.get('/uk/:region/parties', function(req, res, next) {
 /**
  * Get regional articles
  */
-app.get('/uk/:region/articles', function(req, res, next) {
+app.get('/:country/:region/articles', function(req, res, next) {
     var region = req.params.region;
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     res.send( JSON.stringify() );

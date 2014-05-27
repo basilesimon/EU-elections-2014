@@ -5,6 +5,7 @@
 var Q = require('q');
 var mongoJs = require('mongojs');
 var csvtojson = require("csvtojson").core.Converter;
+var crypto = require('crypto');
 var fs = require("fs");
 
 GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "regions", "concepts"]);
@@ -20,29 +21,35 @@ loadCandidatesFromCsv()
     var regions = {};
     var parties = {};
     
-    // Build list of canidates and parties
+    // Build list of candidates and parties
     candidates.forEach(function(candidate, i) {
+
+        candidate._id = crypto.createHash('sha1').update( candidate.name+candidate.region+candidate.party ).digest("hex");
+        
         if (!regions[candidate.region])
-            regions[candidate.region] = { _id: candidate.region, name: candidate.region, candidates: [], articles: [] };
+            regions[candidate.region] = { name: candidate.region, country: "United Kingdom", candidates: [], articles: [] };
 
         if (!parties[candidate.party])
-            parties[candidate.party] = { _id: candidate.party, name: candidate.party, candidates: [], articles: [] };
+            parties[candidate.party] = { name: candidate.party, candidates: [], articles: [] };
 
-        regions[candidate.region].candidates.push( candidate );
-        parties[candidate.party].candidates.push( candidate );
+        regions[candidate.region].candidates.push( JSON.parse(JSON.stringify(candidate)) );
+        parties[candidate.party].candidates.push( JSON.parse(JSON.stringify(candidate)) );
         
-        // Save each canidate to DB
-        promises.push( savetoDb('candidates', candidate) );
+        // Save each candidate to DB
+        candidate.country = "United Kingdom";
+        candidate.articles = [];
+        candidate.concepts = [];
+        promises.push( save('candidates', candidate) );
     });
 
     // Save all regions to db
     Object.keys(regions).forEach(function(region) {
-        promises.push( savetoDb('regions', regions[region]) );
+        promises.push( save('regions', regions[region]) );
     });
     
     // Save all parties to db
     Object.keys(parties).forEach(function(party) {
-        promises.push( savetoDb('parties', parties[party]) );
+        promises.push( save('parties', parties[party]) );
     });
     
     return Q.all(promises);
@@ -67,7 +74,7 @@ function loadCandidatesFromCsv() {
     return deferred.promise;
 }
 
-function savetoDb(collection, record) {
+function save(collection, record) {
     var deferred = Q.defer();
     db[collection].save(record, function(err, saved) {
         if (err || !saved)

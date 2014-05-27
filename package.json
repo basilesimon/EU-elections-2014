@@ -9,9 +9,10 @@
     "ejs": "*",
     "mongojs": "*",
     "request": "*",
+    "crypto": "*",
     "q": "*",
     "moment": "*",
     "csvtojson": "*",
-    "newsquery": "0.3.*"
+    "newsquery": "*"
   }
 }
