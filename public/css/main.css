@@ -85,7 +85,7 @@ h1 {
 }
 
 .label.label-info {
-    background-color: #259eff;
+    background-color: #3698e2;
 }
 
 .label.label-person {
@@ -102,17 +102,23 @@ h1 {
 
 .label .badge {
     position: relative;
-    background-color: rgba(255,255,255,0.75) !important;
-    background-color: rgba(0,0,0,0.2) !important;
-    color: rgba(0,0,0,0.3) !important;
+    background-color: rgba(0,0,0,0.1) !important;
     color: #fff !important;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    padding: 6px;
-    margin: -3px;
-    margin-right: -8px;
-    margin-left: 3px;
+    padding: 7px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    margin-right: -9px;
+    margin-left: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .fa-ul li {
