@@ -70,8 +70,7 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
         $('#candidate-concepts').html('<div id="candidate-concepts-people" class="clearfix"></div>'
                                      +'<div id="candidate-concepts-organisations" class="clearfix"></div>'
                                      +'<div id="candidate-concepts-places" class="clearfix"></div>'
-                                     +'<div id="candidate-concepts-other" class="clearfix"></div>');
-
+                                     +'<div id="candidate-concepts-things" class="clearfix"></div>');
 
         if (candidate.concepts && candidate.concepts.length > 0) {
             candidate.concepts.forEach(function(concept) {
@@ -92,9 +91,9 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                     $('#candidate-concepts-places').append(html);
                 } else {
                     var html = '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
-                    if ($('#candidate-concepts-other').html() == '')
-                        $('#candidate-concepts-other').append('<span class="label label-default pull-left">Other Tags</span>');
-                    $('#candidate-concepts-other').append(html);
+                    if ($('#candidate-concepts-things').html() == '')
+                        $('#candidate-concepts-things').append('<span class="label label-default pull-left">Things</span>');
+                    $('#candidate-concepts-things').append(html);
                 }
             });
         }
@@ -134,6 +133,20 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
         
     });
     $('#candidate-info').show();
+});
+
+
+$(document).on("click touch", ".map path[data-region-name]", function(e) {
+    var regionName = $(this).data('regionName');
+    var cssClass = $(element).attr('class');
+
+    // NB: Can't use addClass() and removeClass as they don't work with SVGs!
+    $('.map .active').attr('class', '');
+    $(element).attr('class', cssClass + ' active');
+
+    $.getJSON(server+"/region/"+encodeURIComponent(regionName.replace(/ /g,'_')), function(region) {
+        
+    });
 });
 
 $(window).scroll(function(){
