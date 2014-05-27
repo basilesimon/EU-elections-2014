@@ -29,37 +29,6 @@ app.set('view engine', 'ejs');
 app.engine('ejs', ejs.__express);
 partials.register('.ejs', ejs);
 
-/**
- * Get regions
- */
-app.get('/:country/regions', function(req, res, next) {
-    var country = req.params.country.replace(/_/g, ' ');
-    euElectionCoverage.getRegions(country)
-    .then(function(regions) {
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        res.json(regions);
-    });
-});
-
-app.get('/:country/:region/candidates', function(req, res, next) {
-    var region = req.params.region.replace(/_/g, ' ');
-    var country = req.params.country.replace(/_/g, ' ');
-    euElectionCoverage.getCandidates(country, region)
-    .then(function(candidates) {
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        res.json(candidates);
-    });
-});
-
-app.get('/:country/candidates', function(req, res, next) {
-    var country = req.params.country.replace(/_/g, ' ');
-    euElectionCoverage.getCandidates(country)
-    .then(function(candidates) {
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        res.json(candidates);
-    });
-});
-
 app.get('/candidates', function(req, res, next) {
     euElectionCoverage.getCandidates()
     .then(function(candidates) {
@@ -80,6 +49,51 @@ app.get('/parties', function(req, res, next) {
 app.get('/candidate/:id', function(req, res, next) {
     var candidateId = req.params.id;
     euElectionCoverage.getCandidateById(candidateId)
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
+});
+
+/**
+ * Get regions
+ */
+app.get('/:country/regions', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    euElectionCoverage.getRegions(country)
+    .then(function(regions) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(regions);
+    });
+});
+
+/**
+ * Get region
+ */
+app.get('/:country/:region', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    var region = req.params.region.replace(/_/g, ' ');
+    euElectionCoverage.getRegion(country, region)
+    .then(function(region) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(region);
+    });
+});
+
+
+app.get('/:country/:region/candidates', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    var region = req.params.region.replace(/_/g, ' ');
+    euElectionCoverage.getCandidates(country, region)
+    .then(function(candidates) {
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.json(candidates);
+    });
+});
+
+app.get('/:country/candidates', function(req, res, next) {
+    var country = req.params.country.replace(/_/g, ' ');
+    euElectionCoverage.getCandidates(country)
     .then(function(candidates) {
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
         res.json(candidates);

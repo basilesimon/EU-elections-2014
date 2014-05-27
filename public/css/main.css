@@ -85,11 +85,11 @@ h1 {
 }
 
 .label.label-info {
-    background-color: #3698e2;
+    background-color: #e2333b;
 }
 
 .label.label-person {
-    background-color: #259eff;
+    background-color: #3698e2;
 }
 
 .label.label-organisation {
@@ -162,8 +162,8 @@ h1 {
     opacity: 0;
 }
 
-#select-region {
-    font-size: 48px;
+#select-region h2 {
+    font-size: 42px;
     font-weight: 600;
 }
 .panel-accordian .panel-title a {
@@ -221,9 +221,7 @@ h1 {
     position: relative;
     top: 1px;
     border: 1px solid rgba(0,0,0,.2);
-}
-
-
-#candidate-articles * {
-    font-size: 15px !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }

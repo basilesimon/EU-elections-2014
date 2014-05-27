@@ -2,19 +2,6 @@
 var server = "http://localhost:3001";
 
 $(function() {
-    
-    $.getJSON("json/candidatesbyparty.json", function(candidatesByParty) {
-        var ctxCandidates = document.getElementById("candidates-by-party").getContext("2d");
-        var options = { segmentStrokeWidth : 1 };
-        var candidatesChart = new Chart(ctxCandidates).Doughnut(candidatesByParty, options);
-    });
-
-    $.getJSON("json/partymentions.json", function(mentionsByParty) {
-        var ctxMentions = document.getElementById("mentions-by-party").getContext("2d");
-        var options = { segmentStrokeWidth : 1 };
-        var mentionsChart = new Chart(ctxMentions).Doughnut(mentionsByParty, options);
-    });
-    
     // Get all regions
     $.getJSON(server+"/United_Kingdom/regions", function(regions) {
         // Add accordion wtih regions + candidates
@@ -51,6 +38,9 @@ $(function() {
 
 $(document).on("click touch", "a[data-candidate-id]", function(e) {
     e.preventDefault();
+    
+    $('html,body').animate({scrollTop:$("#container-linked-data").offset().top}, 500);
+    
     var parent = this;
     var candidateId = $(this).data('candidateId');
     
@@ -113,22 +103,34 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                 //if (article.source == "http://www.bbc.co.uk/ontologies/bbc/Twitter")
                 //    return;
                     
-                if (index > 10)
-                    return;
-                    
                 var domain = article.url.replace(/^http:\/\//, '').replace(/\/(.*)?/, '');
                 domain = domain.replace(/(www|rss|feeds)\./, '');
                 articlesHtml += '<li>'
-                               +' <p>'
-                               +'  <a href="'+article.url+'">'+article.title+'</a>'
-                               +'  <br/><span class="text-muted">'+domain+'</span>'
-                               +' </p>';
-                               +'</li>';
+                               +'<h3><a href="'+article.url+'">'+article.title+'</a></h3>'
+                               +'<p class="lead"><strong class="text-muted">'+domain+'</strong></p>'
+                               +'<h5 class="text-muted">This was tagged with:</h5>'
+                               +'<p class="clearfix">';
+
+                var personTagsHtml = "", organisationTagsHtml = "", placeTagsHtml = "", otherTagsHtml = "";
+                article.concepts.forEach(function(concept) {
+                    if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
+                        personTagsHtml += '<span class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+'</span>';
+                    } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Organisation') != -1) {
+                        organisationTagsHtml += '<span class="label label-organisation pull-left"><i class="fa fa-sitemap"></i> '+concept.name+'</span>';
+                    } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Place') != -1) {
+                        placeTagsHtml += '<span class="label label-place pull-left"><i class="fa fa-globe"></i> '+concept.name+'</span>';
+                    } else {
+                        otherTagsHtml += '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+'</span>';
+                    }
+                });  
+                articlesHtml += personTagsHtml+organisationTagsHtml+placeTagsHtml+otherTagsHtml;              
+                articlesHtml +='</p><hr/></li>';
             });
             articlesHtml += '</ul>';
         } else {
             articlesHtml = '<p class="text-muted">No articles found</p>';
         }
+        console.log(articlesHtml);
         $('#candidate-articles').html(articlesHtml);
         
     });
@@ -138,15 +140,33 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
 
 $(document).on("click touch", ".map path[data-region-name]", function(e) {
     var regionName = $(this).data('regionName');
-    var cssClass = $(element).attr('class');
-
+    var cssClass = new String($(this).attr('class'));
+    
     // NB: Can't use addClass() and removeClass as they don't work with SVGs!
     $('.map .active').attr('class', '');
-    $(element).attr('class', cssClass + ' active');
-
-    $.getJSON(server+"/region/"+encodeURIComponent(regionName.replace(/ /g,'_')), function(region) {
-        
-    });
+    
+    if (cssClass.match(/active/)) {
+        $('#region-info').hide();
+        $('#select-region').fadeIn();
+        showRegionalPollPieChart();
+    } else {
+        $(this).attr('class', cssClass + ' active');
+    
+        $('#select-region').hide();
+        $('#region-info').hide().removeClass('hidden');
+    
+        $.getJSON(server+"/United_Kingdom/"+encodeURIComponent(regionName), function(region) {
+            $('#region-name').html(region.name);
+            //$('#region-articles ul').html('');
+            $("#region-candidates ul").html('');
+            region.candidates.forEach(function(candidate) {
+                if (candidate.uri)
+                    $('#region-candidates ul').append('<li><i class="fa fa-li fa-user fa-lg"></i><a href="#" data-candidate-id="' + candidate._id + '"><strong>' + candidate.name + '</strong></a> <span class="text-muted">'+candidate.party+'</span></li>');
+            });
+            showRegionalPollPieChart(region.name);
+            $('#region-info').slideDown();
+        });
+    }
 });
 
 $(window).scroll(function(){

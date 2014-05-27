@@ -16,18 +16,15 @@ euElectionCoverage.getCandidates()
     candidates.forEach(function(candidate, i) {
         if (!candidate.uri)
             return;
-        var promise = newsquery.getRelatedConcepts(candidate.uri, 100)
+        var promise = newsquery.getCoOccuringConcepts(candidate.uri, 100)
         .then(function(concepts) {
             console.log("Retreived "+concepts.length+" concepts related to "+candidate.uri);
             candidate.concepts = concepts;
-            return save('candidates', candidate);
+            return candidate;
         });
         promises.push(promise);
     });
     return Q.all(promises);
-})
-.then(function() {
-   return euElectionCoverage.getCandidates();
 })
 .then(function(candidates) {
     var promises = [];
@@ -36,6 +33,7 @@ euElectionCoverage.getCandidates()
             return;
         var promise = getDetailedConcepts(candidate.concepts)
         .then(function(detailedConcepts) {
+            console.log("Retreived extended information for "+candidate.concepts.length+" concepts related to "+candidate.uri);
             candidate.concepts = detailedConcepts;
             return candidate;
         });
@@ -44,16 +42,14 @@ euElectionCoverage.getCandidates()
     return Q.all(promises);
 })
 .then(function(candidates) {
-    console.log(candidates);
     var promises = [];
     candidates.forEach(function(candidate, i) {
         promises.push( save('candidates', candidate) );
     });
     return Q.all(promises);
 })
-
-.then(function() {
-   return euElectionCoverage.getCandidates();
+.then(function(candidates) {
+    return euElectionCoverage.getCandidates();
 })
 .then(function(candidates) {
     var promises = [];
@@ -63,13 +59,35 @@ euElectionCoverage.getCandidates()
         var promise = newsquery.getArticlesByConcept(candidate.uri, 100)
         .then(function(articles) {
             console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
-            candidate.articles = articles;
+            candidate.articles = articles
             return save('candidates', candidate);
         });
         promises.push(promise);
     });
     return Q.all(promises);
 })
+// .then(function(candidates) {
+//     var promises = [];
+//     candidates.forEach(function(candidate, i) {
+//         if (candidate.articles.length == 0)
+//             return;
+//         var promise = getDetailedConceptsForArticles(candidate.articles)
+//         .then(function(articlesWithDetailedConcepts) {
+//             console.log("Retreived extended article concept information for "+candidate.articles.length+" articles relating to "+candidate.uri);
+//             candidate.articles = articlesWithDetailedConcepts;
+//             return candidate;
+//         });
+//         promises.push(promise);
+//     });
+//     return Q.all(promises);
+// })
+// .then(function(candidates) {
+//     var promises = [];
+//     candidates.forEach(function(candidate, i) {
+//         promises.push( save('candidates', candidate) );
+//     });
+//     return Q.all(promises);
+// })
 // .then(function() {
 //    return euElectionCoverage.getparties();
 // })
@@ -107,7 +125,6 @@ function getDetailedConcepts(concepts) {
     concepts.forEach(function(concept, i) {
         var promise = newsquery.getConcept(concept.uri, 1)
         .then(function(detailedConcept) {
-            console.log(detailedConcept);
             if (detailedConcept.type)
                 concept.type = detailedConcept.type;
             if (detailedConcept.description)
@@ -115,6 +132,25 @@ function getDetailedConcepts(concepts) {
             return concept;
         });
         promises.push(promise);
+    });
+    return Q.all(promises);
+}
+
+
+function getDetailedConceptsForArticles(articles) {
+    var promises = [];
+    articles.forEach(function(article, i) {    
+        article.concepts.forEach(function(concept, i) {
+            var promise = newsquery.getConcept(concept.uri, 1)
+            .then(function(detailedConcept) {
+                if (detailedConcept.type)
+                    concept.type = detailedConcept.type;
+                if (detailedConcept.description)
+                    concept.description = detailedConcept.description;
+                return concept;
+            });
+            promises.push(promise);
+        });
     });
     return Q.all(promises);
 }
