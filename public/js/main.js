@@ -61,20 +61,49 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
     $('#candidate-info').removeClass('hidden').show();
     
     $.getJSON(server+"/candidate/"+candidateId, function(candidate) {
-        $('#candidate-name').html(candidate.name+"</br/><small>"+candidate.party+"</small>");
+        var candidateUrl = server+'/candidate/'+candidateId;
+        $('#candidate-name').html('<a href="'+candidateUrl+'">'+candidate.name+'</a><br/><small>'+candidate.party+'</small>');
         $('#candidate-articles').html('');
         $('#candidate-concepts').html('');
         
         // Display related concepts
-        var conceptsHtml  = '';
+        $('#candidate-concepts').html('<div id="candidate-concepts-people" class="clearfix"></div>'
+                                     +'<div id="candidate-concepts-organisations" class="clearfix"></div>'
+                                     +'<div id="candidate-concepts-places" class="clearfix"></div>'
+                                     +'<div id="candidate-concepts-other" class="clearfix"></div>');
+
+
         if (candidate.concepts && candidate.concepts.length > 0) {
             candidate.concepts.forEach(function(concept) {
-                conceptsHtml += '<span class="label label-info pull-left">'+concept.name+'</span>';
+                if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
+                    var html = '<span class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
+                    if ($('#candidate-concepts-people').html() == '')
+                        $('#candidate-concepts-people').append('<span class="label label-default pull-left">People</span>');
+                    $('#candidate-concepts-people').append(html);
+                } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Organisation') != -1) {
+                    var html = '<span class="label label-organisation pull-left"><i class="fa fa-sitemap"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
+                    if ($('#candidate-concepts-organisations').html() == '')
+                        $('#candidate-concepts-organisations').append('<span class="label label-default pull-left">Organisations</span>');
+                    $('#candidate-concepts-organisations').append(html);
+                } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Place') != -1) {
+                    var html = '<span class="label label-place pull-left"><i class="fa fa-globe"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
+                    if ($('#candidate-concepts-places').html() == '')
+                        $('#candidate-concepts-places').append('<span class="label label-default pull-left">Places</span>');
+                    $('#candidate-concepts-places').append(html);
+                } else {
+                    var html = '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
+                    if ($('#candidate-concepts-other').html() == '')
+                        $('#candidate-concepts-other').append('<span class="label label-default pull-left">Other Tags</span>');
+                    $('#candidate-concepts-other').append(html);
+                }
             });
-        } else {
-            conceptsHtml = '<p class="text-muted">No concepts found</p>';
         }
-        $('#candidate-concepts').html(conceptsHtml);
+        
+        if ($('#candidate-concepts-people').html() == '' &&
+            $('#candidate-concepts-organisations').html() == '' &&
+            $('#candidate-concepts-places').html() == '' &&
+            $('#candidate-concepts-other').html() == '')
+            conceptsHtml = '<p class="text-muted">No concepts found</p>';
         
         // Display articles about the candidate
         var articlesHtml  = '';

@@ -11,25 +11,24 @@ GLOBAL.config = config;
 GLOBAL.db = mongoJs.connect("127.0.0.1/eu-election-coverage", ["candidates", "parties", "regions", "concepts"]);
 
 euElectionCoverage.getCandidates()
-// .then(function(candidates) {
-//     var promises = [];
-//     candidates.forEach(function(candidate, i) {
-//         if (!candidate.uri)
-//             return;
-//         var promise = newsquery.getRelatedConcepts(candidate.uri, 100)
-//         .then(function(concepts) {
-//             console.log("Retreived "+concepts.length+" concepts related to "+candidate.uri);
-//             candidate.concepts = concepts;
-//             return save('candidates', candidate);
-//         });
-//         promises.push(promise);
-//     });
-//     return Q.all(promises);
-// })
-// 
-// .then(function() {
-//    return euElectionCoverage.getCandidates();
-// })
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        if (!candidate.uri)
+            return;
+        var promise = newsquery.getRelatedConcepts(candidate.uri, 100)
+        .then(function(concepts) {
+            console.log("Retreived "+concepts.length+" concepts related to "+candidate.uri);
+            candidate.concepts = concepts;
+            return save('candidates', candidate);
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function() {
+   return euElectionCoverage.getCandidates();
+})
 .then(function(candidates) {
     var promises = [];
     candidates.forEach(function(candidate, i) {
@@ -53,26 +52,24 @@ euElectionCoverage.getCandidates()
     return Q.all(promises);
 })
 
-// .then(function() {
-//    return euElectionCoverage.getCandidates();
-// })
-// .then(function(candidates) {
-//     var promises = [];
-//     candidates.forEach(function(candidate, i) {
-//         if (!candidate.uri)
-//             return;
-//         var promise = newsquery.getArticlesByConcept(candidate.uri, 100)
-//         .then(function(articles) {
-//             console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
-//             candidate.articles = articles;
-//             return save('candidates', candidate);
-//         });
-//         promises.push(promise);
-//     });
-//     return Q.all(promises);
-// })
-
-
+.then(function() {
+   return euElectionCoverage.getCandidates();
+})
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        if (!candidate.uri)
+            return;
+        var promise = newsquery.getArticlesByConcept(candidate.uri, 100)
+        .then(function(articles) {
+            console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
+            candidate.articles = articles;
+            return save('candidates', candidate);
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
 // .then(function() {
 //    return euElectionCoverage.getparties();
 // })

@@ -73,9 +73,6 @@ h1 {
 .label {
     font-size: 15px;
     line-height: 19px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
 }
 
 .label.pull-left {
@@ -91,11 +88,31 @@ h1 {
     background-color: #259eff;
 }
 
-.label.label-info .badge {
+.label.label-person {
+    background-color: #259eff;
+}
+
+.label.label-organisation {
+    background-color: #ffac30;
+}
+
+.label.label-place {
+    background-color: #4b9f51;
+}
+
+.label .badge {
     position: relative;
-    left: 2px;
-    background-color: #ffffff;
-    color: #259eff;
+    background-color: rgba(255,255,255,0.75) !important;
+    background-color: rgba(0,0,0,0.2) !important;
+    color: rgba(0,0,0,0.3) !important;
+    color: #fff !important;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 6px;
+    margin: -3px;
+    margin-right: -8px;
+    margin-left: 3px;
 }
 
 .fa-ul li {
@@ -198,4 +215,9 @@ h1 {
     position: relative;
     top: 1px;
     border: 1px solid rgba(0,0,0,.2);
+}
+
+
+#candidate-articles * {
+    font-size: 15px !important;
 }
