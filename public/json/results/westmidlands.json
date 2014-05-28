@@ -1,0 +1,39 @@
+[
+    {
+      "value" : 13.35,
+      "color" : "#cc0000"
+    },
+    {
+      "value" : 2.63,
+      "color" : "#38761d"
+    },
+    {
+      "value" : 2.78,
+      "color" : "#ff9900"
+    },
+    {
+      "value": 12.15,
+      "color":"#0099c6"
+    },
+    {
+      "value" : 15.75,
+      "color" : "#741b47"
+    },
+    {
+      "value" : 0.76,
+      "color" : "#073763"
+    },
+    {
+      "value" : 0,
+      "color" : "#766AFF"
+    },
+    {
+      "value": 2.57,
+      "color": "grey"
+    },
+    {
+      "value" : 50,
+      "color" : "#eeeeee"
+    }
+
+]

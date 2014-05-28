@@ -1,34 +1,34 @@
 [
     {
-      "value": 12,
-      "color":"#0099c6"
-    },
-    {
-      "value" : 10.5,
+      "value" : 18.24,
       "color" : "#cc0000"
     },
     {
-      "value" : 5,
+      "value" : 2.60,
+      "color" : "#38761d"
+    },
+    {
+      "value" : 2.70,
       "color" : "#ff9900"
     },
     {
-      "value" : 13.5,
+      "value": 8.85,
+      "color":"#0099c6"
+    },
+    {
+      "value" : 14.60,
       "color" : "#741b47"
     },
     {
-      "value" : 7,
-      "color" : "#38761d"
+      "value" : 0.85,
+      "color" : "#073763"
     },
     {
       "value" : 0,
       "color" : "#766AFF"
     },
     {
-      "value" : 0.5,
-      "color" : "#073763"
-    },
-    {
-      "value": 1,
+      "value": 1.91,
       "color": "grey"
     },
     {
