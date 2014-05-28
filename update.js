@@ -3,6 +3,7 @@ var mongoJs = require('mongojs');
 var csvtojson = require("csvtojson").core.Converter;
 var crypto = require('crypto');
 var fs = require("fs");
+var moment = require("moment");
 var config = require(__dirname + '/config.json');
 var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
 var newsquery = require('newsquery')(config.bbcNewsLabs.apiKey);
@@ -56,6 +57,31 @@ euElectionCoverage.getCandidates()
     candidates.forEach(function(candidate, i) {
         if (!candidate.uri)
             return;
+        var promise = newsquery.getConceptOccurrencesOverTime(candidate.uri, moment().subtract('days', 90).format('YYYY-MM-DD'), moment().format('YYYY-MM-DD'))
+        .then(function(conceptOccurrences) {
+            console.log("Retreived mentions over the last "+conceptOccurrences.length+" days for "+candidate.uri);
+            candidate.mentions = conceptOccurrences;
+            return candidate;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        promises.push( save('candidates', candidate) );
+    });
+    return Q.all(promises);
+})
+.then(function(candidates) {
+    return euElectionCoverage.getCandidates();
+})
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        if (!candidate.uri)
+            return;
         var promise = newsquery.getArticlesByConcept(candidate.uri, 100)
         .then(function(articles) {
             console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
@@ -66,28 +92,28 @@ euElectionCoverage.getCandidates()
     });
     return Q.all(promises);
 })
-// .then(function(candidates) {
-//     var promises = [];
-//     candidates.forEach(function(candidate, i) {
-//         if (candidate.articles.length == 0)
-//             return;
-//         var promise = getDetailedConceptsForArticles(candidate.articles)
-//         .then(function(articlesWithDetailedConcepts) {
-//             console.log("Retreived extended article concept information for "+candidate.articles.length+" articles relating to "+candidate.uri);
-//             candidate.articles = articlesWithDetailedConcepts;
-//             return candidate;
-//         });
-//         promises.push(promise);
-//     });
-//     return Q.all(promises);
-// })
-// .then(function(candidates) {
-//     var promises = [];
-//     candidates.forEach(function(candidate, i) {
-//         promises.push( save('candidates', candidate) );
-//     });
-//     return Q.all(promises);
-// })
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        if (candidate.articles.length == 0)
+            return;
+        var promise = getDetailedConceptsForArticles(candidate.articles)
+        .then(function(articlesWithDetailedConcepts) {
+            console.log("Retreived extended article concept information for "+candidate.articles.length+" articles relating to "+candidate.uri);
+            candidate.articles = articlesWithDetailedConcepts;
+            return candidate;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        promises.push( save('candidates', candidate) );
+    });
+    return Q.all(promises);
+})
 // .then(function() {
 //    return euElectionCoverage.getparties();
 // })

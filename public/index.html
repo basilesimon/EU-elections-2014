@@ -15,6 +15,7 @@
         <script src="js/lib/newslabs-api.js"></script>
         <script src="js/main.js"></script>
         <script src="js/charts.js"></script>
+        <script src="js/graph.js"></script>
     </head>
     <body>
         <div class="navbar navbar-static-top" role="navigation">
@@ -243,17 +244,23 @@
                 <div class="col-sm-9">
                     <div id="candidate-info" class="hidden">
                         <h2 id="candidate-name" style="margin-top: 0px"></h2>
+                        <h3>Mentions in the media over the last 90 days</h3>
+                        <div style="height: 300px; width: 100%; overflow: hidden;">
+                            <canvas id="candidate-mentions" width="850" height="300"></canvas>
+                        </div>
                         <ul id="tabs-explore" class="nav nav-tabs" style="margin-bottom: 10px;">
-                            <li class="active"><a href="#tab-candidate-concepts" data-toggle="tab"><i class="fa fa-lg fa-tag"></i> Linked concepts</a></li>
-                            <li><a href="#tab-candidate-articles" data-toggle="tab"><i class="fa fa-lg fa-file-text-o"></i> In the media</a></li>
+                            <li class="active"><a href="#tab-candidate-concepts" data-toggle="tab"><i class="fa fa-lg fa-tag"></i> Connections</a></li>
+                            <li><a href="#tab-candidate-articles" data-toggle="tab"><i class="fa fa-lg fa-file-text-o"></i> Mentions</a></li>
                         </ul>
                         <div class="tab-content">
                             <div id="tab-candidate-concepts" class="tab-pane active">
-                                    <!-- <canvas id="candidate-mentions" width="800" height="300"></canvas> -->
-                                    <div id="candidate-concepts"></div>
+                                <h3>Connections in the media</h3>
+                                <br/>
+                                <div id="candidate-concepts"></div>
                             </div>
                             <div id="tab-candidate-articles" class="tab-pane">
-                                <h3>In the media</h3>
+                                <h3>Mentions in the media</h3>
+                                <br/>
                                 <div id="candidate-articles"></div>
                             </div>
                         </div>

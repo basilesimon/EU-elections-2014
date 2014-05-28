@@ -225,3 +225,31 @@ h1 {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+.label.text-right {
+    text-align: right;
+}
+
+/*
+#candidate-concepts .media {
+    height: 36px;
+    margin-bottom: 0px !important;
+    overflow: hidden;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#candidate-concepts .media:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+#candidate-concepts .media.expanded,
+#candidate-concepts .media.expanded:hover {
+    background: transparent;
+    height: auto;
+    overflow: auto;
+}
+*/

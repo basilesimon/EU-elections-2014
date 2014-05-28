@@ -57,35 +57,29 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
         $('#candidate-concepts').html('');
         
         // Display related concepts
-        $('#candidate-concepts').html('<div id="candidate-concepts-people" class="clearfix"></div>'
-                                     +'<div id="candidate-concepts-organisations" class="clearfix"></div>'
-                                     +'<div id="candidate-concepts-places" class="clearfix"></div>'
-                                     +'<div id="candidate-concepts-things" class="clearfix"></div>');
+        $('#candidate-concepts').html('<div class="media"><span class="col-md-2 pull-left text-right label label-default">People</span><div class="media-body"><div id="candidate-concepts-people" class="clearfix"></div></div></div>'
+                                     +'<div class="media"><span class="col-md-2 pull-left text-right label label-default">Organisations</span><div class="media-body"><div id="candidate-concepts-organisations" class="clearfix"></div></div></div>'
+                                     +'<div class="media"><span class="col-md-2 pull-left text-right label label-default">Places</span><div class="media-body"><div id="candidate-concepts-places" class="clearfix"></div></div></div>'
+                                     +'<div class="media"><span class="col-md-2 pull-left text-right label label-default">Other</span><div class="media-body"><div id="candidate-concepts-things" class="clearfix"></div></div></div>');
 
         if (candidate.concepts && candidate.concepts.length > 0) {
             candidate.concepts.forEach(function(concept) {
                 if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
                     var html = '<span class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
-                    if ($('#candidate-concepts-people').html() == '')
-                        $('#candidate-concepts-people').append('<span class="label label-default pull-left">People</span>');
                     $('#candidate-concepts-people').append(html);
                 } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Organisation') != -1) {
                     var html = '<span class="label label-organisation pull-left"><i class="fa fa-sitemap"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
-                    if ($('#candidate-concepts-organisations').html() == '')
-                        $('#candidate-concepts-organisations').append('<span class="label label-default pull-left">Organisations</span>');
                     $('#candidate-concepts-organisations').append(html);
                 } else if (concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Place') != -1) {
                     var html = '<span class="label label-place pull-left"><i class="fa fa-globe"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
-                    if ($('#candidate-concepts-places').html() == '')
-                        $('#candidate-concepts-places').append('<span class="label label-default pull-left">Places</span>');
                     $('#candidate-concepts-places').append(html);
                 } else {
                     var html = '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+'</span></span>';
-                    if ($('#candidate-concepts-things').html() == '')
-                        $('#candidate-concepts-things').append('<span class="label label-default pull-left">Things</span>');
                     $('#candidate-concepts-things').append(html);
                 }
             });
+        } else {
+            $('#candidate-concepts').html('<p class="text-muted">No links to other subjects found</p>');
         }
         
         if ($('#candidate-concepts-people').html() == '' &&
@@ -106,9 +100,9 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                 var domain = article.url.replace(/^http:\/\//, '').replace(/\/(.*)?/, '');
                 domain = domain.replace(/(www|rss|feeds)\./, '');
                 articlesHtml += '<li>'
-                               +'<h3><a href="'+article.url+'">'+article.title+'</a></h3>'
-                               +'<p class="lead"><strong class="text-muted">'+domain+'</strong></p>'
-                               +'<h5 class="text-muted">This was tagged with:</h5>'
+                               +'<h4><a href="'+article.url+'">'+article.title+'</a></h4>'
+                               +'<p class="lead text-muted">'+domain+'</p>'
+                               +'<h5 class="text-muted">Tagged with...</h5>'
                                +'<p class="clearfix">';
 
                 var personTagsHtml = "", organisationTagsHtml = "", placeTagsHtml = "", otherTagsHtml = "";
@@ -128,15 +122,22 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
             });
             articlesHtml += '</ul>';
         } else {
-            articlesHtml = '<p class="text-muted">No articles found</p>';
+            articlesHtml = '<p class="text-muted">No mentions in the media found</p>';
         }
         console.log(articlesHtml);
         $('#candidate-articles').html(articlesHtml);
+
+        $('#candidate-info').show();
+        
+        plotGraphByDate('candidate-mentions', candidate.mentions, true);
         
     });
-    $('#candidate-info').show();
+
 });
 
+$(document).on("click touch", "#candidate-concepts .media", function(e) {
+    $(this).toggleClass("expanded");
+});
 
 $(document).on("click touch", ".map path[data-region-name]", function(e) {
     var regionName = $(this).data('regionName');
