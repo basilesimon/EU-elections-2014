@@ -86,11 +86,21 @@ euElectionCoverage.getCandidates()
         .then(function(articles) {
             console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
             candidate.articles = articles
-            return save('candidates', candidate);
+            return candidate;
         });
         promises.push(promise);
     });
     return Q.all(promises);
+})
+.then(function(candidates) {
+    var promises = [];
+    candidates.forEach(function(candidate, i) {
+        promises.push( save('candidates', candidate) );
+    });
+    return Q.all(promises);
+})
+.then(function(candidates) {
+    return euElectionCoverage.getCandidates();
 })
 .then(function(candidates) {
     var promises = [];

@@ -37,10 +37,10 @@ function plotGraphByDate(canvasId, graphData, hideXaxis) {
     var plotData = {
         labels: labels,
         datasets: [{
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
+            fillColor: "#dbebff",
+            strokeColor: "#3698e2",
+            pointColor: "transparent",
+            pointStrokeColor: "transparent",
             data: data
         }]
     }

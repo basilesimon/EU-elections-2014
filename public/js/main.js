@@ -96,6 +96,9 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                 
                 //if (article.source == "http://www.bbc.co.uk/ontologies/bbc/Twitter")
                 //    return;
+                
+                if (!article.url)
+                    return;
                     
                 var domain = article.url.replace(/^http:\/\//, '').replace(/\/(.*)?/, '');
                 domain = domain.replace(/(www|rss|feeds)\./, '');
