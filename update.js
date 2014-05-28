@@ -99,31 +99,6 @@ euElectionCoverage.getCandidates()
     });
     return Q.all(promises);
 })
-.then(function(candidates) {
-    return euElectionCoverage.getCandidates();
-})
-.then(function(candidates) {
-    var promises = [];
-    candidates.forEach(function(candidate, i) {
-        if (candidate.articles.length == 0)
-            return;
-        var promise = getDetailedConceptsForArticles(candidate.articles)
-        .then(function(articlesWithDetailedConcepts) {
-            console.log("Retreived extended article concept information for "+candidate.articles.length+" articles relating to "+candidate.uri);
-            candidate.articles = articlesWithDetailedConcepts;
-            return candidate;
-        });
-        promises.push(promise);
-    });
-    return Q.all(promises);
-})
-.then(function(candidates) {
-    var promises = [];
-    candidates.forEach(function(candidate, i) {
-        promises.push( save('candidates', candidate) );
-    });
-    return Q.all(promises);
-})
 // .then(function() {
 //    return euElectionCoverage.getparties();
 // })
@@ -168,25 +143,6 @@ function getDetailedConcepts(concepts) {
             return concept;
         });
         promises.push(promise);
-    });
-    return Q.all(promises);
-}
-
-
-function getDetailedConceptsForArticles(articles) {
-    var promises = [];
-    articles.forEach(function(article, i) {    
-        article.concepts.forEach(function(concept, j) {
-            var promise = newsquery.getConcept(concept.uri, 1)
-            .then(function(detailedConcept) {
-                if (detailedConcept.type)
-                    articles[i].concepts[j].type = detailedConcept.type;
-                if (detailedConcept.description)
-                    articles[i].concepts[j].description = detailedConcept.description;
-                return concept;
-            });
-            promises.push(promise);
-        });
     });
     return Q.all(promises);
 }
