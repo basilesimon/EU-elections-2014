@@ -1,7 +1,7 @@
 [
   {
     "label":"Conservative Party",
-    "value":1526,
+    "value":1964,
     "color":"#0099c6",
     "labelColor" : "white",
     "labelFontSize" : "16"
@@ -11,83 +11,83 @@
     "label" : "UKIP",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":2004
+    "value":2604
   },
   {
     "color" : "#ff9900",
     "label" : "Liberal Democrats",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":1458
+    "value":1807
   },
   {
     "color" : "#cc0000",
     "label" : "Labour",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":4081
+    "value":4795
   },
   {
     "color" : "#073763",
     "label" : "BNP",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":12
+    "value":15
   },
   {
     "color" : "#38761d",
-    "label" : "Greem Party",
+    "label" : "Green Party",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":5
+    "value":8
   },
   {
     "label":"Scottish National Party",
     "color" : "#766AFF",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":451
+    "value":519
   },
   {
     "label":"Plaid Cymru",
     "color" : "#a9c413",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":53
+    "value":68
   },
   {
     "label": "Social Democratic and Labour Party",
     "color": "#cc0000",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":160
+    "value":210
   },
   {
     "label": "Democratic Unionist Party",
     "color": "#cc0000",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":71
+    "value":78
   },
   {
     "label": "Traditional Unionist Voice",
     "color": "#0099c6",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":1
+    "value":25
   },
   {
     "label": "Ulster Unionist Party",
     "color": "#dd4477",
     "labelColor": "white",
     "labelFontSize" : "16",
-    "value":180
+    "value":240
   },
   {
     "label":"Others",
     "color" : "#cccccc",
     "labelColor" : "white",
     "labelFontSize" : "16",
-    "value":13
+    "value":14
   }
 ]
