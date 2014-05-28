@@ -176,13 +176,13 @@ function getDetailedConcepts(concepts) {
 function getDetailedConceptsForArticles(articles) {
     var promises = [];
     articles.forEach(function(article, i) {    
-        article.concepts.forEach(function(concept, i) {
+        article.concepts.forEach(function(concept, j) {
             var promise = newsquery.getConcept(concept.uri, 1)
             .then(function(detailedConcept) {
                 if (detailedConcept.type)
-                    concept.type = detailedConcept.type;
+                    articles[i].concepts[j].type = detailedConcept.type;
                 if (detailedConcept.description)
-                    concept.description = detailedConcept.description;
+                    articles[i].concepts[j].description = detailedConcept.description;
                 return concept;
             });
             promises.push(promise);

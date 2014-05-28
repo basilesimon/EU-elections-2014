@@ -97,6 +97,7 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                 //if (article.source == "http://www.bbc.co.uk/ontologies/bbc/Twitter")
                 //    return;
                 
+                // Some content may not contain URLs (e.g. images, videos)
                 if (!article.url)
                     return;
                     
