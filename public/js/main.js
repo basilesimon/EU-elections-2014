@@ -1,9 +1,9 @@
 
-var server = "/";
+var gServer = "http://eu.bbcnewslabs.co.uk/";
 
 $(function() {
     // Get all regions
-    $.getJSON(server+"/United_Kingdom/regions", function(regions) {
+    $.getJSON(gServer+"United_Kingdom/regions", function(regions) {
         // Add accordion wtih regions + candidates
         $('#tab-explore-candidates').html('<div class="panel-group" id="candiates-by-region-accordion"></div>');
         regions.forEach(function(region, regionIndex) {
@@ -50,8 +50,8 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
     $('a[data-candidate-id="'+candidateId+'"]').addClass('active');
     $('#candidate-info').removeClass('hidden').show();
     
-    $.getJSON(server+"/candidate/"+candidateId, function(candidate) {
-        var candidateUrl = server+'/candidate/'+candidateId;
+    $.getJSON(gServer+"candidate/"+candidateId, function(candidate) {
+        var candidateUrl = gServer+'/candidate/'+candidateId;
         $('#candidate-name').html('<a href="'+candidateUrl+'">'+candidate.name+'</a><br/><small>'+candidate.party+'</small>');
         $('#candidate-articles').html('');
         $('#candidate-concepts').html('');
@@ -159,8 +159,7 @@ $(document).on("click touch", ".map path[data-region-name]", function(e) {
     
         $('#select-region').hide();
         $('#region-info').hide().removeClass('hidden');
-    
-        $.getJSON(server+"/United_Kingdom/"+encodeURIComponent(regionName), function(region) {
+        $.getJSON(gServer+"United_Kingdom/"+encodeURIComponent(regionName), function(region) {
             $('#region-name').html(region.name);
             //$('#region-articles ul').html('');
             $("#region-candidates ul").html('');
