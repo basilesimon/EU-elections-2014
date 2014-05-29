@@ -27,10 +27,11 @@ loadCsv("../data/candidates.csv")
         console.log("Importing "+candidate.name+"...");
         
         candidate._id = crypto.createHash('sha1').update( candidate.name+candidate.party+candidate.region ).digest("hex");
-        var partyId = crypto.createHash('sha1').update( candidate.party ).digest("hex");;
+        var partyId = crypto.createHash('sha1').update( candidate.party ).digest("hex");
+        var regionId = crypto.createHash('sha1').update( candidate.region ).digest("hex");
         
         if (!regions[candidate.region])
-            regions[candidate.region] = { name: candidate.region, country: "United Kingdom", candidates: [], articles: [] };
+            regions[candidate.region] = { _id: regionId, name: candidate.region, country: "United Kingdom", candidates: [], articles: [] };
         
         if (!gParties[candidate.party])
             gParties[candidate.party] = { _id: partyId, name: candidate.party, candidates: [], articles: [] };
