@@ -73,7 +73,8 @@ function plotGraphByDate(canvasId, datasets, hideXaxis) {
         scaleOverride: true,
         scaleSteps: steps,
         scaleStepWidth: Math.ceil(max / steps),
-        scaleStartValue: 0
+        scaleStartValue: 0,
+        datasetStrokeWidth: 3
     };
 
     ctx.canvas.height = $('#' + canvasId).attr('origionalHeight');

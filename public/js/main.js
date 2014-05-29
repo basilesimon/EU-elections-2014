@@ -193,11 +193,22 @@ $(window).scroll(function(){
       if (bottomOfWindow > ($(this).position().top + 300)) {
           $(this).removeClass('hidden');
           $.getJSON(gServer+"parties", function(parties) {
+              $('#party-mentions-legend').html('');
               var datasets = []
               parties.forEach(function(party) {
                   // NB: Only parties with mentions (which requires a URI) and a
                   // colour defined for them will be shown on the graph
-                  if (party.mentions && party.color) {
+                  if (party.mentions) {
+                      
+                      var lineColor = "#cccccc";
+                      
+                      if (party.name == "Conservative Party" ||
+                          party.name == "Labour Party" ||
+                          party.name == "Liberal Democrats" ||
+                          party.name == "UKIP") {
+                          lineColor = party.color;
+                          $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:'+lineColor+';"></div>'+party.name+'</div>');
+                      }
 
                       party.mentions.forEach(function(mention,i) {
                           party.mentions[i].label = party.name;
@@ -205,13 +216,14 @@ $(window).scroll(function(){
           
                       datasets.push({
                                   fillColor: "transparent",
-                                  strokeColor: party.color,
+                                  strokeColor: lineColor,
                                   pointColor: "transparent",
                                   pointStrokeColor: "transparent",
                                   data: party.mentions
                               });
                       }
               });
+              $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:#cccccc"></div>Other parties</div>');
               plotGraphByDate('party-mentions', datasets, true);
           });
       }
