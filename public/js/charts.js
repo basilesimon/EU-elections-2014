@@ -1,22 +1,26 @@
 
 function showRegionalPollPieChart(region) {
     var url = "";
-    var canvasId = "regional-poll";
-    if (region === "London") {
-        url = "json/results/london.json";
-    } else if (region === "Scotland") {
-        url = "json/results/scotland.json";
-    } else if (region === "East Midlands" || region === "West Midlands" || region === "Wales") {
-        url = "json/results/midlands.json";
-    } else if (region === "North West England" || region === "North East England" || region === "Yorkshire and the Humber") {
-        url = "json/results/north.json";
-    } else if (region === "South West England" || region === "South East England" || region === "East of England") {
-        url = "json/results/south.json";
+    var canvasId = "";
+    
+    if (region) {
+        url = "json/results/"+region.toLowerCase().replace(/ /g, '')+".json";
+        canvasId = "regional-poll";
     } else {
         url = "json/results/national.json";
         canvasId = "national-poll";
     }
+    
+    // @todo No results for N.I. yet
+    if (region == "Northern Ireland") {
+        url = "json/results/national.json";
+    }
+    
+    $('#' + canvasId).hide();
+    
     $.getJSON(gServer+url, function(pollData) {
+        $('#' + canvasId).show();
+
         var canvas = document.getElementById(canvasId);
         var ctx = canvas.getContext("2d");
 
