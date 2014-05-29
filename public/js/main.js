@@ -4,30 +4,6 @@ var gServer = "http://eu.bbcnewslabs.co.uk/";
 //gServer = "http://localhost:3103/";
 
 $(function() {
-
-    $.getJSON(gServer+"parties", function(parties) {
-        var datasets = []
-        parties.forEach(function(party) {
-            // NB: Only parties with mentions (which requires a URI) and a
-            // colour defined for them will be shown on the graph
-            if (party.mentions && party.color) {
-
-                party.mentions.forEach(function(mention,i) {
-                    party.mentions[i].label = party.name;
-                });
-                
-                datasets.push({
-                            fillColor: "transparent",
-                            strokeColor: party.color,
-                            pointColor: "transparent",
-                            pointStrokeColor: "transparent",
-                            data: party.mentions
-                        });
-                }
-        });
-        plotGraphByDate('party-mentions', datasets, true);
-    });
-
     // Get all regions
     $.getJSON(gServer+"United_Kingdom/regions", function(regions) {
         // Add accordion wtih regions + candidates
@@ -208,7 +184,38 @@ $(document).on("click touch", ".map path[data-region-name]", function(e) {
 $(window).scroll(function(){
   $('.fade-in').each( function(i) {
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > ($(this).position().top + 100))
+      if (bottomOfWindow > ($(this).position().top + 150))
           $(this).animate({'opacity':'1'},500);
   });
+
+  $('#party-mentions.hidden').each(function(i) {
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > ($(this).position().top + 150)) {
+          $(this).removeClass('hidden');
+          $.getJSON(gServer+"parties", function(parties) {
+              var datasets = []
+              parties.forEach(function(party) {
+                  // NB: Only parties with mentions (which requires a URI) and a
+                  // colour defined for them will be shown on the graph
+                  if (party.mentions && party.color) {
+
+                      party.mentions.forEach(function(mention,i) {
+                          party.mentions[i].label = party.name;
+                      });
+          
+                      datasets.push({
+                                  fillColor: "transparent",
+                                  strokeColor: party.color,
+                                  pointColor: "transparent",
+                                  pointStrokeColor: "transparent",
+                                  data: party.mentions
+                              });
+                      }
+              });
+              plotGraphByDate('party-mentions', datasets, true);
+          });
+      }
+
+  });
+
 });
