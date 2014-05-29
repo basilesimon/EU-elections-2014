@@ -190,7 +190,7 @@ $(window).scroll(function(){
 
   $('#party-mentions.hidden').each(function(i) {
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > ($(this).position().top + 150)) {
+      if (bottomOfWindow > ($(this).position().top + 300)) {
           $(this).removeClass('hidden');
           $.getJSON(gServer+"parties", function(parties) {
               var datasets = []
