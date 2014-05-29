@@ -1,10 +1,12 @@
 /**
  * Turn an an array of date + value pairs into a graph
  * @param   canvasId    The ID for a canvas object
- * @param   graphData   An array of objects [{date: 'YYYY-MM-DD', value: 10}, {date: 'YYYY-MM-DD', value: 25}, ... ]
+ * @param   datasets    An array of datasets for chart.js
  * @param   hideXaxis   Optional boolean. If true hides the X-Axis on the graph.
+ *
+ * @todo This needs some refactoring (it's a little obtuse)
  */
-function plotGraphByDate(canvasId, graphData, hideXaxis) {
+function plotGraphByDate(canvasId, datasets, hideXaxis) {
     var canvas = document.getElementById(canvasId);
 
     // Hack to stop Chart.js incorrectly resizing graph on subsquent
@@ -17,15 +19,10 @@ function plotGraphByDate(canvasId, graphData, hideXaxis) {
     var labels = [];
     var data = [];
     var maxValue = 0;
-    for (var i = 0; i < graphData.length; i++) {
-        var label = graphData[i].date;
-        var value = graphData[i].value;
 
-        if (value > maxValue)
-            maxValue = value;
-
-        data.push(value);
-
+    for (var i = 0; i < datasets[0].data.length; i++) {
+        var label = datasets[0].data[i].date;
+        
         if (hideXaxis == true) {
             labels.push("");
         } else {
@@ -33,22 +30,35 @@ function plotGraphByDate(canvasId, graphData, hideXaxis) {
         }
     }
 
+    for (var j = 0; j < datasets.length; j++) {
+        data[j] = [];
+        for (var i = 0; i < datasets[j].data.length; i++) {
+            var value = datasets[j].data[i].value;
+            if (value > maxValue)
+                maxValue = value;
+
+            data[j].push(value);
+        }
+        datasets[j].data = data[j];
+    }
+
     var ctx = canvas.getContext("2d");
     var plotData = {
         labels: labels,
-        datasets: [{
-            fillColor: "#dbebff",
-            strokeColor: "#3698e2",
-            pointColor: "transparent",
-            pointStrokeColor: "transparent",
-            data: data
-        }]
-    }
+        datasets: datasets
+    };
 
     var chartOptions = {};
     var steps = 5;
     var max = 5;
-    if (maxValue > 50) {
+    // @todo Refactor to scale sensibly automatically
+    if (maxValue > 300) {
+        var steps = 10;
+        var max = 400;
+    } else if (maxValue > 100) {
+        var steps = 10;
+        var max = 200;
+    } else if (maxValue > 50) {
         var steps = 10;
         var max = 100;
     } else if (maxValue > 20) {

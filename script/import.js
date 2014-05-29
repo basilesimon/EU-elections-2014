@@ -67,7 +67,10 @@ loadCsv("../data/candidates.csv")
     parties.forEach(function(party, i) {
         if (gParties[party.name]) {;
             console.log("Importing info for "+party.name+"...");
-            gParties[party.name].uri = party.uri;
+            if (party.uri)
+                gParties[party.name].uri = party.uri;
+            if (party.color)
+                gParties[party.name].color = party.color;
             promises.push( save('parties', gParties[party.name]) );
         }
     });

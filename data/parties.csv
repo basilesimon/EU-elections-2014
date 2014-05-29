@@ -1,18 +1,19 @@
-name,uri
-Alliance Party of Northern Ireland,http://dbpedia.org/resource/Alliance_Party_of_Northern_Ireland
-British National Party,http://dbpedia.org/resource/British_National_Party
-Christian Peoples Alliance,http://dbpedia.org/resource/Christian_Peoples_Alliance
-Conservative Party,http://dbpedia.org/resource/Conservative_Party_(UK)
-Democratic Unionist Party,http://dbpedia.org/resource/Democratic_Unionist_Party
-Green Party,http://dbpedia.org/resource/Green_Party_of_England_and_Wales
-Labour Party,http://dbpedia.org/resource/Labour_Party_(UK)
-Liberal Democrats,http://dbpedia.org/resource/Liberal_Democrats
-Pirate Party UK,http://dbpedia.org/resource/Pirate_Party_UK
-Plaid Cymru,http://dbpedia.org/resource/Plaid_Cymru
-Scottish Green Party,http://dbpedia.org/resource/Scottish_National_Party
-Sinn Féin,http://dbpedia.org/resource/Sinn_F%C3%A9in
-Social Democratic and Labour Party,http://dbpedia.org/resource/Social_Democratic_and_Labour_Party
-Socialist Party of Great Britain,http://dbpedia.org/resource/Socialist_Party_of_Great_Britain
-Traditional Unionist Voice,http://dbpedia.org/resource/Traditional_Unionist_Voice
-UKIP,http://dbpedia.org/resource/UK_Independence_Party
-Ulster Unionist Party,http://dbpedia.org/resource/Ulster_Unionist_Party
+name,uri,color
+Alliance Party of Northern Ireland,http://dbpedia.org/resource/Alliance_Party_of_Northern_Ireland,
+British National Party,http://dbpedia.org/resource/British_National_Party,#073763
+Christian Peoples Alliance,http://dbpedia.org/resource/Christian_Peoples_Alliance,
+Conservative Party,http://dbpedia.org/resource/Conservative_Party_(UK),#0099c6
+Democratic Unionist Party,http://dbpedia.org/resource/Democratic_Unionist_Party,
+Green Party,http://dbpedia.org/resource/Green_Party_of_England_and_Wales,#38761d
+Labour Party,http://dbpedia.org/resource/Labour_Party_(UK),#cc0000
+Liberal Democrats,http://dbpedia.org/resource/Liberal_Democrats,#ff9900
+Pirate Party UK,http://dbpedia.org/resource/Pirate_Party_UK,
+Plaid Cymru,http://dbpedia.org/resource/Plaid_Cymru,#a9c413
+Scottish Green Party,http://dbpedia.org/resource/Scottish_National_Party,
+Sinn Féin,http://dbpedia.org/resource/Sinn_F%C3%A9in,
+Social Democratic and Labour Party,http://dbpedia.org/resource/Social_Democratic_and_Labour_Party,#cc0000
+Socialist Party of Great Britain,http://dbpedia.org/resource/Socialist_Party_of_Great_Britain,
+Traditional Unionist Voice,http://dbpedia.org/resource/Traditional_Unionist_Voice,
+UKIP,http://dbpedia.org/resource/UK_Independence_Party,#741b47
+Ulster Unionist Party,http://dbpedia.org/resource/Ulster_Unionist_Party,#dd4477
+Scottish National Party,http://dbpedia.org/page/Scottish_National_Party,#766AFF

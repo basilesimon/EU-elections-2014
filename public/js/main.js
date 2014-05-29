@@ -1,7 +1,33 @@
 
+// @todo Refactor to remove dependancy on this variable (temporary hack)
 var gServer = "http://eu.bbcnewslabs.co.uk/";
+//gServer = "http://localhost:3103/";
 
 $(function() {
+
+    $.getJSON(gServer+"parties", function(parties) {
+        var datasets = []
+        parties.forEach(function(party) {
+            // NB: Only parties with mentions (which requires a URI) and a
+            // colour defined for them will be shown on the graph
+            if (party.mentions && party.color) {
+
+                party.mentions.forEach(function(mention,i) {
+                    party.mentions[i].label = party.name;
+                });
+                
+                datasets.push({
+                            fillColor: "transparent",
+                            strokeColor: party.color,
+                            pointColor: "transparent",
+                            pointStrokeColor: "transparent",
+                            data: party.mentions
+                        });
+                }
+        });
+        plotGraphByDate('party-mentions', datasets, true);
+    });
+
     // Get all regions
     $.getJSON(gServer+"United_Kingdom/regions", function(regions) {
         // Add accordion wtih regions + candidates
@@ -51,7 +77,7 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
     $('#candidate-info').removeClass('hidden').show();
     
     $.getJSON(gServer+"candidate/"+candidateId, function(candidate) {
-        var candidateUrl = gServer+'/candidate/'+candidateId;
+        var candidateUrl = gServer+'candidate/'+candidateId;
         $('#candidate-name').html('<a href="'+candidateUrl+'">'+candidate.name+'</a><br/><small>'+candidate.party+'</small>');
         $('#candidate-articles').html('');
         $('#candidate-concepts').html('');
@@ -128,12 +154,18 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
         } else {
             articlesHtml = '<p class="text-muted">No mentions in the media found</p>';
         }
-        console.log(articlesHtml);
+
         $('#candidate-articles').html(articlesHtml);
 
         $('#candidate-info').show();
         
-        plotGraphByDate('candidate-mentions', candidate.mentions, true);
+        plotGraphByDate('candidate-mentions', [{
+            fillColor: "#dbebff",
+            strokeColor: "#3698e2",
+            pointColor: "transparent",
+            pointStrokeColor: "transparent",
+            data: candidate.mentions
+        }], true);
         
     });
 

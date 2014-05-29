@@ -106,9 +106,18 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="lead text-center">
-                        The "number of mentions in the media" was calculated from April 1st, 2014, to election day.
+                    <p class="text-center text-muted">
+                        The "number of mentions in the media" above was calculated from April 1st, 2014, to election day.
                     </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">Mentions of parties in the media over the last 60 days</h2>
+                    <br/>
+                    <div style="height: 350px; width: 100%; overflow: hidden;">
+                        <canvas id="party-mentions" width="1160" height="350"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,7 +127,9 @@
                     <div class="col-sm-6" style="z-index: 10;">
                         <div id="select-region">
                             <h2>
-                                Select a region to view candidates &amp; local news<br/>
+                                Select a region to view <br/>
+                                local candidates
+                                <br/>
                                 <small>
                                     <i class="fa fa-globe"></i> 12 UK Regions<br/>
                                     <i class="fa fa-sitemap"></i> 48 Political Parties<br/>

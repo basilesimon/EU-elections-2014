@@ -126,7 +126,7 @@ euElectionCoverage.getCandidates()
     parties.forEach(function(party, i) {
         if (!party.uri)
             return;
-        var promise = newsquery.getConceptOccurrencesOverTime(party.uri, moment().subtract('days', 90).format('YYYY-MM-DD'), moment().format('YYYY-MM-DD'))
+        var promise = newsquery.getConceptOccurrencesOverTime(party.uri, moment().subtract('days', 60).format('YYYY-MM-DD'), moment().format('YYYY-MM-DD'))
         .then(function(conceptOccurrences) {
             console.log("Retreived mentions over the last "+conceptOccurrences.length+" days for "+party.uri);
             party.mentions = conceptOccurrences;
