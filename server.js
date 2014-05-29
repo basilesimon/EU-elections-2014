@@ -7,7 +7,6 @@ var partials = require('express-partials');
 var ejs = require('ejs');
 var mongoJs = require('mongojs');
 var Q = require('q');
-var dateFormat = require('dateformat');
 var fs = require('fs');
 var config = require(__dirname + '/config.json');
 var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');

@@ -1,5 +1,5 @@
 
-var server = "http://localhost:3001";
+var server = "/";
 
 $(function() {
     // Get all regions
