@@ -3,6 +3,8 @@
 var gServer = "http://eu.bbcnewslabs.co.uk/";
 //gServer = "http://localhost:3103/";
 
+var gCanidateLoaded = false;
+
 $(function() {
     // Get all regions
     $.getJSON(gServer+"United_Kingdom/regions", function(regions) {
@@ -39,6 +41,9 @@ $(function() {
 });
 
 $(document).on("click touch", "a[data-candidate-id]", function(e) {
+    
+    gCanidateLoaded = true;
+        
     e.preventDefault();
     
     $('html,body').animate({scrollTop:$("#container-linked-data").offset().top}, 500);
@@ -182,7 +187,6 @@ $(document).on("click touch", ".map path[data-region-name]", function(e) {
     }
 });
 
-var gCanidateLoaded = false;
 $(window).scroll(function(){
     
   $('.fade-in').each( function(i) {
