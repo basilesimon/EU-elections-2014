@@ -10,9 +10,9 @@
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/lib/moment.min.js"></script>
         <script src="js/lib/chart.js"></script>
-        <script src="js/main.js?v=3"></script>
-        <script src="js/charts.js?v=3"></script>
-        <script src="js/graph.js?v=3"></script>
+        <script src="js/main.js?v=4"></script>
+        <script src="js/charts.js?v=4"></script>
+        <script src="js/graph.js?v=4"></script>
     </head>
     <body>
         <div class="navbar navbar-static-top" role="navigation">
@@ -251,16 +251,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-9">
+                <div id="candidate-info-wrapper" class="col-sm-9">
                     <div id="candidate-info" class="hidden">
-                        <h2 id="candidate-name" style="margin-top: 0px"></h2>
+                        <h2 id="candidate-name" style="margin-top: 0px;"></h2>
                         <h3>Mentions in the media over the last 90 days</h3>
                         <div style="height: 275px; width: 100%; overflow: hidden;">
                             <canvas id="candidate-mentions" width="850" height="275"></canvas>
                         </div>
                         <ul id="tabs-explore" class="nav nav-tabs" style="margin-bottom: 10px;">
                             <li class="active"><a href="#tab-candidate-concepts" data-toggle="tab"><i class="fa fa-lg fa-tag"></i> Connections</a></li>
-                            <li><a href="#tab-candidate-articles" data-toggle="tab"><i class="fa fa-lg fa-file-text-o"></i> Mentions</a></li>
+                            <li><a href="#tab-candidate-articles" data-toggle="tab"><i class="fa fa-lg fa-file-text-o"></i> Mentions in the media</a></li>
                         </ul>
                         <div class="tab-content">
                             <div id="tab-candidate-concepts" class="tab-pane active">

@@ -50,9 +50,10 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
     
     $('a[data-candidate-id]').removeClass('active');
     $('a[data-candidate-id="'+candidateId+'"]').addClass('active');
-    $('#candidate-info').removeClass('hidden').show();
     
     $.getJSON(gServer+"candidate/"+candidateId, function(candidate) {
+        $('#candidate-info').removeClass('hidden').show();
+        
         var candidateUrl = gServer+'candidate/'+candidateId;
         $('#candidate-name').html('<a href="'+candidateUrl+'">'+candidate.name+'</a><br/><small>'+candidate.party+'</small>');
         $('#candidate-articles').html('');
@@ -181,11 +182,26 @@ $(document).on("click touch", ".map path[data-region-name]", function(e) {
     }
 });
 
+var gCanidateLoaded = false;
 $(window).scroll(function(){
+    
   $('.fade-in').each( function(i) {
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
       if (bottomOfWindow > ($(this).position().top + 150))
           $(this).animate({'opacity':'1'},500);
+  });
+  
+  // @fixme hacky!
+  $('#candidate-info-wrapper').each( function(i) {
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > ($(this).position().top) + 600) {
+        // Uses Nigel Farage as initial example
+        if (gCanidateLoaded == false) {
+            $('a[data-candidate-id="da31718d89adb04d5d6bc8398258ca7601907b8a"]').click();
+        }
+        gCanidateLoaded = true;
+
+      }
   });
 
   $('#party-mentions.hidden').each(function(i) {
