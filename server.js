@@ -121,7 +121,7 @@ app.get('/:country/:region/articles', function(req, res, next) {
  * Handle all other requests as 404 / Page Not Found errors
  */
 app.use(function(req, res, next) {
-    res.status(404).render('page-not-found', { title: "Page not found" });
+    res.status(404).send("File not found");
 });
 
 app.listen(3103);

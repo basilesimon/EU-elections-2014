@@ -1,3 +1,7 @@
+/**
+ * Script to fetch latest info about concept co-occurences for candidates and parties
+ */
+
 var Q = require('q');
 var mongoJs = require('mongojs');
 var csvtojson = require("csvtojson").core.Converter;
@@ -71,6 +75,71 @@ euElectionCoverage.getCandidates()
     var promises = [];
     candidates.forEach(function(candidate, i) {
         promises.push( save('candidates', candidate) );
+    });
+    return Q.all(promises);
+})
+.then(function() {
+    return euElectionCoverage.getParties()
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        if (!party.uri)
+            return;
+        var promise = newsquery.getCoOccuringConcepts(party.uri, 100)
+        .then(function(concepts) {
+            console.log("Retreived "+concepts.length+" concepts related to "+party.uri);
+            party.concepts = concepts;
+            return party;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        if (party.concepts.length == 0)
+            return;
+        var promise = getDetailedConcepts(party.concepts)
+        .then(function(detailedConcepts) {
+            console.log("Retreived extended information for "+party.concepts.length+" concepts related to "+party.uri);
+            party.concepts = detailedConcepts;
+            return party;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        promises.push( save('parties', party) );
+    });
+    return Q.all(promises);
+})
+.then(function() {
+    return euElectionCoverage.getParties()
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        if (!party.uri)
+            return;
+        var promise = newsquery.getConceptOccurrencesOverTime(party.uri, moment().subtract('days', 90).format('YYYY-MM-DD'), moment().format('YYYY-MM-DD'))
+        .then(function(conceptOccurrences) {
+            console.log("Retreived mentions over the last "+conceptOccurrences.length+" days for "+party.uri);
+            party.mentions = conceptOccurrences;
+            return party;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        promises.push( save('parties', party) );
     });
     return Q.all(promises);
 })

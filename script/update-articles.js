@@ -1,3 +1,8 @@
+/**
+ * Script to fetch latest articles mentioning candidates, parties and regions to mongodb
+ * @todo Add support for regions (need to add Juicer free text support to newsQuery)
+ */
+
 var Q = require('q');
 var mongoJs = require('mongojs');
 var csvtojson = require("csvtojson").core.Converter;
@@ -31,6 +36,31 @@ euElectionCoverage.getCandidates()
     var promises = [];
     candidates.forEach(function(candidate, i) {
         promises.push( save('candidates', candidate) );
+    });
+    return Q.all(promises);
+})
+.then(function() {
+    return euElectionCoverage.getParties()
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        if (!party.uri)
+            return;
+        var promise = newsquery.getArticlesByConcept(party.uri, 100)
+        .then(function(articles) {
+            console.log("Retreived "+articles.length+" articles mentioning "+party.uri);
+            party.articles = articles
+            return party;
+        });
+        promises.push(promise);
+    });
+    return Q.all(promises);
+})
+.then(function(parties) {
+    var promises = [];
+    parties.forEach(function(party, i) {
+        promises.push( save('parties', party) );
     });
     return Q.all(promises);
 })
