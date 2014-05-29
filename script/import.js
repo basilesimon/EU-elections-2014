@@ -63,7 +63,7 @@ loadCandidatesFromCsv()
     
 function loadCandidatesFromCsv() {
     var deferred = Q.defer();
-    var csvFileName = "./data/candidates.csv";
+    var csvFileName = "../data/candidates.csv";
     var fileStream = fs.createReadStream(csvFileName);
     var csvConverter = new csvtojson();
     csvConverter.on("end_parsed", function(candidates) {

@@ -4,8 +4,8 @@ var csvtojson = require("csvtojson").core.Converter;
 var crypto = require('crypto');
 var fs = require("fs");
 var moment = require("moment");
-var config = require(__dirname + '/config.json');
-var euElectionCoverage = require(__dirname + '/lib/eu-election-coverage.js');
+var config = require(__dirname + '/../config.json');
+var euElectionCoverage = require(__dirname + '/../lib/eu-election-coverage.js');
 var newsquery = require('newsquery')(config.bbcNewsLabs.apiKey);
 
 GLOBAL.config = config;
@@ -74,49 +74,6 @@ euElectionCoverage.getCandidates()
     });
     return Q.all(promises);
 })
-.then(function(candidates) {
-    return euElectionCoverage.getCandidates();
-})
-.then(function(candidates) {
-    var promises = [];
-    candidates.forEach(function(candidate, i) {
-        if (!candidate.uri)
-            return;
-        var promise = newsquery.getArticlesByConcept(candidate.uri, 100)
-        .then(function(articles) {
-            console.log("Retreived "+articles.length+" articles mentioning "+candidate.uri);
-            candidate.articles = articles
-            return candidate;
-        });
-        promises.push(promise);
-    });
-    return Q.all(promises);
-})
-.then(function(candidates) {
-    var promises = [];
-    candidates.forEach(function(candidate, i) {
-        promises.push( save('candidates', candidate) );
-    });
-    return Q.all(promises);
-})
-// .then(function() {
-//    return euElectionCoverage.getparties();
-// })
-// .then(function(parties) {
-//     var promises = [];
-//     parties.forEach(function(party, i) {
-//         if (!party.uri)
-//             return;    
-//         var promise = newsquery.getArticlesByConcept(party.uri, 100)
-//         .then(function(articles) {
-//             console.log("Retreived "+articles.length+" articles mentioning "+party.uri);
-//             party.articles = articles;
-//             return save('candidates', party);
-//         });
-//         promises.push(promise);
-//     });
-//     return Q.all(promises);
-// })
 .then(function() {
     db.close();
 });
