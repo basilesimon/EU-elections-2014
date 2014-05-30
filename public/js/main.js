@@ -1,7 +1,5 @@
 
-// @todo Refactor to remove dependancy on this variable (temporary hack)
 var gServer = "http://eu.bbcnewslabs.co.uk/";
-//gServer = "http://localhost:3103/";
 
 $(function() {
     // Get all regions
@@ -36,6 +34,64 @@ $(function() {
 
        });
     });
+    
+    // Get parties and display commonly mentioned co-occuring concepts
+    $.getJSON(gServer+"parties", function(parties) {
+        parties.forEach(function(party) {
+            if (party.concepts && $('#party-topics *[data-party="'+party.name+'"]')) {
+                var element = $('#party-topics *[data-party="'+party.name+'"]');
+
+                var person = 0;
+                party.concepts.forEach(function(concept, i) {
+                    if (person < 1 && concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
+                        person++;
+                        element.append('<div class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
+                    }
+                });
+                // Some neutral / generic tags to ignore. All parties are tagged with these and doesn't tell us much.
+                var conceptsToIgnore = ["Three points for a win",
+                                        "Month",
+                                        "Member of Parliament",
+                                        "Member of the European Parliament",
+                                        "Case",
+                                        "Issue",
+                                        "Minister",
+                                        "Councillor",
+                                        "Candidate",
+                                        "Voting",
+                                        "Political party",
+                                        "Council",
+                                        "Party",
+                                        "Spokesperson",
+                                        "Election",
+                                        "Politics"];
+                
+                // We sort the concepts parties are tagged with and display some of the least common tags - ones that set them apart
+                var displayed = 0;
+                party.concepts.forEach(function(concept, i) {
+                    if (i < 5)
+                        return;
+
+                    if (displayed >= 5)
+                        return;
+
+                    // Formatting for concept names
+                    concept.name = concept.name.replace(/\((.*)?\)/, '').trim();
+
+                    // Some hackery to ignore concepts that are not relevant (noise)
+                    if (conceptsToIgnore.indexOf(concept.name) != -1)
+                        return;
+                    
+                    if (!concept.type || concept.type.indexOf('http://dbpedia.org/ontology/Thing') != -1) {
+                        element.append('<div class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
+                        displayed++;
+                    }
+
+                });
+            }
+        });
+    });
+
 });
 
 $(document).on("click touch", "a[data-candidate-id]", function(e) {
@@ -129,64 +185,11 @@ $(window).scroll(function(){
                           lineColor = party.color;
                           $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:'+lineColor+';"></div>'+party.name+'</div>');
                       }
-                      
-                      if (party.concepts && $('#party-topics *[data-party="'+party.name+'"]')) {
-                          var element = $('#party-topics *[data-party="'+party.name+'"]');
-
-
-                          var person = 0;
-                          party.concepts.forEach(function(concept, i) {
-                              if (person < 1 && concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
-                                  person++;
-                                  element.append('<div class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
-                              }
-                          });
-                          // Some neutral / generic tags to ignore. All parties are tagged with these and doesn't tell us much.
-                          var conceptsToIgnore = ["Three points for a win",
-                                                  "Month",
-                                                  "Member of Parliament",
-                                                  "Member of the European Parliament",
-                                                  "Case",
-                                                  "Issue",
-                                                  "Minister",
-                                                  "Councillor",
-                                                  "Candidate",
-                                                  "Voting",
-                                                  "Political party",
-                                                  "Council",
-                                                  "Party",
-                                                  "Spokesperson",
-                                                  "Election",
-                                                  "Politics"];
-                          
-                          // We sort the concepts parties are tagged with and display some of the least common tags - ones that set them apart
-                          var displayed = 0;
-                          party.concepts.forEach(function(concept, i) {
-                              if (i < 5)
-                                  return;
-
-                              if (displayed >= 5)
-                                  return;
-
-                              // Formatting for concept names
-                              concept.name = concept.name.replace(/\((.*)?\)/, '').trim();
-
-                              // Some hackery to ignore concepts that are not relevant (noise)
-                              if (conceptsToIgnore.indexOf(concept.name) != -1)
-                                  return;
-                              
-                              if (!concept.type || concept.type.indexOf('http://dbpedia.org/ontology/Thing') != -1) {
-                                  element.append('<div class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
-                                  displayed++;
-                              }
-
-                          });
-                      }
 
                       party.mentions.forEach(function(mention,i) {
                           party.mentions[i].label = party.name;
                       });
-          
+
                       datasets.push({
                                   fillColor: "transparent",
                                   strokeColor: lineColor,
