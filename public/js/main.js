@@ -3,8 +3,6 @@
 var gServer = "http://eu.bbcnewslabs.co.uk/";
 //gServer = "http://localhost:3103/";
 
-var gCanidateLoaded = false;
-
 $(function() {
     // Get all regions
     $.getJSON(gServer+"United_Kingdom/regions", function(regions) {
@@ -41,8 +39,6 @@ $(function() {
 });
 
 $(document).on("click touch", "a[data-candidate-id]", function(e) {
-    
-    gCanidateLoaded = true;
         
     e.preventDefault();
     
@@ -56,6 +52,161 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
     $('a[data-candidate-id]').removeClass('active');
     $('a[data-candidate-id="'+candidateId+'"]').addClass('active');
     
+    displayInfoForCanidate(candidateId);
+});
+
+$(document).on("click touch", "#candidate-concepts .media", function(e) {
+    $(this).toggleClass("expanded");
+});
+
+$(document).on("click touch", ".map path[data-region-name]", function(e) {
+    var regionName = $(this).data('regionName');
+    var cssClass = new String($(this).attr('class'));
+    
+    // NB: Can't use addClass() and removeClass as they don't work with SVGs!
+    $('.map .active').attr('class', '');
+    
+    if (cssClass.match(/active/)) {
+        $('#region-info').hide();
+        $('#select-region').fadeIn();
+        showRegionalPollPieChart();
+    } else {
+        $(this).attr('class', cssClass + ' active');
+    
+        $('#select-region').hide();
+        $('#region-info').hide().removeClass('hidden');
+        $.getJSON(gServer+"United_Kingdom/"+encodeURIComponent(regionName), function(region) {
+            $('#region-name').html(region.name);
+            //$('#region-articles ul').html('');
+            $("#region-candidates ul").html('');
+            region.candidates.forEach(function(candidate) {
+                if (candidate.uri)
+                    $('#region-candidates ul').append('<li><i class="fa fa-li fa-user fa-lg"></i><a href="#" data-candidate-id="' + candidate._id + '"><strong>' + candidate.name + '</strong></a> <span class="text-muted">'+candidate.party+'</span></li>');
+            });
+            showRegionalPollPieChart(region.name);
+            $('#region-info').slideDown();
+        });
+    }
+});
+
+$(window).scroll(function(){
+    
+  $('.fade-in').each( function(i) {
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > ($(this).position().top + 150))
+          $(this).animate({'opacity':'1'},500);
+  });
+  
+  // @fixme hacky!
+  $('#candidate-info').each( function(i) {
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > ($(this).position().top) + 600) {
+        // Uses Nigel Farage as initial example
+        if ($(this).hasClass('hidden'))
+            displayInfoForCanidate('da31718d89adb04d5d6bc8398258ca7601907b8a');
+
+      }
+  });
+
+  $('#party-mentions.hidden').each(function(i) {
+      var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      if (bottomOfWindow > ($(this).position().top + 300)) {
+          $(this).removeClass('hidden');
+          $.getJSON(gServer+"parties", function(parties) {
+              $('#party-mentions-legend').html('');
+              var datasets = []
+              parties.forEach(function(party) {
+                  // NB: Only parties with mentions (which requires a URI) and a
+                  // colour defined for them will be shown on the graph
+                  if (party.mentions) {
+                      
+                      var lineColor = "#cccccc";
+                      
+                      if (party.name == "Conservative Party" ||
+                          party.name == "Labour Party" ||
+                          party.name == "Liberal Democrats" ||
+                          party.name == "UKIP") {
+                          lineColor = party.color;
+                          $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:'+lineColor+';"></div>'+party.name+'</div>');
+                      }
+                      
+                      if (party.concepts && $('#party-topics *[data-party="'+party.name+'"]')) {
+                          var element = $('#party-topics *[data-party="'+party.name+'"]');
+
+
+                          var person = 0;
+                          party.concepts.forEach(function(concept, i) {
+                              if (person < 1 && concept.type && concept.type.indexOf('http://dbpedia.org/ontology/Person') != -1) {
+                                  person++;
+                                  element.append('<div class="label label-person pull-left"><i class="fa fa-user"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
+                              }
+                          });
+                          // Some neutral / generic tags to ignore. All parties are tagged with these and doesn't tell us much.
+                          var conceptsToIgnore = ["Three points for a win",
+                                                  "Month",
+                                                  "Member of Parliament",
+                                                  "Member of the European Parliament",
+                                                  "Case",
+                                                  "Issue",
+                                                  "Minister",
+                                                  "Councillor",
+                                                  "Candidate",
+                                                  "Voting",
+                                                  "Political party",
+                                                  "Council",
+                                                  "Party",
+                                                  "Spokesperson",
+                                                  "Election",
+                                                  "Politics"];
+                          
+                          // We sort the concepts parties are tagged with and display some of the least common tags - ones that set them apart
+                          var displayed = 0;
+                          party.concepts.forEach(function(concept, i) {
+                              if (i < 5)
+                                  return;
+
+                              if (displayed >= 5)
+                                  return;
+
+                              // Formatting for concept names
+                              concept.name = concept.name.replace(/\((.*)?\)/, '').trim();
+
+                              // Some hackery to ignore concepts that are not relevant (noise)
+                              if (conceptsToIgnore.indexOf(concept.name) != -1)
+                                  return;
+                              
+                              if (!concept.type || concept.type.indexOf('http://dbpedia.org/ontology/Thing') != -1) {
+                                  element.append('<div class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
+                                  displayed++;
+                              }
+
+                          });
+                      }
+
+                      party.mentions.forEach(function(mention,i) {
+                          party.mentions[i].label = party.name;
+                      });
+          
+                      datasets.push({
+                                  fillColor: "transparent",
+                                  strokeColor: lineColor,
+                                  pointColor: "transparent",
+                                  pointStrokeColor: "transparent",
+                                  data: party.mentions
+                              });
+                      }
+              });
+              $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:#cccccc"></div>Other parties</div>');
+              plotGraphByDate('party-mentions', datasets, true);
+          });
+      }
+
+  });
+
+});
+
+
+function displayInfoForCanidate(candidateId)  {
     $.getJSON(gServer+"candidate/"+candidateId, function(candidate) {
         $('#candidate-info').removeClass('hidden').show();
         
@@ -129,7 +280,7 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
                         otherTagsHtml += '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+'</span>';
                     }
                 });  
-                articlesHtml += personTagsHtml+organisationTagsHtml+placeTagsHtml+otherTagsHtml;              
+                articlesHtml += personTagsHtml+organisationTagsHtml+placeTagsHtml+otherTagsHtml;
                 articlesHtml +='</p><hr/></li>';
             });
             articlesHtml += '</ul>';
@@ -149,105 +300,5 @@ $(document).on("click touch", "a[data-candidate-id]", function(e) {
             data: candidate.mentions
         }], true);
         
-    });
-
-});
-
-$(document).on("click touch", "#candidate-concepts .media", function(e) {
-    $(this).toggleClass("expanded");
-});
-
-$(document).on("click touch", ".map path[data-region-name]", function(e) {
-    var regionName = $(this).data('regionName');
-    var cssClass = new String($(this).attr('class'));
-    
-    // NB: Can't use addClass() and removeClass as they don't work with SVGs!
-    $('.map .active').attr('class', '');
-    
-    if (cssClass.match(/active/)) {
-        $('#region-info').hide();
-        $('#select-region').fadeIn();
-        showRegionalPollPieChart();
-    } else {
-        $(this).attr('class', cssClass + ' active');
-    
-        $('#select-region').hide();
-        $('#region-info').hide().removeClass('hidden');
-        $.getJSON(gServer+"United_Kingdom/"+encodeURIComponent(regionName), function(region) {
-            $('#region-name').html(region.name);
-            //$('#region-articles ul').html('');
-            $("#region-candidates ul").html('');
-            region.candidates.forEach(function(candidate) {
-                if (candidate.uri)
-                    $('#region-candidates ul').append('<li><i class="fa fa-li fa-user fa-lg"></i><a href="#" data-candidate-id="' + candidate._id + '"><strong>' + candidate.name + '</strong></a> <span class="text-muted">'+candidate.party+'</span></li>');
-            });
-            showRegionalPollPieChart(region.name);
-            $('#region-info').slideDown();
-        });
-    }
-});
-
-$(window).scroll(function(){
-    
-  $('.fade-in').each( function(i) {
-      var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > ($(this).position().top + 150))
-          $(this).animate({'opacity':'1'},500);
-  });
-  
-  // @fixme hacky!
-  $('#candidate-info-wrapper').each( function(i) {
-      var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > ($(this).position().top) + 600) {
-        // Uses Nigel Farage as initial example
-        if (gCanidateLoaded == false) {
-            $('a[data-candidate-id="da31718d89adb04d5d6bc8398258ca7601907b8a"]').click();
-        }
-        gCanidateLoaded = true;
-
-      }
-  });
-
-  $('#party-mentions.hidden').each(function(i) {
-      var bottomOfWindow = $(window).scrollTop() + $(window).height();
-      if (bottomOfWindow > ($(this).position().top + 300)) {
-          $(this).removeClass('hidden');
-          $.getJSON(gServer+"parties", function(parties) {
-              $('#party-mentions-legend').html('');
-              var datasets = []
-              parties.forEach(function(party) {
-                  // NB: Only parties with mentions (which requires a URI) and a
-                  // colour defined for them will be shown on the graph
-                  if (party.mentions) {
-                      
-                      var lineColor = "#cccccc";
-                      
-                      if (party.name == "Conservative Party" ||
-                          party.name == "Labour Party" ||
-                          party.name == "Liberal Democrats" ||
-                          party.name == "UKIP") {
-                          lineColor = party.color;
-                          $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:'+lineColor+';"></div>'+party.name+'</div>');
-                      }
-
-                      party.mentions.forEach(function(mention,i) {
-                          party.mentions[i].label = party.name;
-                      });
-          
-                      datasets.push({
-                                  fillColor: "transparent",
-                                  strokeColor: lineColor,
-                                  pointColor: "transparent",
-                                  pointStrokeColor: "transparent",
-                                  data: party.mentions
-                              });
-                      }
-              });
-              $('#party-mentions-legend').append('<div class="pull-left" style="margin-right: 10px;"><div class="minibox" style="background-color:#cccccc"></div>Other parties</div>');
-              plotGraphByDate('party-mentions', datasets, true);
-          });
-      }
-
-  });
-
-});
+    }); 
+}

@@ -74,7 +74,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="text-center">Number of candidates <em>versus</em> media coverage</h2>
+                    <h2 style="margin-top: 40px;" class="text-center">Number of candidates <em>versus</em> media coverage</h2>
                 </div>
             </div>
             <div class="row" style="margin-bottom: 40px;">
@@ -113,12 +113,45 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="text-center">Mentions of parties in the media over the last 60 days</h2>
-                    <br/>
-                    <div style="height: 350px; width: 100%; overflow: hidden;">
+                    <h2 style="margin: 40px;" class="text-center">Mentions of parties in the media over the last 60 days</h2>
+                    <div style="height: 350px; width: 100%; overflow: hidden;" class="clearfix">
                         <canvas id="party-mentions" class="pull-right hidden" width="1140" height="350"></canvas>
                     </div>
-                        <div id="party-mentions-legend"></div>
+                    <div id="party-mentions-legend"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="margin-top: 40px;" class="text-center">Topics parties are associated with in the media</h2>
+                    <p style="margin: 20px 0;" class="lead">
+                        Below you can see the person most frequently associated with each party and some examples of the most
+                        common topics they are associated with. You can also see how many times each topic is mentioned along side each party.
+                    </p>
+                </div>
+            </div>
+            <div id="party-topics" class="row">
+                <div class="col-md-3">
+                    <h3>Conservative Party</h3>
+                    <div data-party="Conservative Party" class="clearfix"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Labour Party</h3>
+                    <div data-party="Labour Party" class="clearfix"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Liberal Democrats</h3>
+                    <div data-party="Liberal Democrats" class="clearfix"></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>UKIP</h3>
+                    <div data-party="UKIP" class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="margin: 20px 0;">
+                        For a more expansive example of automated concept tagging in practice, check out some of the more well known MEP candidates below.
+                    </p>
                 </div>
             </div>
         </div>
@@ -228,9 +261,16 @@
         <div id="container-linked-data" class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>Explore Linked Data</h2>
+                    <h2>MEP Candidates and Linked Data</h2>
                     <p class="lead">
                         There are 748 candidates standing in the UK, the most well known 66 of these are recognised by The Juicer.
+                    </p>
+                    <p>
+                       Examples of more commonly mentioned candidates are <a href="#" data-candidate-id="da31718d89adb04d5d6bc8398258ca7601907b8a">Nigel Farage</a>,
+                      <a href="#" data-candidate-id="16764725df82030ee3a2eefbc1a03662dfe1ae2d">Roger Helmer</a> and <a href="#" data-candidate-id="9aec7c04e762bec80624f873444b837b11e64df2">Nick Griffin</a>.                       
+                    </p>
+                    <p>
+                        We also have quite good coverage of the leading candidates from <strong>Northern Ireland</strong>.
                     </p>
                     <br/>
                 </div>
@@ -251,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="candidate-info-wrapper" class="col-sm-9">
+                <div class="col-sm-9">
                     <div id="candidate-info" class="hidden">
                         <h2 id="candidate-name" style="margin-top: 0px;"></h2>
                         <h3>Mentions in the media over the last 90 days</h3>
