@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>BBC coverage of the European Elections 2014</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+        <script src="js/lib/jquery-1.10.2.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
+        <script src="js/lib/chart.js"></script>
+        <script src="js/main.js?v=4"></script>
+        <script src="js/charts.js?v=4"></script>
+        <script src="js/graph.js?v=4"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://twitter.com/BBC_News_Labs"><img src="img/bbc_blocks.png" width="84" height="24" title="logo"/> <span>News Labs</span></a>
+                </div>
+            </div>
+        </div>
+        <div style="background: #eee; color: #666 !important; position: relative; top: -20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="img/news-labs.png" class="pull-right" height="120" style="margin-top: 20px; margin-left: 10px; margin-bottom: 20px;" alt="BBC News Labs" />
+
+                        <h1>BBC coverage of the European Election Coverage</h1>
+                        <p class="lead" style="margin-bottom: 10px;">An experimental dashboard around the 2014 European Election coverage in the UK</p>
+                        <p>
+                            <em>by <a href="http://twitter.com/basilesimon">@BasileSimon</a> and <a href="http://twitter.com/iaincollins">@IainCollins</a> for <a href="http://twitter.com/BBC_News_Labs">@BBC_News_Labs</a></em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="alert alert-info">
+                        <i class="fa fa-lg fa-info-circle"></i> <a href="http://www.bbc.co.uk/news/events/vote2014">BBC News - Vote 2014</a> is the offical BBC coverage of the European Elections
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="lead centered">
+                        This how the BBC covered the European Elections. Select another publisher to compare the results:
+                    </p>
+                    <div class="centered">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
+                          BBC <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="./bbc.html">BBC</a></li>
+                          <li><a href="./guardian.html">The Guardian</a></li>
+                          <li><a href="./sky.html">Sky News</a></li>
+                          <li><a href="./yorkshirepost.html">The Yorkshire Post</a></li>
+                          <li><a href="#">(...)</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="margin-top: 40px;" class="text-center">Number of candidates <em>versus</em> media coverage</h2>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-sm-6">
+                    <h3 class="text-center">Number of candidates running by party</h3>
+                    <br/>
+                    <canvas id="candidates-by-party" width="400" height="380"></canvas>
+                      <div style="60%; position: absolute; top: 130px; right: -130px;">
+                        <div class="minibox" style="background-color:#0099c6;"></div>Conservatives<br>
+                        <div class="minibox" style="background-color:#741b47;"></div>UKIP<br>
+                        <div class="minibox" style="background-color:#ff9900;"></div>Liberal-Democrats<br>
+                        <div class="minibox" style="background-color:#cc0000;"></div>Labour<br>
+                        <div class="minibox" style="background-color:#073763;"></div>BNP<br>
+                        <div class="minibox" style="background-color:#38761d;"></div>Green Party<br>
+                        <div class="minibox" style="background-color:#dd4477;"></div>English Democrats<br>
+                        <div class="minibox" style="background-color:#66aa00;"></div>An Independence from Europe<br>
+                        <div class="minibox" style="background-color:#b82e2e;"></div>No2EU<br>
+                        <div class="minibox" style="background-color:#766AFF;"></div>SNP<br>
+                        <div class="minibox" style="background-color:#a9c413;"></div>Plaid Cymru<br>
+                        <div class="minibox" style="background-color:#cc0000;"></div>Social Democratic &amp; Labour Party<br>
+                        <div class="minibox" style="background-color:#dd4477;"></div>Ulster Unionist Party
+                      </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-center">Recent mentions <strong>by the BBC</strong> by party</h3>
+                    <br/>
+                    <canvas id="mentions-by-party" width="400" height="380" class="pull-right"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-center text-muted">
+                        The "number of mentions in the media" above was calculated from April 1st, 2014, to election day.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="margin: 40px;" class="text-center">Mentions of parties <strong>by the BBC</strong> over the last 60 days</h2>
+                    <div style="height: 380px; width: 100%; overflow: hidden;" class="clearfix">
+                        <canvas id="party-mentions" class="pull-right hidden" width="1140" height="350"></canvas>
+                        <div id="party-mentions-legend"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="margin: 20px 0;">
+                        For a more expansive example of automated concept tagging in practice, check out some of the more well known MEP candidates below.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-linked-data" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MEP Candidates and Linked Data</h2>
+                    <p class="lead">
+                        There are 748 candidates standing in the UK, the most well known 66 of these are recognised by The Juicer.
+                    </p>
+                    <p>
+                       Examples of more commonly mentioned candidates are <a href="#" data-candidate-id="da31718d89adb04d5d6bc8398258ca7601907b8a">Nigel Farage</a>,
+                      <a href="#" data-candidate-id="16764725df82030ee3a2eefbc1a03662dfe1ae2d">Roger Helmer</a> and <a href="#" data-candidate-id="9aec7c04e762bec80624f873444b837b11e64df2">Nick Griffin</a>.
+                    </p>
+                    <p>
+                        We also have quite good coverage of the leading candidates from <strong>Northern Ireland</strong>.
+                    </p>
+                    <br/>
+                </div>
+            </div>
+            <div class="row fade-in">
+                <div class="col-sm-3">
+                    <ul id="tabs-explore" class="nav nav-tabs hidden" style="margin-bottom: 10px;">
+                        <li class="active"><a href="#tab-explore-candidates" data-toggle="tab">By Region</a></li>
+                        <li><a href="#tab-explore-parties" data-toggle="tab">By Party</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-explore-candidates" class="tab-pane active"></div>
+                        <div id="tab-explore-parties" class="tab-pane">
+                            <div class="input-group hidden">
+                                <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                                <input name="form" class="form-control input-lg" placeholder="party name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div id="candidate-info" class="hidden">
+                        <h2 id="candidate-name" style="margin-top: 0px;"></h2>
+                        <h3>Mentions in the media over the last 90 days</h3>
+                        <div style="height: 275px; width: 100%; overflow: hidden;">
+                            <canvas id="candidate-mentions" width="850" height="275"></canvas>
+                        </div>
+                        <ul id="tabs-explore" class="nav nav-tabs" style="margin-bottom: 10px;">
+                            <li class="active"><a href="#tab-candidate-concepts" data-toggle="tab"><i class="fa fa-lg fa-tag"></i> Connections</a></li>
+                            <li><a href="#tab-candidate-articles" data-toggle="tab"><i class="fa fa-lg fa-file-text-o"></i> Mentions in the media</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-candidate-concepts" class="tab-pane active">
+                                <h3>Connections in the media</h3>
+                                <br/>
+                                <div id="candidate-concepts"></div>
+                            </div>
+                            <div id="tab-candidate-articles" class="tab-pane">
+                                <h3>Mentions in the media</h3>
+                                <br/>
+                                <div id="candidate-articles"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class"container">
+            <div id="footer">
+              <div class="container">
+                <p class="text-center text-muted">
+                  <strong>Disclaimer</strong> This is an experiment from BBC News Labs, it is not published by BBC News and should not be considered official BBC content.
+                </p>
+                <br/>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

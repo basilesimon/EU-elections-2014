@@ -233,6 +233,10 @@ h1 {
 #party-topics .label {
     clear: left;
 }
+
+.centered {
+  text-align: center;
+}
 /*
 #candidate-concepts .media {
     height: 36px;

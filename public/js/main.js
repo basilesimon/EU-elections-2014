@@ -12,13 +12,13 @@ $(function() {
             region.candidates.forEach(function(candidate) {
                 if (!candidate.uri)
                     return;
-                
+
                 listGroupHtml += '<a href="#" data-candidate-id="'+candidate._id+'" class="list-group-item">'
                                 +'<i class="fa fa-user fa-lg pull-left" style="margin-top: 10px; margin-right: 10px; margin-bottom: 20px;"></i> '
                                 +'<strong>'+ candidate.name+'</strong><br/><span class="text-muted">'+candidate.party+'</span>'
                                 +'</a>';
             });
-            
+
             var targetId = 'candidates-by-region-'+regionIndex;
             $('#candiates-by-region-accordion').append('<div class="panel panel-default panel-accordian">'
                                                        +'  <div class="panel-heading">'
@@ -34,7 +34,7 @@ $(function() {
 
        });
     });
-    
+
     // Get parties and display commonly mentioned co-occuring concepts
     $.getJSON(gServer+"parties", function(parties) {
         parties.forEach(function(party) {
@@ -65,7 +65,7 @@ $(function() {
                                         "Spokesperson",
                                         "Election",
                                         "Politics"];
-                
+
                 // We sort the concepts parties are tagged with and display some of the least common tags - ones that set them apart
                 var displayed = 0;
                 party.concepts.forEach(function(concept, i) {
@@ -81,7 +81,7 @@ $(function() {
                     // Some hackery to ignore concepts that are not relevant (noise)
                     if (conceptsToIgnore.indexOf(concept.name) != -1)
                         return;
-                    
+
                     if (!concept.type || concept.type.indexOf('http://dbpedia.org/ontology/Thing') != -1) {
                         element.append('<div class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+' <span class="badge">'+concept.occurrences+' mentions</span></div>');
                         displayed++;
@@ -95,19 +95,19 @@ $(function() {
 });
 
 $(document).on("click touch", "a[data-candidate-id]", function(e) {
-        
+
     e.preventDefault();
-    
+
     $('html,body').animate({scrollTop:$("#container-linked-data").offset().top}, 500);
-    
+
     var parent = this;
     var candidateId = $(this).data('candidateId');
-    
+
     $('#candidate-info').removeClass('hidden').hide();
-    
+
     $('a[data-candidate-id]').removeClass('active');
     $('a[data-candidate-id="'+candidateId+'"]').addClass('active');
-    
+
     displayInfoForCanidate(candidateId);
 });
 
@@ -118,17 +118,17 @@ $(document).on("click touch", "#candidate-concepts .media", function(e) {
 $(document).on("click touch", ".map path[data-region-name]", function(e) {
     var regionName = $(this).data('regionName');
     var cssClass = new String($(this).attr('class'));
-    
+
     // NB: Can't use addClass() and removeClass as they don't work with SVGs!
     $('.map .active').attr('class', '');
-    
+
     if (cssClass.match(/active/)) {
         $('#region-info').hide();
         $('#select-region').fadeIn();
         showRegionalPollPieChart();
     } else {
         $(this).attr('class', cssClass + ' active');
-    
+
         $('#select-region').hide();
         $('#region-info').hide().removeClass('hidden');
         $.getJSON(gServer+"United_Kingdom/"+encodeURIComponent(regionName), function(region) {
@@ -146,13 +146,13 @@ $(document).on("click touch", ".map path[data-region-name]", function(e) {
 });
 
 $(window).scroll(function(){
-    
+
   $('.fade-in').each( function(i) {
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
       if (bottomOfWindow > ($(this).position().top + 150))
           $(this).animate({'opacity':'1'},500);
   });
-  
+
   // @fixme hacky!
   $('#candidate-info').each( function(i) {
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
@@ -175,9 +175,9 @@ $(window).scroll(function(){
                   // NB: Only parties with mentions (which requires a URI) and a
                   // colour defined for them will be shown on the graph
                   if (party.mentions) {
-                      
+
                       var lineColor = "#cccccc";
-                      
+
                       if (party.name == "Conservative Party" ||
                           party.name == "Labour Party" ||
                           party.name == "Liberal Democrats" ||
@@ -212,12 +212,12 @@ $(window).scroll(function(){
 function displayInfoForCanidate(candidateId)  {
     $.getJSON(gServer+"candidate/"+candidateId, function(candidate) {
         $('#candidate-info').removeClass('hidden').show();
-        
+
         var candidateUrl = gServer+'candidate/'+candidateId;
         $('#candidate-name').html('<a href="'+candidateUrl+'">'+candidate.name+'</a><br/><small>'+candidate.party+'</small>');
         $('#candidate-articles').html('');
         $('#candidate-concepts').html('');
-        
+
         // Display related concepts
         $('#candidate-concepts').html('<div class="media"><span class="col-md-2 pull-left text-right label label-default">People</span><div class="media-body"><div id="candidate-concepts-people" class="clearfix"></div></div></div>'
                                      +'<div class="media"><span class="col-md-2 pull-left text-right label label-default">Organisations</span><div class="media-body"><div id="candidate-concepts-organisations" class="clearfix"></div></div></div>'
@@ -243,26 +243,26 @@ function displayInfoForCanidate(candidateId)  {
         } else {
             $('#candidate-concepts').html('<p class="text-muted">No links to other subjects found</p>');
         }
-        
+
         if ($('#candidate-concepts-people').html() == '' &&
             $('#candidate-concepts-organisations').html() == '' &&
             $('#candidate-concepts-places').html() == '' &&
             $('#candidate-concepts-other').html() == '')
             conceptsHtml = '<p class="text-muted">No concepts found</p>';
-        
+
         // Display articles about the candidate
         var articlesHtml  = '';
         if (candidate.articles && candidate.articles.length > 0) {
             articlesHtml += '<ul class="list-unstyled">';
             candidate.articles.forEach(function(article, index) {
-                
+
                 //if (article.source == "http://www.bbc.co.uk/ontologies/bbc/Twitter")
                 //    return;
-                
+
                 // Some content may not contain URLs (e.g. images, videos)
                 if (!article.url)
                     return;
-                    
+
                 var domain = article.url.replace(/^http:\/\//, '').replace(/\/(.*)?/, '');
                 domain = domain.replace(/(www|rss|feeds)\./, '');
                 articlesHtml += '<li>'
@@ -282,7 +282,7 @@ function displayInfoForCanidate(candidateId)  {
                     } else {
                         otherTagsHtml += '<span class="label label-info pull-left"><i class="fa fa-tag"></i> '+concept.name+'</span>';
                     }
-                });  
+                });
                 articlesHtml += personTagsHtml+organisationTagsHtml+placeTagsHtml+otherTagsHtml;
                 articlesHtml +='</p><hr/></li>';
             });
@@ -294,7 +294,7 @@ function displayInfoForCanidate(candidateId)  {
         $('#candidate-articles').html(articlesHtml);
 
         $('#candidate-info').show();
-        
+
         plotGraphByDate('candidate-mentions', [{
             fillColor: "#dbebff",
             strokeColor: "#3698e2",
@@ -302,6 +302,6 @@ function displayInfoForCanidate(candidateId)  {
             pointStrokeColor: "transparent",
             data: candidate.mentions
         }], true);
-        
-    }); 
+
+    });
 }
